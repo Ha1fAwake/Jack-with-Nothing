@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0482ef6b-22f4-447a-aa7b-43e035ffb97e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/ItemMgr.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItemMgr.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LudumDare/Model/BasicItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LudumDare/Model/BasicItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LudumDare/Model/ItemMgr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LudumDare/Model/ItemMgr.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LudumDare/Scenes/Zzl.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LudumDare/Scenes/Zzl.unity" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts_lt/ItemDetecte.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+              <folding>
+                <marker date="1570257329231" expanded="true" signature="61:318" ph="{...}" />
+                <marker date="1570257329231" expanded="true" signature="111:151" ph="{...}" />
+                <marker date="1570257329231" expanded="true" signature="205:316" ph="{...}" />
+                <marker date="1570257329231" expanded="true" signature="253:310" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts_lt/BagData.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="116">
+              <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+              <folding>
+                <marker date="1570257329230" expanded="true" signature="57:1274" ph="{...}" />
+                <marker date="1570257329230" expanded="true" signature="305:335" ph="{...}" />
+                <marker date="1570257329230" expanded="true" signature="366:399" ph="{...}" />
+                <marker date="1570257329230" expanded="true" signature="438:469" ph="{...}" />
+                <marker date="1570257329230" expanded="true" signature="501:534" ph="{...}" />
+                <marker date="1570257329230" expanded="true" signature="575:608" ph="{...}" />
+                <marker date="1570257329230" expanded="true" signature="642:677" ph="{...}" />
+                <marker date="1570257329230" expanded="true" signature="723:754" ph="{...}" />
+                <marker date="1570257329230" expanded="true" signature="791:822" ph="{...}" />
+                <marker date="1570257329230" expanded="true" signature="870:903" ph="{...}" />
+                <marker date="1570257329230" expanded="true" signature="942:975" ph="{...}" />
+                <marker date="1570257329230" expanded="true" signature="1006:1271" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/LudumDare/Model/ItemMgr.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="429">
+              <caret line="89" selection-start-line="89" selection-end-line="89" />
+              <folding>
+                <marker date="1570259135056" expanded="false" signature="6:102" ph="..." />
+                <marker date="1570259135056" expanded="true" signature="129:2486" ph="{...}" />
+                <marker date="1570259135056" expanded="true" signature="173:2484" ph="{...}" />
+                <marker date="1570259135056" expanded="false" signature="271:521" ph="{...}" />
+                <marker date="1570259135056" expanded="false" signature="612:1293" ph="{...}" />
+                <marker date="1570259135056" expanded="false" signature="638:1283" ph="{...}" />
+                <marker date="1570259135056" expanded="false" signature="685:893" ph="{...}" />
+                <marker date="1570259135056" expanded="false" signature="942:1131" ph="{...}" />
+                <marker date="1570259135056" expanded="false" signature="1397:1869" ph="{...}" />
+                <marker date="1570259135056" expanded="false" signature="1459:1832" ph="{...}" />
+                <marker date="1570259135056" expanded="false" signature="1552:1741" ph="{...}" />
+                <marker date="1570259135056" expanded="false" signature="1612:1723" ph="{...}" />
+                <marker date="1570259135056" expanded="true" signature="1935:2171" ph="{...}" />
+                <marker date="1570259135056" expanded="false" signature="2010:2114" ph="{...}" />
+                <marker date="1570259135056" expanded="true" signature="2225:2469" ph="{...}" />
+                <marker date="1570259135056" expanded="true" signature="2300:2412" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/LudumDare/Model/BasicItem.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+              <folding>
+                <marker date="1570258756096" expanded="false" signature="6:59" ph="..." />
+                <marker date="1570258756096" expanded="true" signature="110:728" ph="{...}" />
+                <marker date="1570258756096" expanded="true" signature="177:726" ph="{...}" />
+                <marker date="1570258756096" expanded="true" signature="438:720" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/LudumDare/Scripts/ItemIdentity.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+              <folding>
+                <marker date="1570260029656" expanded="false" signature="6:128" ph="..." />
+                <marker date="1570260029656" expanded="true" signature="171:289" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts_lt/ItemDetecte.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/LudumDare/Scripts/ItemIdentity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/LudumDare/Model/BasicItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts_lt/BagData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/LudumDare/Model/ItemMgr.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/LudumDare/Scripts/ItemId.cs" />
+        <option value="$PROJECT_DIR$/Assets/LudumDare/Model/BasicItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/LudumDare/Model/ItemMgr.cs" />
+        <option value="$PROJECT_DIR$/Assets/LudumDare/Scripts/ItemIdenity.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts_lt/ItemDetecte.cs" />
+        <option value="$PROJECT_DIR$/Assets/LudumDare/Scripts/ItemIdentity.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/.idea.LudumDare45/.idea/indexLayout.xml" />
+        <option value="$PROJECT_DIR$/.idea/.idea.LudumDare45/.idea/vcs.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="295" />
+    <option name="y" value="30" />
+    <option name="width" value="1550" />
+    <option name="height" value="819" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="UnityExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="UnityExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-hidden-items" value="false" />
+        <option name="show-project-names" value="true" />
+      </pane>
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="FileSystemExplorer" />
+      <pane id="AssemblyExplorer" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="userSelectedPid" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="userSelectedPid" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0482ef6b-22f4-447a-aa7b-43e035ffb97e" name="Default Changelist" comment="" />
+      <created>1570258604167</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1570258604167</updated>
+      <workItem from="1570258618416" duration="1722000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1722000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19089082" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Performance Profiler" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Unity" order="11" weight="0.41192788" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Unit Tests" order="13" />
+      <window_info anchor="bottom" id="Terminal" order="14" />
+      <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" weight="0.32953784" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="5" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/LudumDare/Model/ItemMgr.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+          <folding>
+            <marker date="1570259135056" expanded="false" signature="6:102" ph="..." />
+            <marker date="1570259135056" expanded="true" signature="129:2486" ph="{...}" />
+            <marker date="1570259135056" expanded="true" signature="173:2484" ph="{...}" />
+            <marker date="1570259135056" expanded="false" signature="271:521" ph="{...}" />
+            <marker date="1570259135056" expanded="false" signature="612:1293" ph="{...}" />
+            <marker date="1570259135056" expanded="false" signature="638:1283" ph="{...}" />
+            <marker date="1570259135056" expanded="false" signature="685:893" ph="{...}" />
+            <marker date="1570259135056" expanded="false" signature="942:1131" ph="{...}" />
+            <marker date="1570259135056" expanded="false" signature="1397:1869" ph="{...}" />
+            <marker date="1570259135056" expanded="false" signature="1459:1832" ph="{...}" />
+            <marker date="1570259135056" expanded="false" signature="1552:1741" ph="{...}" />
+            <marker date="1570259135056" expanded="false" signature="1612:1723" ph="{...}" />
+            <marker date="1570259135056" expanded="true" signature="1935:2171" ph="{...}" />
+            <marker date="1570259135056" expanded="false" signature="2010:2114" ph="{...}" />
+            <marker date="1570259135056" expanded="true" signature="2225:2469" ph="{...}" />
+            <marker date="1570259135056" expanded="true" signature="2300:2412" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/LudumDare/Model/BasicItem.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <folding>
+            <marker date="1570258756096" expanded="false" signature="6:59" ph="..." />
+            <marker date="1570258756096" expanded="true" signature="110:728" ph="{...}" />
+            <marker date="1570258756096" expanded="true" signature="177:726" ph="{...}" />
+            <marker date="1570258756096" expanded="true" signature="438:720" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts_lt/BagData.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+          <folding>
+            <marker date="1570257329230" expanded="true" signature="57:1274" ph="{...}" />
+            <marker date="1570257329230" expanded="true" signature="305:335" ph="{...}" />
+            <marker date="1570257329230" expanded="true" signature="366:399" ph="{...}" />
+            <marker date="1570257329230" expanded="true" signature="438:469" ph="{...}" />
+            <marker date="1570257329230" expanded="true" signature="501:534" ph="{...}" />
+            <marker date="1570257329230" expanded="true" signature="575:608" ph="{...}" />
+            <marker date="1570257329230" expanded="true" signature="642:677" ph="{...}" />
+            <marker date="1570257329230" expanded="true" signature="723:754" ph="{...}" />
+            <marker date="1570257329230" expanded="true" signature="791:822" ph="{...}" />
+            <marker date="1570257329230" expanded="true" signature="870:903" ph="{...}" />
+            <marker date="1570257329230" expanded="true" signature="942:975" ph="{...}" />
+            <marker date="1570257329230" expanded="true" signature="1006:1271" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts_lt/ItemDetecte.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <marker date="1570257329231" expanded="true" signature="61:318" ph="{...}" />
+            <marker date="1570257329231" expanded="true" signature="111:151" ph="{...}" />
+            <marker date="1570257329231" expanded="true" signature="205:316" ph="{...}" />
+            <marker date="1570257329231" expanded="true" signature="253:310" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/LudumDare/Scripts/ItemIdentity.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+          <folding>
+            <marker date="1570260029656" expanded="false" signature="6:128" ph="..." />
+            <marker date="1570260029656" expanded="true" signature="171:289" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

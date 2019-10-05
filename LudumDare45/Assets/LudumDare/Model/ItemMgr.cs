@@ -78,7 +78,18 @@ namespace LudumDare.Model
             }
 
             throw new Exception("没有这个ID的物体");
-        } 
+        }
+
+        public static BasicItem GetItem(string name)
+        {
+            foreach (var VARIABLE in ItemMgr.Instance.itemInfos)
+            {
+                if (VARIABLE.ItemName == name)
+                    return VARIABLE;
+            }
+
+            throw new Exception("没有这个ID的物体");
+        }
         
     }
 }

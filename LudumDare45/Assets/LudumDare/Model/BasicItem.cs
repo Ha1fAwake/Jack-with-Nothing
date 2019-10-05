@@ -1,4 +1,5 @@
 using System;
+using ReadyGamerOne.Const;
 using UnityEngine;
 #if UNITY_EDITOR
 
@@ -9,10 +10,10 @@ namespace LudumDare.Model
     public class BasicItem//:ScriptableObject
     {
             public int id;
-            public string itemName;
+            public ConstStringChooser itemName;
             public string descriptions;
             public Sprite sprite;
-
+            public string ItemName => itemName.StringValue;
             public override string ToString()
             {
                 var text = "===<BaseItem>===\n";
