@@ -2,8 +2,6 @@
 
 public class Move_Test : MonoBehaviour {
 
-    BagData bagData = new BagData();
-
     void Update() {
         if (Input.GetKeyDown(KeyCode.W)) {
             transform.position += new Vector3(0, 1, 0);
@@ -18,7 +16,7 @@ public class Move_Test : MonoBehaviour {
             transform.position += new Vector3(1, 0, 0);
         }
         if (Input.GetKeyDown(KeyCode.Space)) {
-            bagData.SwitchItem();
+            BagData.SwitchItem(transform);
         }
     }
 }
