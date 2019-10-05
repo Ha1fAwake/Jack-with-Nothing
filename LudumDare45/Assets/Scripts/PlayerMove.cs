@@ -12,27 +12,25 @@ public class PlayerMove : MonoBehaviour {
     void Update() {
         //移动
         if (KeyAble()) {
-            if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W)) IsW = true;
-            else if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S)) IsS = true;
-            else if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A)) IsA = true;
-            else if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D)) IsD = true;
+            if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W)) {
+                IsW = true;
+                BagData.PlayerFace = BagData.Direction.up;
+            }
+            else if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S)) {
+                IsS = true;
+                BagData.PlayerFace = BagData.Direction.down;
+            }
+            else if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A)) {
+                IsA = true;
+                BagData.PlayerFace = BagData.Direction.left;
+            }
+            else if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D)) {
+                IsD = true;
+                BagData.PlayerFace = BagData.Direction.right;
+            }
         }
-        if (Input.GetKeyDown(KeyCode.Space)) BagData.SwitchItem(transform);
+        if (Input.GetKeyDown(KeyCode.Space) && SwitchAble()) BagData.SwitchItem(transform);
         Move();
-
-        //判断朝向
-        if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) {
-            BagData.PlayerFace = BagData.Direction.up;
-        }
-        if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S)) {
-            BagData.PlayerFace = BagData.Direction.down;
-        }
-        if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A)) {
-            BagData.PlayerFace = BagData.Direction.left;
-        }
-        if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D)) {
-            BagData.PlayerFace = BagData.Direction.right;
-        }
     }
 
     public void Move() {
@@ -85,5 +83,14 @@ public class PlayerMove : MonoBehaviour {
     public bool KeyAble() {
         if (!IsW && !IsS && !IsA && !IsD) return true;
         else return false;
+    }
+
+    public bool SwitchAble() {
+        if (transform.position.x == (int)(transform.position.x)) {
+            if (transform.position.y == (int)(transform.position.y)) {
+                return true;
+            }
+        }
+        return false;
     }
 }

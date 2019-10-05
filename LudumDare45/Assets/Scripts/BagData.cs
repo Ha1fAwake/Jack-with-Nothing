@@ -8,7 +8,6 @@ public class BagData {
         left,
         right
     };
-    
     private static int bagItemId = 0;  //背包id
     private static int facedItemId;
     private static GameObject bagItem;   //背包物品
