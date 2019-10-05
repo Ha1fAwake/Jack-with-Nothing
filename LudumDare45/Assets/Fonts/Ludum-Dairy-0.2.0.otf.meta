@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: af395dd88f640b64dbf93178d6bcd247
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Ludum Dairy
+  fontNames:
+  - Ludum Dairy
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 2705ede7e793c2643a0778ef098a1422, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
