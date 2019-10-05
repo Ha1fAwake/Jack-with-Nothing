@@ -2,15 +2,20 @@
 
 public class ItemDetecte : MonoBehaviour {
 
-    BagData bagData;
-
-    private void Start() {
-        bagData = new BagData();
-    }
-
-    private void OnTriggerEnter2D(Collider2D other) {
+    private void OnTriggerStay2D(Collider2D other) {
         if (other.transform.name == "Player") {
-            bagData.SetFacedItem(gameObject);
+            if (BagData.PlayerFace == BagData.Direction.up && transform.position.y > other.transform.position.y) {
+                BagData.FacedItem = gameObject;
+            }
+            else if (BagData.PlayerFace == BagData.Direction.down && transform.position.y < other.transform.position.y) {
+                BagData.FacedItem = gameObject;
+            }
+            else if (BagData.PlayerFace == BagData.Direction.left && transform.position.x < other.transform.position.x) {
+                BagData.FacedItem = gameObject;
+            }
+            else if (BagData.PlayerFace == BagData.Direction.right && transform.position.x > other.transform.position.x) {
+                BagData.FacedItem = gameObject;
+            }
         }
     }
 }

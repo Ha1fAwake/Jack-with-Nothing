@@ -1,61 +1,61 @@
 ﻿using UnityEngine;
 
-public class BagData : MonoBehaviour {
+public class BagData {
 
-    private static int bagItemId;  //背包id
+    public enum Direction {
+        up,
+        down,
+        left,
+        right
+    };
+    private static int bagItemId = 0;  //背包id
     private static int facedItemId;
     private static GameObject bagItem;   //背包物品
     private static GameObject facedItem;
-    private Vector3 farAway = new Vector3(999, 999, 0);
+    private static Direction playerFace = Direction.down;  //主角朝向
+    private static Vector3 farAway = new Vector3(9, 9, 0);  //背包位置
 
-    public BagData() {
-        bagItemId = 0;
-    }
+    public static int BagItemId { get => bagItemId; set => bagItemId = value; }
+    public static int FacedItemId { get => facedItemId; set => facedItemId = value; }
+    public static GameObject BagItem { get => bagItem; set => bagItem = value; }
+    public static GameObject FacedItem { get => facedItem; set => facedItem = value; }
+    public static Direction PlayerFace { get => playerFace; set => playerFace = value; }
 
-    public BagData(int item) {
-        bagItemId = item;
-    }
+    public static void SwitchItem(Transform Player) {
 
-    public void SetBagItemId(int id) {
-        bagItemId = id;
-    }
-
-    public int GetBagItemId() {
-        return bagItemId;
-    }
-
-    public void SetFacedItemId(int id) {
-        facedItemId = id;
-    }
-
-    public int GetFacedItemId() {
-        return facedItemId;
-    }
-
-    public void SetBagItem(GameObject item) {
-        bagItem = item;
-    }
-
-    public GameObject GetBagItem() {
-        return bagItem;
-    }
-
-    public void SetFacedItem(GameObject item) {
-        facedItem = item;
-    }
-
-    public GameObject GetFacedItem() {
-        return facedItem;
-    }
-
-    public void SwitchItem() {
-        if (facedItem == null)  //无法交换
+        //无效操作
+        if (facedItem == null && bagItem == null) {
             return;
+        }
 
-        if (bagItem != null) bagItem.transform.position = facedItem.transform.position;
-        facedItem.transform.position = farAway;
-        bagItemId = facedItemId;
-        bagItem = facedItem;
+        //放置物体
+        else if (facedItem == null) {
+            if (playerFace == Direction.up) {
+                bagItem.transform.position = Player.position + new Vector3(0, 1, 0);
+            }
+            if (playerFace == Direction.down) {
+                bagItem.transform.position = Player.position + new Vector3(0, -1, 0);
+            }
+            if (playerFace == Direction.left) {
+                bagItem.transform.position = Player.position + new Vector3(-1, 0, 0);
+            }
+            if (playerFace == Direction.right) {
+                bagItem.transform.position = Player.position + new Vector3(1, 0, 0);
+            }
+            bagItem = null;
+        }
+
+        //获得物体
+        else if (bagItem == null) {
+            bagItem = facedItem;
+            facedItem.transform.position = farAway;
+        }
+
+        //交换物体
+        else {
+            bagItem.transform.position = facedItem.transform.position;
+            facedItem.transform.position = farAway;
+            bagItem = facedItem;
+        }
     }
-
 }
