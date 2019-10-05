@@ -13,5 +13,22 @@ namespace LudumDare.Scripts
         {
             return Mathf.Abs(input.x) >= 0.01f || Mathf.Abs(input.y) >= 0.01f;
         }
+
+
+        protected override void Start()
+        {
+            base.Start();
+            onWalk += (input, scale) =>
+            {
+                if (input.x > 0)
+                    BagData.PlayerFace = BagData.Direction.left;
+                else if (input.x < 0)
+                    BagData.PlayerFace = BagData.Direction.right;
+                if (input.y < 0)
+                    BagData.PlayerFace = BagData.Direction.down;
+                else if (input.y > 0)
+                    BagData.PlayerFace = BagData.Direction.up;
+            };
+        }
     }
 }
