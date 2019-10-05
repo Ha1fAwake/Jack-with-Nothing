@@ -1,5 +1,8 @@
 using System.Collections.Generic;
 using System.IO;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 using UnityEngine;
 
 namespace ReadyGamerOne.Const
@@ -14,14 +17,17 @@ namespace ReadyGamerOne.Const
 
                 if (!_instance)
                 {
-                    if(File.Exists("Assets/GlobalConstStrings.asset"))
-                        _instance = UnityEditor.AssetDatabase.LoadAssetAtPath<ConstStringAsset>("Assets/GlobalConstStrings.asset");
+                    if (File.Exists("Assets/Resources/GlobalConstStrings.asset"))
+                        _instance = Resources.Load<ConstStringAsset>("GlobalConstStrings");
                 }
 #if UNITY_EDITOR
                 if (!_instance)
                 {
                     _instance = CreateInstance<ConstStringAsset>();
-                    UnityEditor.AssetDatabase.CreateAsset(_instance, "Assets/GlobalConstStrings.asset");
+                    var path = "Assets/Resources";
+                    if (!Directory.Exists(path))
+                        Directory.CreateDirectory(path);
+                    AssetDatabase.CreateAsset(_instance, path+"/GlobalConstStrings.asset");
                 }
 #endif
                 if (_instance == null)

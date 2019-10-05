@@ -1,7 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Reflection;
+
+#if UNITY_EDITOR
+    
 using UnityEditor;
+#endif
 using UnityEngine;
 
 namespace ReadyGamerOne.EditorExtension
@@ -9,12 +13,14 @@ namespace ReadyGamerOne.EditorExtension
     [Serializable]
     public class StringChooser
     {
-
+#if UNITY_EDITOR
         public static string GetShowTextFromSerializedProperty(SerializedProperty property)
         {
             return  property.FindPropertyRelative("values").GetArrayElementAtIndex(property.FindPropertyRelative("selectedIndex").intValue).stringValue;
 
-        }
+        }        
+#endif
+
         
         //private static Type typeToShow;
         [SerializeField] protected string[] values;

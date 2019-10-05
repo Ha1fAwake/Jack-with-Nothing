@@ -41,24 +41,43 @@ namespace ReadyGamerOne.Utility
 
         public static Rect GetRectAtIndex(this Rect rect, int index)
         {
-            return new Rect(rect.position + new Vector2(0, index * EditorGUIUtility.singleLineHeight),
-                new Vector2(rect.size.x, EditorGUIUtility.singleLineHeight));
+            float height = 0;
+#if UNITY_EDITOR
+            height = EditorGUIUtility.singleLineHeight;
+#else
+            height =16;
+#endif
+            
+            return new Rect(rect.position + new Vector2(0, index * height),
+                new Vector2(rect.size.x, height));
         }
         
         public static Rect GetRectFromIndex(this Rect rect, int index)
-        {
-            return new Rect(rect.position+new Vector2(0,index*EditorGUIUtility.singleLineHeight),
-                new Vector2(EditorGUIUtility.singleLineHeight,rect.y-index*EditorGUIUtility.singleLineHeight));
+        {            
+            float height = 0;
+#if UNITY_EDITOR
+            height = EditorGUIUtility.singleLineHeight;
+#else
+            height =16;
+#endif
+            return new Rect(rect.position+new Vector2(0,index*height),
+                new Vector2(height,rect.y-index*height));
 
         }
 
         public static Rect GetRectFromIndexWithHeight(this Rect rect, ref int index, float height)
         {
-            
-            var ans= new Rect(rect.position + new Vector2(0,  index * EditorGUIUtility.singleLineHeight),
+                    
+            float h = 0;
+#if UNITY_EDITOR
+            h = EditorGUIUtility.singleLineHeight;
+#else
+            h =16;
+#endif
+            var ans= new Rect(rect.position + new Vector2(0,  index * h),
                 new Vector2(rect.size.x, height));
 
-            index += Mathf.CeilToInt(height / EditorGUIUtility.singleLineHeight);
+            index += Mathf.CeilToInt(height / h);
             
             return ans;
         }

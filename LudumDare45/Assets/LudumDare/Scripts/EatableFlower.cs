@@ -11,9 +11,11 @@ namespace LudumDare.Scripts
     {
         public ConstStringChooser playerDeadMessage;
         public bool canEat = true;
+        [Header("可以吃的物品ID")]
         public List<int> acceptableItemIds=new List<int>();
+        [Header("消化时间")]
         public float eattingTime;
-        
+        [Header("吃饱图片")]
         public Sprite eatingSprite;
         private Sprite idleSprite;
         private SpriteRenderer spriteRenderer;
@@ -23,17 +25,31 @@ namespace LudumDare.Scripts
             spriteRenderer = GetComponent<SpriteRenderer>();
             idleSprite = spriteRenderer.sprite;
             itemIdentity = GetComponent<ItemIdentity>();
+            itemIdentity.onAddToBag += () =>
+            {
+                if (canEat)
+                {
+                    //你完了，这食人花都敢拿
+                    CEventCenter.BroadMessage(playerDeadMessage.StringValue);
+                }
+            };
         }
 
         
-        
-        public void TryStartEating(int id)
+        /// <summary>
+        /// 尝试吃某个物品
+        /// 如果物品在可吃列表就会吃，否则返回False
+        /// 这函数应该在和食人花喂食的时候调用
+        /// </summary>
+        /// <param name="id"></param>
+        public bool TryStartEating(int id)
         {
             if (!acceptableItemIds.Contains(id))
-                return;
+                return false;
             canEat = false;
             spriteRenderer.sprite = eatingSprite;
             MainLoop.Instance.ExecuteLater(OnFinishEating, eattingTime);
+            return true;
         }
 
         private void OnFinishEating()

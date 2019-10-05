@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: GlobalConstStrings
   m_EditorClassIdentifier: 
   constStrings:
+  - "\u53F2\u83B1\u59C6"
+  - "\u98DF\u4EBA\u82B1"
   - "\u70B8\u5F39"
-  - "\u5976\u725B"
   - "\u73A9\u5BB6\u6B7B\u4EA1"

@@ -1,5 +1,8 @@
 using System;
+#if UNITY_EDITOR
+    
 using UnityEditor;
+#endif
 using UnityEngine;
 
 namespace ReadyGamerOne.EditorExtension
@@ -11,8 +14,8 @@ namespace ReadyGamerOne.EditorExtension
 
         public static bool typeChangAble = true;
         public static float argTypeWidth = 0.4f;
-        
-        
+
+#if UNITY_EDITOR
         public static string GetShowTextFromSerializedProperty(SerializedProperty property)
         {
             var text = "";
@@ -39,7 +42,10 @@ namespace ReadyGamerOne.EditorExtension
             }
 
             return text;
-        }
+        }        
+#endif
+        
+
 
         public string GetValueString()
         {

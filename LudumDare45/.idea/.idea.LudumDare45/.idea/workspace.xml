@@ -3,97 +3,26 @@
   <component name="ChangeListManager">
     <list default="true" id="0482ef6b-22f4-447a-aa7b-43e035ffb97e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LudumDare45/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LudumDare45/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LudumDare45/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LudumDare45/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LudumDare45/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LudumDare45/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GlobalConstStrings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GlobalConstStrings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fungus/EditorResources/FungusEditorResources.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fungus/EditorResources/FungusEditorResources.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fungus/Integrations/Playmaker/Fungus-PlayMaker.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fungus/Integrations/Spine/Fungus-Spine.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GlobalConstStrings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GlobalConstStrings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItemMgr.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItemMgr.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LudumDare/Model/ItemMgr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LudumDare/Model/ItemMgr.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/LudumDare/Scenes/Zzl.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LudumDare/Scenes/Zzl.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LudumDare/Scripts/ItemIdentity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LudumDare/Scripts/ItemIdentity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LudumDare/Scripts/PlayController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LudumDare/Scripts/PlayController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Common.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Common/CEventCenter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Common/CEventCenter.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Common/MonoSingleton.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Common/MonoSingleton.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Common/Singleton.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Common/Singleton.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Const.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Const/ConstStringAsset.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Const/ConstStringAsset.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Const/ConstStringChooser.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Const/ConstStringChooser.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Const/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Const/Editor/ConstStringAssetEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Const/Editor/ConstStringAssetEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Const/Editor/ConstStringChooserDrawer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Const/Editor/ConstStringChooserDrawer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Const/TxtSign.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Const/TxtSign.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Editor/EditorUtility.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Editor/EditorUtility.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/EditorExtension.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/EditorExtension/AnimationNameChooser.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/EditorExtension/AnimationNameChooser.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/EditorExtension/ArgChooser.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/EditorExtension/ArgChooser.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/EditorExtension/ArgType.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/EditorExtension/ArgType.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/EditorExtension/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/EditorExtension/Editor/AnimationNameChooserDrawer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/EditorExtension/Editor/AnimationNameChooserDrawer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/EditorExtension/Editor/ArgChooserDrawer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/EditorExtension/Editor/ArgChooserDrawer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/EditorExtension/Editor/MessagetTriggerDrawer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/EditorExtension/Editor/MessagetTriggerDrawer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/EditorExtension/Editor/ResourcesPathChooserDrawer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/EditorExtension/Editor/ResourcesPathChooserDrawer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/EditorExtension/Editor/StringChooseDrawer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/EditorExtension/Editor/StringChooseDrawer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/EditorExtension/Editor/TransformPathChooserDrawer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/EditorExtension/Editor/TransformPathChooserDrawer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/EditorExtension/MessageTrigger.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/EditorExtension/MessageTrigger.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/EditorExtension/ResourcesPathChooser.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/EditorExtension/ResourcesPathChooser.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/EditorExtension/StringChooser.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/EditorExtension/StringChooser.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/EditorExtension/TransformPathChooser.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/EditorExtension/TransformPathChooser.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Global.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Global/GlobalVar.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Global/GlobalVar.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Memory.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Memory/MemoryMgr.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Memory/MemoryMgr.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Script.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Script/AbstractCharacterController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Script/AbstractCharacterController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Script/AudioMgr.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Script/AudioMgr.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Script/BasicGameMgr.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Script/BasicGameMgr.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Script/CloseEnough.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Script/CloseEnough.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Script/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Script/Editor/AbstractCharacterControllerEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Script/Editor/AbstractCharacterControllerEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Script/MainLoop.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Script/MainLoop.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Script/TriggerInputer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Script/TriggerInputer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Script/UIInputer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Script/UIInputer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Utility.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Utility/EnumUtil.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Utility/EnumUtil.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Utility/GizmosUtil.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Utility/GizmosUtil.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Utility/InputUtil.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Utility/InputUtil.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Utility/RectExtension.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Utility/RectExtension.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Utility/WindowsUtil.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReadyGamerOne/Utility/WindowsUtil.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LudumDare/Scripts/EatableFlower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LudumDare/Scripts/EatableFlower.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReadyGamerOne/Const/ConstStringAsset.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReadyGamerOne/Const/ConstStringAsset.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReadyGamerOne/EditorExtension/ArgChooser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReadyGamerOne/EditorExtension/ArgChooser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReadyGamerOne/EditorExtension/StringChooser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReadyGamerOne/EditorExtension/StringChooser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReadyGamerOne/Utility/RectExtension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReadyGamerOne/Utility/RectExtension.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts_lt/BagData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts_lt/BagData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -102,59 +31,43 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts_lt/ItemDetecte.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/LudumDare/Scripts/EatableFlower.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
+            <state relative-caret-position="16">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
               <folding>
-                <marker date="1570260771639" expanded="true" signature="61:912" ph="{...}" />
-                <marker date="1570260771639" expanded="true" signature="115:910" ph="{...}" />
-                <marker date="1570260771639" expanded="true" signature="163:904" ph="{...}" />
-                <marker date="1570260771639" expanded="true" signature="278:341" ph="{...}" />
-                <marker date="1570260771639" expanded="true" signature="462:525" ph="{...}" />
-                <marker date="1570260771639" expanded="true" signature="646:709" ph="{...}" />
-                <marker date="1570260771639" expanded="true" signature="831:894" ph="{...}" />
+                <marker date="1570265668823" expanded="true" signature="6:149" ph="..." />
+                <marker date="1570265668823" expanded="true" signature="178:1931" ph="{...}" />
+                <marker date="1570265668823" expanded="true" signature="225:1929" ph="{...}" />
+                <marker date="1570265668823" expanded="true" signature="682:1118" ph="{...}" />
+                <marker date="1570265668823" expanded="true" signature="916:1107" ph="{...}" />
+                <marker date="1570265668823" expanded="true" signature="945:1093" ph="{...}" />
+                <marker date="1570265668823" expanded="true" signature="1137:1296" ph="/// 尝试吃某个物品 ... " />
+                <marker date="1570265668823" expanded="true" signature="1339:1614" ph="{...}" />
+                <marker date="1570265668823" expanded="false" signature="1653:1922" ph="{...}" />
+                <marker date="1570265668823" expanded="true" signature="1701:1835" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts_lt/BagData.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReadyGamerOne/EditorExtension/ArgChooser.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+            <state relative-caret-position="135">
+              <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
               <folding>
-                <marker date="1570260771637" expanded="true" signature="41:2046" ph="{...}" />
-                <marker date="1570260771637" expanded="true" signature="70:131" ph="{...}" />
-                <marker date="1570260771637" expanded="false" signature="914:2044" ph="{...}" />
-                <marker date="1570260771637" expanded="true" signature="982:1013" ph="{...}" />
-                <marker date="1570260771637" expanded="true" signature="1066:1694" ph="{...}" />
-                <marker date="1570260771637" expanded="true" signature="1112:1212" ph="{...}" />
-                <marker date="1570260771637" expanded="true" signature="1259:1360" ph="{...}" />
-                <marker date="1570260771637" expanded="true" signature="1407:1508" ph="{...}" />
-                <marker date="1570260771637" expanded="true" signature="1556:1656" ph="{...}" />
-                <marker date="1570260771637" expanded="true" signature="1745:1841" ph="{...}" />
-                <marker date="1570260771637" expanded="true" signature="1857:2038" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/LudumDare/Scripts/PlayController.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <marker date="1570261019185" expanded="false" signature="6:89" ph="..." />
-                <marker date="1570261019185" expanded="true" signature="118:972" ph="{...}" />
-                <marker date="1570261019185" expanded="true" signature="180:970" ph="{...}" />
-                <marker date="1570261019185" expanded="true" signature="307:406" ph="{...}" />
-                <marker date="1570261019185" expanded="false" signature="448:964" ph="{...}" />
-                <marker date="1570261019185" expanded="true" signature="537:953" ph="{...}" />
+                <marker date="1570280258809" expanded="true" signature="6:80" ph="..." />
+                <marker date="1570280258809" expanded="true" signature="121:2459" ph="{...}" />
+                <marker date="1570280258809" expanded="true" signature="170:2457" ph="{...}" />
+                <marker date="1570280258809" expanded="true" signature="185:1969" ph="Static" />
+                <marker date="1570280258809" expanded="true" signature="408:1371" ph="{...}" />
+                <marker date="1570280258809" expanded="true" signature="567:1335" ph="{...}" />
+                <marker date="1570280258809" expanded="true" signature="1436:1949" ph="{...}" />
+                <marker date="1570280258809" expanded="true" signature="1475:1912" ph="{...}" />
+                <marker date="1570280258809" expanded="true" signature="2212:2442" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -163,73 +76,141 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/LudumDare/Model/ItemMgr.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="89" selection-start-line="89" selection-end-line="89" />
+            <state relative-caret-position="361">
+              <caret line="37" column="17" lean-forward="true" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
               <folding>
-                <marker date="1570259135056" expanded="false" signature="6:102" ph="..." />
-                <marker date="1570259135056" expanded="true" signature="129:2486" ph="{...}" />
-                <marker date="1570259135056" expanded="true" signature="173:2484" ph="{...}" />
-                <marker date="1570259135056" expanded="false" signature="271:521" ph="{...}" />
-                <marker date="1570259135056" expanded="false" signature="612:1293" ph="{...}" />
-                <marker date="1570259135056" expanded="false" signature="638:1283" ph="{...}" />
-                <marker date="1570259135056" expanded="false" signature="685:893" ph="{...}" />
-                <marker date="1570259135056" expanded="false" signature="942:1131" ph="{...}" />
-                <marker date="1570259135056" expanded="false" signature="1397:1869" ph="{...}" />
-                <marker date="1570259135056" expanded="false" signature="1459:1832" ph="{...}" />
-                <marker date="1570259135056" expanded="false" signature="1552:1741" ph="{...}" />
-                <marker date="1570259135056" expanded="false" signature="1612:1723" ph="{...}" />
-                <marker date="1570259135056" expanded="true" signature="1935:2171" ph="{...}" />
-                <marker date="1570259135056" expanded="false" signature="2010:2114" ph="{...}" />
-                <marker date="1570259135056" expanded="true" signature="2225:2469" ph="{...}" />
-                <marker date="1570259135056" expanded="true" signature="2300:2412" ph="{...}" />
+                <marker date="1570281633843" expanded="true" signature="6:132" ph="..." />
+                <marker date="1570281633843" expanded="true" signature="159:2791" ph="{...}" />
+                <marker date="1570281633843" expanded="true" signature="203:2789" ph="{...}" />
+                <marker date="1570281633843" expanded="true" signature="318:699" ph="{...}" />
+                <marker date="1570281633843" expanded="true" signature="806:1592" ph="{...}" />
+                <marker date="1570281633843" expanded="true" signature="832:1582" ph="{...}" />
+                <marker date="1570281633843" expanded="true" signature="879:1055" ph="{...}" />
+                <marker date="1570281633843" expanded="true" signature="1104:1437" ph="{...}" />
+                <marker date="1570281633843" expanded="false" signature="1696:2168" ph="{...}" />
+                <marker date="1570281633843" expanded="false" signature="1758:2131" ph="{...}" />
+                <marker date="1570281633843" expanded="false" signature="1851:2040" ph="{...}" />
+                <marker date="1570281633843" expanded="false" signature="1911:2022" ph="{...}" />
+                <marker date="1570281633843" expanded="true" signature="2234:2476" ph="{...}" />
+                <marker date="1570281633843" expanded="true" signature="2309:2413" ph="{...}" />
+                <marker date="1570281633843" expanded="true" signature="2530:2774" ph="{...}" />
+                <marker date="1570281633843" expanded="true" signature="2605:2717" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/LudumDare/Model/BasicItem.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReadyGamerOne/EditorExtension/StringChooser.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+            <state relative-caret-position="416">
+              <caret line="26" column="53" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
               <folding>
-                <marker date="1570258756096" expanded="false" signature="6:59" ph="..." />
-                <marker date="1570258756096" expanded="true" signature="110:728" ph="{...}" />
-                <marker date="1570258756096" expanded="true" signature="177:726" ph="{...}" />
-                <marker date="1570258756096" expanded="true" signature="438:720" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/LudumDare/Scripts/ItemIdentity.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
-              <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-              <folding>
-                <marker date="1570263035241" expanded="true" signature="6:142" ph="..." />
-                <marker date="1570263035241" expanded="true" signature="185:573" ph="{...}" />
-                <marker date="1570263035241" expanded="true" signature="429:495" ph="{...}" />
-                <marker date="1570263035241" expanded="true" signature="533:570" ph="{...}" />
+                <marker date="1570280293203" expanded="true" signature="6:140" ph="..." />
+                <marker date="1570280293203" expanded="true" signature="181:1475" ph="{...}" />
+                <marker date="1570280293203" expanded="true" signature="233:1473" ph="{...}" />
+                <marker date="1570280293203" expanded="true" signature="796:1178" ph="{...}" />
+                <marker date="1570280293203" expanded="true" signature="1060:1168" ph="{...}" />
+                <marker date="1570280293203" expanded="true" signature="1227:1467" ph="{...}" />
+                <marker date="1570280293203" expanded="true" signature="1379:1456" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/LudumDare/Scripts/EatableFlower.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReadyGamerOne/Const/ConstStringAsset.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-170">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="80">
+              <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
               <folding>
-                <marker date="1570263919425" expanded="true" signature="6:149" ph="..." />
-                <marker date="1570263919425" expanded="true" signature="178:1421" ph="{...}" />
-                <marker date="1570263919425" expanded="true" signature="225:1419" ph="{...}" />
-                <marker date="1570263919425" expanded="true" signature="612:798" ph="{...}" />
-                <marker date="1570263919425" expanded="true" signature="860:1104" ph="{...}" />
-                <marker date="1570263919425" expanded="true" signature="1143:1412" ph="{...}" />
-                <marker date="1570263919425" expanded="true" signature="1191:1325" ph="{...}" />
+                <marker date="1570282051653" expanded="true" signature="6:112" ph="..." />
+                <marker date="1570282051653" expanded="true" signature="143:1221" ph="{...}" />
+                <marker date="1570282051653" expanded="true" signature="196:1219" ph="{...}" />
+                <marker date="1570282051653" expanded="true" signature="301:1148" ph="{...}" />
+                <marker date="1570282051653" expanded="true" signature="327:1138" ph="{...}" />
+                <marker date="1570282051653" expanded="true" signature="374:584" ph="{...}" />
+                <marker date="1570282051653" expanded="true" signature="633:986" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReadyGamerOne/Utility/RectExtension.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="471">
+              <caret line="83" column="8" selection-start-line="83" selection-start-column="8" selection-end-line="83" selection-end-column="8" />
+              <folding>
+                <marker date="1570280636897" expanded="false" signature="6:37" ph="..." />
+                <marker date="1570280636897" expanded="true" signature="70:2833" ph="{...}" />
+                <marker date="1570280636897" expanded="true" signature="77:134" ph="/// Rect 拓展类，用于编辑器拓展 ... " />
+                <marker date="1570280636897" expanded="true" signature="172:2831" ph="{...}" />
+                <marker date="1570280636897" expanded="false" signature="188:1226" ph="上下左右四部分" />
+                <marker date="1570280636897" expanded="true" signature="282:444" ph="{...}" />
+                <marker date="1570280636897" expanded="true" signature="533:706" ph="{...}" />
+                <marker date="1570280636897" expanded="true" signature="792:961" ph="{...}" />
+                <marker date="1570280636897" expanded="true" signature="1045:1207" ph="{...}" />
+                <marker date="1570280636897" expanded="true" signature="1236:2816" ph="获取指定行矩形区域" />
+                <marker date="1570280636897" expanded="true" signature="1323:1623" ph="{...}" />
+                <marker date="1570280636897" expanded="true" signature="1703:2005" ph="{...}" />
+                <marker date="1570280636897" expanded="true" signature="2105:2484" ph="{...}" />
+                <marker date="1570280636897" expanded="true" signature="2567:2645" ph="{...}" />
+                <marker date="1570280636897" expanded="true" signature="2719:2796" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/LudumDare/Scripts/Slame.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+              <folding>
+                <marker date="1570265713049" expanded="true" signature="6:101" ph="..." />
+                <marker date="1570265713049" expanded="true" signature="130:774" ph="{...}" />
+                <marker date="1570265713049" expanded="true" signature="183:772" ph="{...}" />
+                <marker date="1570265713049" expanded="true" signature="383:766" ph="{...}" />
+                <marker date="1570265713049" expanded="true" signature="508:755" ph="{...}" />
+                <marker date="1570265713049" expanded="true" signature="579:725" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReadyGamerOne/Script/BasicGameMgr.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <marker date="1570238601195" expanded="true" signature="6:67" ph="..." />
+                <marker date="1570238601195" expanded="true" signature="99:1290" ph="{...}" />
+                <marker date="1570238601195" expanded="true" signature="106:167" ph="/// 使用SceneMgr推荐用脚本继承这个类 ... " />
+                <marker date="1570238601195" expanded="true" signature="211:1288" ph="{...}" />
+                <marker date="1570238601195" expanded="true" signature="328:578" ph="{...}" />
+                <marker date="1570238601195" expanded="true" signature="618:686" ph="{...}" />
+                <marker date="1570238601195" expanded="true" signature="736:797" ph="{...}" />
+                <marker date="1570238601195" expanded="true" signature="846:879" ph="{...}" />
+                <marker date="1570238601195" expanded="true" signature="930:980" ph="{...}" />
+                <marker date="1570238601195" expanded="true" signature="1030:1104" ph="{...}" />
+                <marker date="1570238601195" expanded="true" signature="1155:1188" ph="{...}" />
+                <marker date="1570238601195" expanded="true" signature="1225:1282" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/LudumDare/Scripts/Test.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+              <folding>
+                <marker date="1570280066665" expanded="true" signature="6:84" ph="..." />
+                <marker date="1570280066665" expanded="true" signature="113:270" ph="{...}" />
+                <marker date="1570280066665" expanded="true" signature="151:268" ph="{...}" />
+                <marker date="1570280066665" expanded="true" signature="186:262" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -238,29 +219,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/LudumDare/Scripts/InputToCEventCenter.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
+            <state relative-caret-position="48">
               <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
               <folding>
                 <marker date="1570263810874" expanded="true" signature="6:87" ph="..." />
                 <marker date="1570263810874" expanded="true" signature="116:440" ph="{...}" />
+                <marker date="1570263810874" expanded="true" signature="183:438" ph="{...}" />
                 <marker date="1570263810874" expanded="true" signature="300:432" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts_lt/FaceDetecte.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding>
-                <marker date="1570260771637" expanded="true" signature="61:685" ph="{...}" />
-                <marker date="1570260771637" expanded="true" signature="82:683" ph="{...}" />
-                <marker date="1570260771637" expanded="true" signature="162:228" ph="{...}" />
-                <marker date="1570260771637" expanded="true" signature="309:377" ph="{...}" />
-                <marker date="1570260771637" expanded="true" signature="458:526" ph="{...}" />
-                <marker date="1570260771637" expanded="true" signature="608:677" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -272,23 +237,27 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/LudumDare/Scripts/InputToCEventCenter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/LudumDare/Scripts/Slame.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReadyGamerOne/EditorExtension/ArgChooser.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/LudumDare/Scripts/PlayController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/LudumDare/Scripts/EatableFlower.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts_lt/Move_Test.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts_lt/ItemDetecte.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/LudumDare/Scripts/ItemIdentity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReadyGamerOne/EditorExtension/StringChooser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReadyGamerOne/Script/BasicGameMgr.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/LudumDare/Model/BasicItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts_lt/BagData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/LudumDare/Scripts/InputToCEventCenter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts_lt/FaceDetecte.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReadyGamerOne/Const/ConstStringAsset.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/LudumDare/Model/ItemMgr.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/LudumDare/Scripts/Test.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReadyGamerOne/Utility/RectExtension.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/LudumDare/Scripts/ItemId.cs" />
         <option value="$PROJECT_DIR$/Assets/LudumDare/Model/BasicItem.cs" />
-        <option value="$PROJECT_DIR$/Assets/LudumDare/Model/ItemMgr.cs" />
         <option value="$PROJECT_DIR$/Assets/LudumDare/Scripts/ItemIdenity.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts_lt/ItemDetecte.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts_lt/Move_Test.cs" />
@@ -296,6 +265,14 @@
         <option value="$PROJECT_DIR$/Assets/LudumDare/Scripts/ItemIdentity.cs" />
         <option value="$PROJECT_DIR$/Assets/LudumDare/Scripts/InputToCEventCenter.cs" />
         <option value="$PROJECT_DIR$/Assets/LudumDare/Scripts/EatableFlower.cs" />
+        <option value="$PROJECT_DIR$/Assets/LudumDare/Scripts/Slame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts_lt/BagData.cs" />
+        <option value="$PROJECT_DIR$/Assets/LudumDare/Scripts/Test.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/ReadyGamerOne/EditorExtension/ArgChooser.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/ReadyGamerOne/EditorExtension/StringChooser.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/ReadyGamerOne/Utility/RectExtension.cs" />
+        <option value="$PROJECT_DIR$/Assets/LudumDare/Model/ItemMgr.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/ReadyGamerOne/Const/ConstStringAsset.cs" />
       </list>
     </option>
   </component>
@@ -307,7 +284,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="173" />
     <option name="y" value="-34" />
     <option name="width" value="1550" />
@@ -321,6 +298,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="FileSystemExplorer" />
+      <pane id="AssemblyExplorer" />
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -339,10 +318,6 @@
               <item name="LudumDare" type="1045f7f1:UnityExplorerNode" />
               <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
             </path>
-            <path>
-              <item name="" type="e068e287:UnityExplorerRootNode" />
-              <item name="Packages" type="4e2708dd:PackagesRoot" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -352,8 +327,6 @@
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
       </pane>
-      <pane id="FileSystemExplorer" />
-      <pane id="AssemblyExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -403,12 +376,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570258604167</updated>
-      <workItem from="1570258618416" duration="5500000" />
+      <workItem from="1570258618416" duration="9317000" />
+      <workItem from="1570279548506" duration="2504000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5500000" />
+    <option name="totallyTimeSpent" value="11821000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -420,9 +394,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19089082" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23601492" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -465,120 +440,50 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts_lt/Move_Test.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding>
-            <marker date="1570260655111" expanded="true" signature="59:627" ph="{...}" />
-            <marker date="1570260655111" expanded="true" signature="80:625" ph="{...}" />
-            <marker date="1570260655111" expanded="true" signature="123:190" ph="{...}" />
-            <marker date="1570260655111" expanded="true" signature="232:300" ph="{...}" />
-            <marker date="1570260655111" expanded="true" signature="342:410" ph="{...}" />
-            <marker date="1570260655111" expanded="true" signature="452:519" ph="{...}" />
-            <marker date="1570260655111" expanded="true" signature="565:619" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts_lt/FaceDetecte.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <marker date="1570260771637" expanded="true" signature="61:685" ph="{...}" />
-            <marker date="1570260771637" expanded="true" signature="82:683" ph="{...}" />
-            <marker date="1570260771637" expanded="true" signature="162:228" ph="{...}" />
-            <marker date="1570260771637" expanded="true" signature="309:377" ph="{...}" />
-            <marker date="1570260771637" expanded="true" signature="458:526" ph="{...}" />
-            <marker date="1570260771637" expanded="true" signature="608:677" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/LudumDare/Model/ItemMgr.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
-          <folding>
-            <marker date="1570259135056" expanded="false" signature="6:102" ph="..." />
-            <marker date="1570259135056" expanded="true" signature="129:2486" ph="{...}" />
-            <marker date="1570259135056" expanded="true" signature="173:2484" ph="{...}" />
-            <marker date="1570259135056" expanded="false" signature="271:521" ph="{...}" />
-            <marker date="1570259135056" expanded="false" signature="612:1293" ph="{...}" />
-            <marker date="1570259135056" expanded="false" signature="638:1283" ph="{...}" />
-            <marker date="1570259135056" expanded="false" signature="685:893" ph="{...}" />
-            <marker date="1570259135056" expanded="false" signature="942:1131" ph="{...}" />
-            <marker date="1570259135056" expanded="false" signature="1397:1869" ph="{...}" />
-            <marker date="1570259135056" expanded="false" signature="1459:1832" ph="{...}" />
-            <marker date="1570259135056" expanded="false" signature="1552:1741" ph="{...}" />
-            <marker date="1570259135056" expanded="false" signature="1612:1723" ph="{...}" />
-            <marker date="1570259135056" expanded="true" signature="1935:2171" ph="{...}" />
-            <marker date="1570259135056" expanded="false" signature="2010:2114" ph="{...}" />
-            <marker date="1570259135056" expanded="true" signature="2225:2469" ph="{...}" />
-            <marker date="1570259135056" expanded="true" signature="2300:2412" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts_lt/Move_Test.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts_lt/FaceDetecte.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/ReadyGamerOne/Script/AbstractCharacterController.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts_lt/ItemDetecte.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
+        <state relative-caret-position="16">
           <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
           <folding>
-            <marker date="1570260771639" expanded="true" signature="61:912" ph="{...}" />
-            <marker date="1570260771639" expanded="true" signature="115:910" ph="{...}" />
-            <marker date="1570260771639" expanded="true" signature="163:904" ph="{...}" />
-            <marker date="1570260771639" expanded="true" signature="278:341" ph="{...}" />
-            <marker date="1570260771639" expanded="true" signature="462:525" ph="{...}" />
-            <marker date="1570260771639" expanded="true" signature="646:709" ph="{...}" />
-            <marker date="1570260771639" expanded="true" signature="831:894" ph="{...}" />
+            <marker date="1570270481134" expanded="true" signature="61:1096" ph="{...}" />
+            <marker date="1570270481134" expanded="true" signature="115:938" ph="{...}" />
+            <marker date="1570270481134" expanded="true" signature="163:932" ph="{...}" />
+            <marker date="1570270481134" expanded="true" signature="285:348" ph="{...}" />
+            <marker date="1570270481134" expanded="true" signature="476:539" ph="{...}" />
+            <marker date="1570270481134" expanded="true" signature="667:730" ph="{...}" />
+            <marker date="1570270481134" expanded="true" signature="859:922" ph="{...}" />
+            <marker date="1570270481134" expanded="true" signature="991:1094" ph="{...}" />
+            <marker date="1570270481134" expanded="true" signature="1039:1088" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts_lt/BagData.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        <state relative-caret-position="48">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
           <folding>
-            <marker date="1570260771637" expanded="true" signature="41:2046" ph="{...}" />
-            <marker date="1570260771637" expanded="true" signature="70:131" ph="{...}" />
-            <marker date="1570260771637" expanded="false" signature="914:2044" ph="{...}" />
-            <marker date="1570260771637" expanded="true" signature="982:1013" ph="{...}" />
-            <marker date="1570260771637" expanded="true" signature="1066:1694" ph="{...}" />
-            <marker date="1570260771637" expanded="true" signature="1112:1212" ph="{...}" />
-            <marker date="1570260771637" expanded="true" signature="1259:1360" ph="{...}" />
-            <marker date="1570260771637" expanded="true" signature="1407:1508" ph="{...}" />
-            <marker date="1570260771637" expanded="true" signature="1556:1656" ph="{...}" />
-            <marker date="1570260771637" expanded="true" signature="1745:1841" ph="{...}" />
-            <marker date="1570260771637" expanded="true" signature="1857:2038" ph="{...}" />
+            <marker date="1570266287764" expanded="true" signature="41:2051" ph="{...}" />
+            <marker date="1570266287764" expanded="false" signature="70:131" ph="{...}" />
+            <marker date="1570266287764" expanded="false" signature="919:2049" ph="{...}" />
+            <marker date="1570266287764" expanded="true" signature="987:1018" ph="{...}" />
+            <marker date="1570266287764" expanded="true" signature="1071:1699" ph="{...}" />
+            <marker date="1570266287764" expanded="true" signature="1117:1217" ph="{...}" />
+            <marker date="1570266287764" expanded="true" signature="1264:1365" ph="{...}" />
+            <marker date="1570266287764" expanded="true" signature="1412:1513" ph="{...}" />
+            <marker date="1570266287764" expanded="true" signature="1561:1661" ph="{...}" />
+            <marker date="1570266287764" expanded="true" signature="1750:1846" ph="{...}" />
+            <marker date="1570266287764" expanded="true" signature="1862:2043" ph="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/LudumDare/Scripts/InputToCEventCenter.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding>
-            <marker date="1570263810874" expanded="true" signature="6:87" ph="..." />
-            <marker date="1570263810874" expanded="true" signature="116:440" ph="{...}" />
-            <marker date="1570263810874" expanded="true" signature="300:432" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/ReadyGamerOne/Script/AbstractCharacterController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="105" column="47" selection-start-line="105" selection-start-column="47" selection-end-line="105" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/LudumDare/Scripts/PlayController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="144">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <marker date="1570261019185" expanded="false" signature="6:89" ph="..." />
@@ -593,7 +498,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/LudumDare/Model/BasicItem.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
+        <state relative-caret-position="272">
           <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
           <folding>
             <marker date="1570258756096" expanded="false" signature="6:59" ph="..." />
@@ -606,7 +511,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/LudumDare/Scripts/ItemIdentity.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
+        <state relative-caret-position="208">
           <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
           <folding>
             <marker date="1570263035241" expanded="true" signature="6:142" ph="..." />
@@ -617,18 +522,181 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/LudumDare/Scripts/InputToCEventCenter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding>
+            <marker date="1570263810874" expanded="true" signature="6:87" ph="..." />
+            <marker date="1570263810874" expanded="true" signature="116:440" ph="{...}" />
+            <marker date="1570263810874" expanded="true" signature="183:438" ph="{...}" />
+            <marker date="1570263810874" expanded="true" signature="300:432" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/LudumDare/Scripts/Slame.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+          <folding>
+            <marker date="1570265713049" expanded="true" signature="6:101" ph="..." />
+            <marker date="1570265713049" expanded="true" signature="130:774" ph="{...}" />
+            <marker date="1570265713049" expanded="true" signature="183:772" ph="{...}" />
+            <marker date="1570265713049" expanded="true" signature="383:766" ph="{...}" />
+            <marker date="1570265713049" expanded="true" signature="508:755" ph="{...}" />
+            <marker date="1570265713049" expanded="true" signature="579:725" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReadyGamerOne/Script/BasicGameMgr.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1570238601195" expanded="true" signature="6:67" ph="..." />
+            <marker date="1570238601195" expanded="true" signature="99:1290" ph="{...}" />
+            <marker date="1570238601195" expanded="true" signature="106:167" ph="/// 使用SceneMgr推荐用脚本继承这个类 ... " />
+            <marker date="1570238601195" expanded="true" signature="211:1288" ph="{...}" />
+            <marker date="1570238601195" expanded="true" signature="328:578" ph="{...}" />
+            <marker date="1570238601195" expanded="true" signature="618:686" ph="{...}" />
+            <marker date="1570238601195" expanded="true" signature="736:797" ph="{...}" />
+            <marker date="1570238601195" expanded="true" signature="846:879" ph="{...}" />
+            <marker date="1570238601195" expanded="true" signature="930:980" ph="{...}" />
+            <marker date="1570238601195" expanded="true" signature="1030:1104" ph="{...}" />
+            <marker date="1570238601195" expanded="true" signature="1155:1188" ph="{...}" />
+            <marker date="1570238601195" expanded="true" signature="1225:1282" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/LudumDare/Scripts/Test.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding>
+            <marker date="1570280066665" expanded="true" signature="6:84" ph="..." />
+            <marker date="1570280066665" expanded="true" signature="113:270" ph="{...}" />
+            <marker date="1570280066665" expanded="true" signature="151:268" ph="{...}" />
+            <marker date="1570280066665" expanded="true" signature="186:262" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReadyGamerOne/EditorExtension/ArgChooser.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+          <folding>
+            <marker date="1570280258809" expanded="true" signature="6:80" ph="..." />
+            <marker date="1570280258809" expanded="true" signature="121:2459" ph="{...}" />
+            <marker date="1570280258809" expanded="true" signature="170:2457" ph="{...}" />
+            <marker date="1570280258809" expanded="true" signature="185:1969" ph="Static" />
+            <marker date="1570280258809" expanded="true" signature="408:1371" ph="{...}" />
+            <marker date="1570280258809" expanded="true" signature="567:1335" ph="{...}" />
+            <marker date="1570280258809" expanded="true" signature="1436:1949" ph="{...}" />
+            <marker date="1570280258809" expanded="true" signature="1475:1912" ph="{...}" />
+            <marker date="1570280258809" expanded="true" signature="2212:2442" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReadyGamerOne/EditorExtension/StringChooser.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="26" column="53" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
+          <folding>
+            <marker date="1570280293203" expanded="true" signature="6:140" ph="..." />
+            <marker date="1570280293203" expanded="true" signature="181:1475" ph="{...}" />
+            <marker date="1570280293203" expanded="true" signature="233:1473" ph="{...}" />
+            <marker date="1570280293203" expanded="true" signature="796:1178" ph="{...}" />
+            <marker date="1570280293203" expanded="true" signature="1060:1168" ph="{...}" />
+            <marker date="1570280293203" expanded="true" signature="1227:1467" ph="{...}" />
+            <marker date="1570280293203" expanded="true" signature="1379:1456" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/LudumDare/Model/ItemMgr.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="37" column="17" lean-forward="true" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+          <folding>
+            <marker date="1570281633843" expanded="true" signature="6:132" ph="..." />
+            <marker date="1570281633843" expanded="true" signature="159:2791" ph="{...}" />
+            <marker date="1570281633843" expanded="true" signature="203:2789" ph="{...}" />
+            <marker date="1570281633843" expanded="true" signature="318:699" ph="{...}" />
+            <marker date="1570281633843" expanded="true" signature="806:1592" ph="{...}" />
+            <marker date="1570281633843" expanded="true" signature="832:1582" ph="{...}" />
+            <marker date="1570281633843" expanded="true" signature="879:1055" ph="{...}" />
+            <marker date="1570281633843" expanded="true" signature="1104:1437" ph="{...}" />
+            <marker date="1570281633843" expanded="false" signature="1696:2168" ph="{...}" />
+            <marker date="1570281633843" expanded="false" signature="1758:2131" ph="{...}" />
+            <marker date="1570281633843" expanded="false" signature="1851:2040" ph="{...}" />
+            <marker date="1570281633843" expanded="false" signature="1911:2022" ph="{...}" />
+            <marker date="1570281633843" expanded="true" signature="2234:2476" ph="{...}" />
+            <marker date="1570281633843" expanded="true" signature="2309:2413" ph="{...}" />
+            <marker date="1570281633843" expanded="true" signature="2530:2774" ph="{...}" />
+            <marker date="1570281633843" expanded="true" signature="2605:2717" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReadyGamerOne/Utility/RectExtension.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="83" column="8" selection-start-line="83" selection-start-column="8" selection-end-line="83" selection-end-column="8" />
+          <folding>
+            <marker date="1570280636897" expanded="false" signature="6:37" ph="..." />
+            <marker date="1570280636897" expanded="true" signature="70:2833" ph="{...}" />
+            <marker date="1570280636897" expanded="true" signature="77:134" ph="/// Rect 拓展类，用于编辑器拓展 ... " />
+            <marker date="1570280636897" expanded="true" signature="172:2831" ph="{...}" />
+            <marker date="1570280636897" expanded="false" signature="188:1226" ph="上下左右四部分" />
+            <marker date="1570280636897" expanded="true" signature="282:444" ph="{...}" />
+            <marker date="1570280636897" expanded="true" signature="533:706" ph="{...}" />
+            <marker date="1570280636897" expanded="true" signature="792:961" ph="{...}" />
+            <marker date="1570280636897" expanded="true" signature="1045:1207" ph="{...}" />
+            <marker date="1570280636897" expanded="true" signature="1236:2816" ph="获取指定行矩形区域" />
+            <marker date="1570280636897" expanded="true" signature="1323:1623" ph="{...}" />
+            <marker date="1570280636897" expanded="true" signature="1703:2005" ph="{...}" />
+            <marker date="1570280636897" expanded="true" signature="2105:2484" ph="{...}" />
+            <marker date="1570280636897" expanded="true" signature="2567:2645" ph="{...}" />
+            <marker date="1570280636897" expanded="true" signature="2719:2796" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/LudumDare/Scripts/EatableFlower.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-170">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="16">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
           <folding>
-            <marker date="1570263919425" expanded="true" signature="6:149" ph="..." />
-            <marker date="1570263919425" expanded="true" signature="178:1421" ph="{...}" />
-            <marker date="1570263919425" expanded="true" signature="225:1419" ph="{...}" />
-            <marker date="1570263919425" expanded="true" signature="612:798" ph="{...}" />
-            <marker date="1570263919425" expanded="true" signature="860:1104" ph="{...}" />
-            <marker date="1570263919425" expanded="true" signature="1143:1412" ph="{...}" />
-            <marker date="1570263919425" expanded="true" signature="1191:1325" ph="{...}" />
+            <marker date="1570265668823" expanded="true" signature="6:149" ph="..." />
+            <marker date="1570265668823" expanded="true" signature="178:1931" ph="{...}" />
+            <marker date="1570265668823" expanded="true" signature="225:1929" ph="{...}" />
+            <marker date="1570265668823" expanded="true" signature="682:1118" ph="{...}" />
+            <marker date="1570265668823" expanded="true" signature="916:1107" ph="{...}" />
+            <marker date="1570265668823" expanded="true" signature="945:1093" ph="{...}" />
+            <marker date="1570265668823" expanded="true" signature="1137:1296" ph="/// 尝试吃某个物品 ... " />
+            <marker date="1570265668823" expanded="true" signature="1339:1614" ph="{...}" />
+            <marker date="1570265668823" expanded="false" signature="1653:1922" ph="{...}" />
+            <marker date="1570265668823" expanded="true" signature="1701:1835" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReadyGamerOne/Const/ConstStringAsset.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding>
+            <marker date="1570282051653" expanded="true" signature="6:112" ph="..." />
+            <marker date="1570282051653" expanded="true" signature="143:1221" ph="{...}" />
+            <marker date="1570282051653" expanded="true" signature="196:1219" ph="{...}" />
+            <marker date="1570282051653" expanded="true" signature="301:1148" ph="{...}" />
+            <marker date="1570282051653" expanded="true" signature="327:1138" ph="{...}" />
+            <marker date="1570282051653" expanded="true" signature="374:584" ph="{...}" />
+            <marker date="1570282051653" expanded="true" signature="633:986" ph="{...}" />
           </folding>
         </state>
       </provider>

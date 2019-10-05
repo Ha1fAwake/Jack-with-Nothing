@@ -1,22 +1,32 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+
+#if UNITY_EDITOR
+    
 using UnityEditor;
+#endif
 using UnityEngine;
 
 namespace LudumDare.Model
 {
     public class ItemMgr:ScriptableObject
     {
+#if UNITY_EDITOR
         [MenuItem("ReadyGamerOne/Create/ItemMgr")]
         public static void CreateAsset()
         {
 
-            AssetDatabase.CreateAsset(CreateInstance<ItemMgr>(), "Assets/ItemMgr.asset");
+            var path = "Assets/Resources";
+            if (!Directory.Exists(path))
+                Directory.CreateDirectory(path);
+            AssetDatabase.CreateAsset(CreateInstance<ItemMgr>(), path+"/ItemMgr.asset");
             AssetDatabase.Refresh();
 
-            Selection.activeObject = AssetDatabase.LoadAssetAtPath<ItemMgr>("Assets/ItemMgr.asset");
-        }
+            Selection.activeObject = AssetDatabase.LoadAssetAtPath<ItemMgr>(path+"/ItemMgr.asset");
+        }        
+#endif
+
         
         private static ItemMgr _instance;
         private static ItemMgr Instance
@@ -26,18 +36,21 @@ namespace LudumDare.Model
 
                 if (!_instance)
                 {
-                    if(File.Exists("Assets/ItemMgr.asset"))
-                        _instance = UnityEditor.AssetDatabase.LoadAssetAtPath<ItemMgr>("Assets/ItemMgr.asset");
+//                    if(File.Exists("Assets/Resources/ItemMgr.asset"))
+                    _instance = Resources.Load<ItemMgr>("ItemMgr");
                 }
 #if UNITY_EDITOR
                 if (!_instance)
                 {
+                    var path = "Assets/Resources";
+                    if (!Directory.Exists(path))
+                        Directory.CreateDirectory(path);
                     _instance = CreateInstance<ItemMgr>();
-                    UnityEditor.AssetDatabase.CreateAsset(_instance, "Assets/ItemMgr.asset");
+                    AssetDatabase.CreateAsset(_instance, path+"/ItemMgr.asset");
                 }
 #endif
                 if (_instance == null)
-                    throw new System.Exception("初始化失败");
+                    throw new Exception("初始化失败");
 
                 return _instance;
             }
@@ -77,7 +90,7 @@ namespace LudumDare.Model
                     return VARIABLE;
             }
 
-            throw new Exception("没有这个ID的物体");
+            throw new Exception("没有这个ID的物体:" + id);
         }
 
         public static BasicItem GetItem(string name)
