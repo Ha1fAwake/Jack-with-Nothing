@@ -1,11 +1,8 @@
 using System;
-using ReadyGamerOne.Script;
-using ReadyGamerOne.Utility;
 using UnityEngine;
-
 namespace LudumDare.Scripts
 {
-    public class PlayController:AbstractCharacterController
+    public class PlayController:ReadyGamerOne.Script.AbstractCharacterController
     {
         public override Func<Vector2, bool> CanWalk => IfCanWalk;
         
@@ -15,20 +12,20 @@ namespace LudumDare.Scripts
         }
 
 
-        protected override void Start()
-        {
-            base.Start();
-            onWalk += (input, scale) =>
-            {
-                if (input.x > 0)
-                    BagData.PlayerFace = BagData.Direction.left;
-                else if (input.x < 0)
-                    BagData.PlayerFace = BagData.Direction.right;
-                if (input.y < 0)
-                    BagData.PlayerFace = BagData.Direction.down;
-                else if (input.y > 0)
-                    BagData.PlayerFace = BagData.Direction.up;
-            };
-        }
+//        protected override void Start()
+//        {
+//            base.Start();
+//            onWalk += (input, scale) =>
+//            {
+//                if (input.x > 0)
+//                    BagData.PlayerFace = BagData.Direction.left;
+//                else if (input.x < 0)
+//                    BagData.PlayerFace = BagData.Direction.right;
+//                if (input.y < 0)
+//                    BagData.PlayerFace = BagData.Direction.down;
+//                else if (input.y > 0)
+//                    BagData.PlayerFace = BagData.Direction.up;
+//            };
+//        }
     }
 }

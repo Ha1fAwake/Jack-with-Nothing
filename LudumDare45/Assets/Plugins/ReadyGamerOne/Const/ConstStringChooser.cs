@@ -8,5 +8,9 @@ namespace ReadyGamerOne.Const
     {
         [SerializeField] private int selectedIndex;
         public string StringValue => ConstStringAsset.Instance.constStrings[selectedIndex];
+        public void SetIndex(int index)
+        {
+            selectedIndex = index;
+        }
     }
 }

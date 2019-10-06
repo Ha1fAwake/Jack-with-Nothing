@@ -209,7 +209,7 @@ namespace LudumDare.Model
         /// <param name="id_1"></param>
         /// <param name="id_2"></param>
         /// <returns>合法返回正确ID，不合法，返回-1</returns>
-        public static bool IsMergeOk(int id_1, int id_2,out int targetId, out GameObject prefab)
+        public static bool IsMergeOk(int id_1, int id_2,out BasicItem target)
         {
             if(id_1==-1 || id_2==-1)
                 throw new Exception("没有这样的ID: "+id_1+"  "+id_2);
@@ -218,24 +218,18 @@ namespace LudumDare.Model
                 var ids = VARIABLE.SourIds;
                 if (ids.Contains(id_1) && ids.Contains(id_2))
                 {
-                    if (VARIABLE.prefab == null)
-                    {
-                        throw new Exception("你忘了给预制体赋值了，物品名："+ItemMgr.GetItem(VARIABLE.TargetId).ItemName);
-                    }
-                    prefab = VARIABLE.prefab;
-                    targetId= VARIABLE.TargetId;
+                    target = ItemMgr.GetItem(VARIABLE.TargetId);
                     return true;
                 }
             }
 
-            targetId = -1;
-            prefab = null;
+            target = null;
             return false;
         }
 
-        public static bool IsMergeOk(string itemName1, string itemName2,out int targetId, out GameObject prefab)
+        public static bool IsMergeOk(string itemName1, string itemName2,out BasicItem targetId)
         {
-            return IsMergeOk(ItemMgr.Name2Id(itemName1), ItemMgr.Name2Id(itemName2), out targetId,out prefab);
+            return IsMergeOk(ItemMgr.Name2Id(itemName1), ItemMgr.Name2Id(itemName2), out targetId);
         }
 
         

@@ -9,7 +9,7 @@ namespace LudumDare.Model.Editor
     {
         public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
         {
-            return EditorGUIUtility.singleLineHeight * 4;
+            return EditorGUIUtility.singleLineHeight * 5;
         }
 
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
@@ -19,6 +19,7 @@ namespace LudumDare.Model.Editor
             EditorGUI.PropertyField(position.GetRectAtIndex(index++), property.FindPropertyRelative("itemName"));
             EditorGUI.PropertyField(position.GetRectAtIndex(index++), property.FindPropertyRelative("descriptions"));
             EditorGUI.PropertyField(position.GetRectAtIndex(index++), property.FindPropertyRelative("sprite"));
+            EditorGUI.PropertyField(position.GetRectAtIndex(index++), property.FindPropertyRelative("prefab"));
         }
     }
 }

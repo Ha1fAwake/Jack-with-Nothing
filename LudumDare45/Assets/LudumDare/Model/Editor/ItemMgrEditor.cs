@@ -25,7 +25,7 @@ namespace LudumDare.Model.Editor
             itemListProp = serializedObject.FindProperty("itemInfos");
             itemList = new ReorderableList(serializedObject, itemListProp, false,
                 true, true,true);
-            itemList.elementHeight = 4 * EditorGUIUtility.singleLineHeight;
+            itemList.elementHeight = 5 * EditorGUIUtility.singleLineHeight;
             itemList.drawElementCallback = (rect, index, x, y) =>
             {
                 var prop = itemListProp.GetArrayElementAtIndex(index++);
@@ -42,7 +42,7 @@ namespace LudumDare.Model.Editor
             mergeInfoListProp = serializedObject.FindProperty("merageInfos");
             mergeInfoList = new ReorderableList(serializedObject, mergeInfoListProp, false, true, true, true);
 
-            mergeInfoList.elementHeight = 4 * EditorGUIUtility.singleLineHeight;
+            mergeInfoList.elementHeight = 3 * EditorGUIUtility.singleLineHeight;
             mergeInfoList.drawElementCallback = (rect, index, x, y) =>
             {
                 var prop = mergeInfoListProp.GetArrayElementAtIndex(index);

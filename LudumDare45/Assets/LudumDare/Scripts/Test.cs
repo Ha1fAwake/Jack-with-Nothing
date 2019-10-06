@@ -13,14 +13,13 @@ namespace LudumDare.Scripts
         public ConstStringChooser item_2;
         private void Start()
         {
-            GameObject prefab;
-            int targetId;
+            BasicItem item;
             
-            if(ItemMgr.IsMergeOk(item_1.StringValue,item_2.StringValue,out targetId, out prefab))
+            if(ItemMgr.IsMergeOk(item_1.StringValue,item_2.StringValue,out item))
             {
-                Debug.Log("合成成功，新物品ID："+targetId);
-                Debug.Log(ItemMgr.GetItem(targetId));
-                Instantiate(prefab, Vector3.zero, Quaternion.identity);
+                Debug.Log("合成成功，新物品名字："+item.ItemName);
+                Debug.Log(item);
+                Instantiate(item.Prefab, Vector3.zero, Quaternion.identity);
             }
             else
             {
