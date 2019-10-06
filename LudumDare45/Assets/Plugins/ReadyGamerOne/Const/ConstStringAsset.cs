@@ -14,7 +14,6 @@ namespace ReadyGamerOne.Const
         {
             get
             {
-
                 if (!_instance)
                 {
                     if (File.Exists("Assets/Resources/GlobalConstStrings.asset"))

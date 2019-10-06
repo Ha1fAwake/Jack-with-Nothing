@@ -1,5 +1,6 @@
 using System;
 using LudumDare.Model;
+using LudumDare.View;
 using ReadyGamerOne.Utility;
 using UnityEngine;
 
@@ -9,7 +10,7 @@ namespace LudumDare.Scripts
     {
         private void Start()
         {
-            WindowsUtil.MessageBox(ItemMgr.GetItem(0));
+            UIHelper.ShowItemInfo(ItemMgr.GetItem(0));
         }
     }
 }

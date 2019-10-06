@@ -853,6 +853,7 @@
           </e>
         </e>
         <e p="LudumDare" t="Include">
+          <e p="Const.cs" t="Include" />
           <e p="Model" t="Include">
             <e p="BasicItem.cs" t="Include" />
             <e p="Editor" t="Include">
@@ -871,6 +872,9 @@
             <e p="PlayController.cs" t="Include" />
             <e p="Slame.cs" t="Include" />
             <e p="Test.cs" t="Include" />
+          </e>
+          <e p="View" t="Include">
+            <e p="UIHelper.cs" t="Include" />
           </e>
         </e>
         <e p="Plugins" t="Include">
