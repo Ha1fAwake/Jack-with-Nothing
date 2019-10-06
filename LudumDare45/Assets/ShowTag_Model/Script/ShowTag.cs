@@ -3,7 +3,6 @@ using UnityEngine.UI;
 
 public class ShowTag : MonoBehaviour {
 
-    public GameObject Player;               //玩家
     public GameObject Tag;                  //标签组件
     public string Content;                  //物品的描述（初始赋值时用）
     public Vector3 TagPos = new Vector3(0, 0.5f, 0);   //Tag的偏移位置
@@ -51,8 +50,7 @@ public class ShowTag : MonoBehaviour {
 
     private void OnTriggerStay2D(Collider2D c) {
         if (BagData.FacedItem == gameObject) {
-            if (!IsShowing && c.transform.name == Player.name) {
-                print("Show");
+            if (!IsShowing && c.transform.tag == "Player") {
                 Destroy(Tag1);  //清除上一个Tag
                 Tag1 = Instantiate(Tag, new Vector3(), new Quaternion(0, 0, 0, 0)); //生成对象
                 foreach (Transform child in Tag1.transform) {
@@ -67,7 +65,7 @@ public class ShowTag : MonoBehaviour {
     }
 
     private void OnTriggerExit2D(Collider2D c) {
-        if (IsShowing && c.transform.name == Player.name) {
+        if (IsShowing && c.transform.tag == "Player") {
             IsShowing = false;
             Destroy(Tag1, FadeTime);  //销毁对象
             IsSlowFade = true;

@@ -3,17 +3,22 @@ using UnityEngine;
 
 public class ItemDetecte : MonoBehaviour {
 
+    private void OnTriggerEnter2D(Collider2D c) {
+        print(c.transform.name);
+        print("this:" + this.name);
+    }
+
     private void OnTriggerStay2D(Collider2D other) {
         if (other.transform.name == "Player") {
             if (BagData.PlayerFace == BagData.Direction.up && transform.position.y > other.transform.position.y + 0.1f) {
                 BagData.FacedItem = gameObject;
                 BagData.FacedItemId = GetItemId();
-                //print("up");
+                print("up");
             }
             else if (BagData.PlayerFace == BagData.Direction.down && transform.position.y + 0.1f < other.transform.position.y) {
                 BagData.FacedItem = gameObject;
                 BagData.FacedItemId = GetItemId();
-                //print("down");
+                print("down");
             }
             else if (BagData.PlayerFace == BagData.Direction.left && transform.position.x + 0.1f < other.transform.position.x) {
                 BagData.FacedItem = gameObject;
@@ -30,7 +35,7 @@ public class ItemDetecte : MonoBehaviour {
                 if (BagData.FacedItem == gameObject) {
                     BagData.FacedItem = null;
                     BagData.FacedItemId = 0;
-                    //print("null");
+                    print("null");
                 }
             }
         }

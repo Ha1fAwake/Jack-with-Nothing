@@ -14,9 +14,6 @@ public class ShowBag : MonoBehaviour {
     }
 
     private void ShowItem(int id) {
-
-        //显示图片
-
-        //UIHelper.ShowItemInfo(ItemMgr.GetItem(id));
+        transform.GetComponent<SpriteRenderer>().sprite = ItemMgr.GetItem(id).sprite;
     }
 }

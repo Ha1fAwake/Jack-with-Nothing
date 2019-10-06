@@ -31,7 +31,10 @@ public class PlayerMove : MonoBehaviour {
                 BagData.PlayerFace = BagData.Direction.right;
             }
         }
-        if (Input.GetKeyDown(KeyCode.Space) && SwitchAble()) BagData.SwitchItem(transform);
+        if (Input.GetKeyDown(KeyCode.Space) && SwitchAble()) {
+            BagData.SwitchItem(transform);
+            print("Switch");
+        }
         Move();
     }
 
@@ -88,12 +91,15 @@ public class PlayerMove : MonoBehaviour {
     }
 
     public bool SwitchAble() {
+        /*
         if (transform.position.x == (int)(transform.position.x)) {
             if (transform.position.y == (int)(transform.position.y)) {
                 return true;
             }
         }
         return false;
+        */
+        return true;
     }
 
 }

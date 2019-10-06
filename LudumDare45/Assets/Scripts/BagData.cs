@@ -1,5 +1,6 @@
 ﻿/*背包数据处理类*/
 using UnityEngine;
+using LudumDare.Model;
 
 public class BagData {
 
@@ -67,6 +68,19 @@ public class BagData {
         bagItemId = facedItemId;
 
         return;
+    }
+
+    public static void MergeItem() {
+        if (facedItem != null && bagItem != null) {
+            BasicItem item;
+            if (ItemMgr.IsMergeOk(bagItemId, facedItemId, out item)) {
+                GameObject.Instantiate(item.Prefab, facedItem.transform.position, new Quaternion());
+                GameObject.Destroy(bagItem);
+                GameObject.Destroy(facedItem);
+                bagItemId = 0;
+
+            }
+        }
     }
 
 }
