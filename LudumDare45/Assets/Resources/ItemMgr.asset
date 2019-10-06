@@ -22,27 +22,48 @@ MonoBehaviour:
   - id: 1
     itemName:
       selectedIndex: 1
-    descriptions: "\u4E0Bhi\u4E86\u4F60"
-    sprite: {fileID: 21300000, guid: 49d5ccdda7b99e24787c2abc3891294c, type: 3}
+    descriptions: "\u6211\u662F\u98DF\u4EBA\u82B1"
+    sprite: {fileID: 21300000, guid: 216024c3434a2c149bfd13a6cbf4a31c, type: 3}
     prefab: {fileID: 0}
   - id: 2
     itemName:
       selectedIndex: 2
-    descriptions: "\u4EFD\u5730\u65B9\u5B98\u5E9C"
-    sprite: {fileID: 21300000, guid: 888feb4a32e3b564fb7e6f9b28cc8e10, type: 3}
+    descriptions: "\u6211\u662F\u70B8\u5F39"
+    sprite: {fileID: 21300000, guid: 56a19ad104235a24b96df332317d8c15, type: 3}
     prefab: {fileID: 0}
-  - id: 3
-    itemName:
-      selectedIndex: 0
-    descriptions: "\u7684\u975E\u5B98\u65B9\u725B\u8089\u6D53\u6C64"
-    sprite: {fileID: 21300000, guid: 62573ea76cbf34643bf28a259a6c901c, type: 3}
-    prefab: {fileID: 1798499133002970769, guid: e14a59d9b03ec3142bdd938640fbab5f,
-      type: 3}
   - id: 4
     itemName:
       selectedIndex: 0
-    descriptions: "\u7684\u975E\u5B98\u65B9\u725B\u8089\u6D53\u6C64"
-    sprite: {fileID: 21300000, guid: 62573ea76cbf34643bf28a259a6c901c, type: 3}
+    descriptions: "\u6211\u662F\u53F2\u83B1\u59C6"
+    sprite: {fileID: 21300000, guid: 3e3989fdd1976e740a7188a1e3ad49ea, type: 3}
+    prefab: {fileID: 1798499133002970769, guid: e14a59d9b03ec3142bdd938640fbab5f,
+      type: 3}
+  - id: 5
+    itemName:
+      selectedIndex: 5
+    descriptions: "\u6211\u662F\u4E95"
+    sprite: {fileID: 21300000, guid: 3951a1a09955d1c4c9cbace9963558c3, type: 3}
+    prefab: {fileID: 1798499133002970769, guid: e14a59d9b03ec3142bdd938640fbab5f,
+      type: 3}
+  - id: 3
+    itemName:
+      selectedIndex: 6
+    descriptions: "\u6211\u662F\u5976\u725B"
+    sprite: {fileID: 21300000, guid: b90559a439b32cd41a5e922058b35d9c, type: 3}
+    prefab: {fileID: 1798499133002970769, guid: e14a59d9b03ec3142bdd938640fbab5f,
+      type: 3}
+  - id: 6
+    itemName:
+      selectedIndex: 7
+    descriptions: "\u6211\u662F\u5730\u9762"
+    sprite: {fileID: 21300000, guid: 7785a5531f046b14d96168b211b0d5bf, type: 3}
+    prefab: {fileID: 1798499133002970769, guid: e14a59d9b03ec3142bdd938640fbab5f,
+      type: 3}
+  - id: 7
+    itemName:
+      selectedIndex: 8
+    descriptions: "\u6211\u662F\u9B54\u8C46"
+    sprite: {fileID: 21300000, guid: 853b664d8fef425478295b1247270c84, type: 3}
     prefab: {fileID: 1798499133002970769, guid: e14a59d9b03ec3142bdd938640fbab5f,
       type: 3}
   merageInfos:
