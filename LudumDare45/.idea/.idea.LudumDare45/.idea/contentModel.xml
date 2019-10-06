@@ -1021,14 +1021,12 @@
           </e>
           <e p="Scripts" t="Include">
             <e p="BagData.cs" t="Include" />
+            <e p="BossAi_1.cs" t="Include" />
             <e p="BossAi_2.cs" t="Include" />
+            <e p="BossAIMgr.cs" t="Include" />
             <e p="EatableFlower.cs" t="Include" />
-            <e p="Editor" t="Include">
-              <e p="PlayControllerEditor.cs" t="Include" />
-            </e>
             <e p="InputToCEventCenter.cs" t="Include" />
             <e p="ItemIdentity.cs" t="Include" />
-            <e p="PlayController.cs" t="Include" />
             <e p="Slame.cs" t="Include" />
             <e p="Test.cs" t="Include" />
           </e>
