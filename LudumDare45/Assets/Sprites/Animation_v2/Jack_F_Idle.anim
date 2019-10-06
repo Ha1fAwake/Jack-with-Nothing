@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Jack_B_Walk
+  m_Name: Jack_F_Idle
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,22 +20,13 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 6610936376818401390, guid: 215872ab810143143b47fb368bc705f0,
-        type: 3}
-    - time: 0.25
-      value: {fileID: 6272706565481649950, guid: 215872ab810143143b47fb368bc705f0,
-        type: 3}
-    - time: 0.5
-      value: {fileID: -7219506513092395675, guid: 215872ab810143143b47fb368bc705f0,
-        type: 3}
-    - time: 0.75
-      value: {fileID: -4368298191616593182, guid: 215872ab810143143b47fb368bc705f0,
+      value: {fileID: -2293420269158538954, guid: 47ff2ea39fc80ab41b05d0fedd3d3f2a,
         type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 4
+  m_SampleRate: 1
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -50,10 +41,7 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 6610936376818401390, guid: 215872ab810143143b47fb368bc705f0, type: 3}
-    - {fileID: 6272706565481649950, guid: 215872ab810143143b47fb368bc705f0, type: 3}
-    - {fileID: -7219506513092395675, guid: 215872ab810143143b47fb368bc705f0, type: 3}
-    - {fileID: -4368298191616593182, guid: 215872ab810143143b47fb368bc705f0, type: 3}
+    - {fileID: -2293420269158538954, guid: 47ff2ea39fc80ab41b05d0fedd3d3f2a, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -64,7 +52,7 @@ AnimationClip:
     m_Level: 0
     m_CycleOffset: 0
     m_HasAdditiveReferencePose: 0
-    m_LoopTime: 1
+    m_LoopTime: 0
     m_LoopBlend: 0
     m_LoopBlendOrientation: 0
     m_LoopBlendPositionY: 0

@@ -38,6 +38,13 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: 62573ea76cbf34643bf28a259a6c901c, type: 3}
     prefab: {fileID: 1798499133002970769, guid: e14a59d9b03ec3142bdd938640fbab5f,
       type: 3}
+  - id: 4
+    itemName:
+      selectedIndex: 0
+    descriptions: "\u7684\u975E\u5B98\u65B9\u725B\u8089\u6D53\u6C64"
+    sprite: {fileID: 21300000, guid: 62573ea76cbf34643bf28a259a6c901c, type: 3}
+    prefab: {fileID: 1798499133002970769, guid: e14a59d9b03ec3142bdd938640fbab5f,
+      type: 3}
   merageInfos:
   - mgr: {fileID: 11400000}
     prefab: {fileID: 1798499133002970769, guid: e14a59d9b03ec3142bdd938640fbab5f,
