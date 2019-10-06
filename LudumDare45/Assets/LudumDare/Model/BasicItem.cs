@@ -1,9 +1,6 @@
 using System;
 using ReadyGamerOne.Const;
 using UnityEngine;
-#if UNITY_EDITOR
-
-#endif
 namespace LudumDare.Model
 {
     [Serializable]
@@ -17,7 +14,7 @@ namespace LudumDare.Model
             public override string ToString()
             {
                 var text = "===<BaseItem>===\n";
-                text += "ItemName: " + itemName + "\n";
+                text += "ItemName: " + itemName.StringValue + "\n";
                 text += "Description: " + descriptions + "\n";
                 text += "Sprite: " + sprite.name + "\n";
                 return text;

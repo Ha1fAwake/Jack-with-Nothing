@@ -10,6 +10,40 @@
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Demigiant" t="Include">
+          <e p="DemiLib" t="Include">
+            <e p="Core" t="Include">
+              <e p="DemiLib.xml" t="Include" />
+              <e p="Editor" t="Include">
+                <e p="DemiEditor.xml" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="DOTween" t="Include">
+            <e p="Modules" t="Include">
+              <e p="DOTweenModuleAudio.cs" t="Include" />
+              <e p="DOTweenModulePhysics.cs" t="Include" />
+              <e p="DOTweenModulePhysics2D.cs" t="Include" />
+              <e p="DOTweenModuleSprite.cs" t="Include" />
+              <e p="DOTweenModuleUI.cs" t="Include" />
+              <e p="DOTweenModuleUnityVersion.cs" t="Include" />
+              <e p="DOTweenModuleUtils.cs" t="Include" />
+            </e>
+            <e p="readme.txt" t="Include" />
+          </e>
+          <e p="DOTweenPro" t="Include">
+            <e p="DOTweenAnimation.cs" t="Include" />
+            <e p="DOTweenProShortcuts.cs" t="Include" />
+            <e p="DOTweenTextMeshPro.cs" t="Include" />
+            <e p="DOTweenTk2d.cs" t="Include" />
+            <e p="Editor" t="Include">
+              <e p="DOTweenAnimationInspector.cs" t="Include" />
+              <e p="DOTweenPreviewManager.cs" t="Include" />
+            </e>
+            <e p="readme.txt" t="Include" />
+          </e>
+          <e p="readme_DOTweenPro.txt" t="Include" />
+        </e>
         <e p="Fungus" t="Include">
           <e p="Docs" t="Include">
             <e p="CHANGELOG.txt" t="Include" />
@@ -859,8 +893,10 @@
             <e p="Editor" t="Include">
               <e p="BasicItemDrawer.cs" t="Include" />
               <e p="ItemMgrEditor.cs" t="Include" />
+              <e p="MergeInfoDrawer.cs" t="Include" />
             </e>
             <e p="ItemMgr.cs" t="Include" />
+            <e p="MergeInfo.cs" t="Include" />
           </e>
           <e p="Scripts" t="Include">
             <e p="EatableFlower.cs" t="Include" />
@@ -941,12 +977,20 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="TouchTheCowEventHandler.cs" t="Include" />
-        </e>
-        <e p="Scripts_lt" t="Include">
           <e p="BagData.cs" t="Include" />
           <e p="ItemDetecte.cs" t="Include" />
           <e p="PlayerMove.cs" t="Include" />
+          <e p="PlayerUI.cs" t="Include" />
+          <e p="ShowBag.cs" t="Include" />
+          <e p="ThemeControl.cs" t="Include" />
+          <e p="TouchTheCowEventHandler.cs" t="Include" />
+        </e>
+        <e p="ShowTag_Model6" t="Include">
+          <e p="Script" t="Include">
+            <e p="ShowTag.cs" t="Include" />
+            <e p="SlowShow.cs" t="Include" />
+          </e>
+          <e p="使用说明文档.txt" t="Include" />
         </e>
       </e>
       <e p="LudumDare45.sln" t="IncludeFlat" />
