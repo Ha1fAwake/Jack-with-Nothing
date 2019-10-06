@@ -1,6 +1,10 @@
 using System;
 using ReadyGamerOne.Const;
 using UnityEngine;
+
+
+
+
 namespace LudumDare.Model
 {
     [Serializable]
@@ -9,7 +13,9 @@ namespace LudumDare.Model
             public int id;
             public ConstStringChooser itemName;
             public string descriptions;
-            public Sprite sprite;
+            public Sprite fontSprite;
+            public Sprite infoSprite;
+            public string exchangeCondition;
             [SerializeField] private GameObject prefab;
 
             public GameObject Prefab
@@ -27,7 +33,8 @@ namespace LudumDare.Model
                 var text = "===<BaseItem>===\n";
                 text += "ItemName: " + itemName.StringValue + "\n";
                 text += "Description: " + descriptions + "\n";
-                text += "Sprite: " + sprite.name + "\n";
+                text += "InfoSprite: " + infoSprite.name + "\n";
+                text += "FontSprite: " + fontSprite.name + "\n";
                 return text;
             }
     }

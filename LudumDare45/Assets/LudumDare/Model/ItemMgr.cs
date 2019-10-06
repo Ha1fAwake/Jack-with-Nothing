@@ -6,6 +6,7 @@ using System.IO;
 using UnityEditor;
 #endif
 using UnityEngine;
+using UnityEngine.Assertions;
 
 namespace LudumDare.Model
 {
@@ -170,7 +171,7 @@ namespace LudumDare.Model
         
 
         /// <summary>
-        /// 根据ID获取物品信息
+        /// 获取物品信息
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
@@ -185,13 +186,6 @@ namespace LudumDare.Model
 
             throw new Exception("没有这个ID的物体:" + id);
         }
-
-        /// <summary>
-        /// 根据名字获取物品信息
-        /// </summary>
-        /// <param name="name"></param>
-        /// <returns></returns>
-        /// <exception cref="Exception"></exception>
         public static BasicItem GetItem(string name)
         {
             foreach (var VARIABLE in Instance.itemInfos)
@@ -226,12 +220,37 @@ namespace LudumDare.Model
             target = null;
             return false;
         }
-
         public static bool IsMergeOk(string itemName1, string itemName2,out BasicItem targetId)
         {
             return IsMergeOk(ItemMgr.Name2Id(itemName1), ItemMgr.Name2Id(itemName2), out targetId);
         }
 
+        /// <summary>
+        /// 置换是否合理
+        /// </summary>
+        /// <param name="ownId"></param>
+        /// <param name="targetId"></param>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
+        public static bool IsExchangeOk(int ownId, int targetId)
+        {
+            if (!ContansID(ownId) || !ContansID(targetId))
+                throw new Exception("ID 不对：" + ownId + "  " + targetId);
+
+            var info = GetItem(targetId);
+            var conditions = info.exchangeCondition;
+            
+            //如果条件为空，表示没有置换条件
+            if (string.IsNullOrEmpty(conditions))
+                return true;
+
+            return conditions.Contains(ownId.ToString());
+        }
+        public static bool IsExchangeOk(string ownName, string targetName)
+        {
+            return IsExchangeOk(Name2Id(ownName), Name2Id(targetName));
+        }
+        
         
     }
 }

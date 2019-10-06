@@ -11,10 +11,21 @@ namespace LudumDare.Scripts
     {
         public ConstStringChooser item_1;
         public ConstStringChooser item_2;
+        
         private void Start()
         {
             BasicItem item;
-            
+
+            if (ItemMgr.IsExchangeOk(item_1.StringValue, item_2.StringValue))
+            {
+                Debug.Log(item_1.StringValue + "可以换" + item_2.StringValue);
+            }
+            else
+            {
+                
+                Debug.Log(item_1.StringValue + "不能换" + item_2.StringValue);
+            }
+
             if(ItemMgr.IsMergeOk(item_1.StringValue,item_2.StringValue,out item))
             {
                 Debug.Log("合成成功，新物品名字："+item.ItemName);
@@ -23,7 +34,7 @@ namespace LudumDare.Scripts
             }
             else
             {
-                Debug.LogError("无法合成");
+                Debug.LogError("无法合成，物品名：" + item_1.StringValue + "  " + item_2.StringValue);
             }
         }
     }

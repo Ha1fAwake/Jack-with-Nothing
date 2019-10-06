@@ -15,21 +15,22 @@ namespace LudumDare.Scripts
 
         public BasicItem CurrentItem => ItemMgr.GetItem(CurrentId);
         
-//        public int AddItem(int itemId)
-//        {
-//            Assert.IsTrue(itemIds.Contains(itemId)==false);
-//
-//            itemIds.Add(itemId);
-//
-//            currentIndex = itemIds.Count - 1;
-//
-//        }
+        public void AddItem(int itemId)
+        {
+            Assert.IsTrue(itemIds.Contains(itemId)==false);
+
+            itemIds.Add(itemId);
+
+            currentIndex = itemIds.Count - 1;
+        }
 
         public void SwitchItem(ItemIdentity itemIdentity, Transform player)
         {
+            var item = CurrentItem;
+            itemIds.Remove(CurrentId);
             
-            
-            
+
+
         }
         
         

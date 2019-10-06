@@ -14,6 +14,6 @@ public class ShowBag : MonoBehaviour {
     }
 
     private void ShowItem(int id) {
-        transform.GetComponent<SpriteRenderer>().sprite = ItemMgr.GetItem(id).sprite;
+        transform.GetComponent<SpriteRenderer>().sprite = ItemMgr.GetItem(id).fontSprite;
     }
 }

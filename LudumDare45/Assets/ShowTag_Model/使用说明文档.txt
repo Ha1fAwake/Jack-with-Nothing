@@ -1,32 +1,32 @@
-Ê¹ÓÃÇ°Ìá£ºPlayer±ØÐëÓÐRigigbody 2D×é¼þºÍCollider 2D×é¼þ£¬±»ÃèÊöÎïÌå±ØÐëÓÐCollider 2D×é¼þ
+ä½¿ç”¨å‰æï¼šPlayerå¿…é¡»æœ‰Rigigbody 2Dç»„ä»¶å’ŒCollider 2Dç»„ä»¶ï¼Œè¢«æè¿°ç‰©ä½“å¿…é¡»æœ‰Collider 2Dç»„ä»¶
 
-£¨1£©½«ScriptÎÄ¼þ¼ÐÀïµÄµÄShowTag½Å±¾ÍÏ×§µ½ÐèÒª±»ÃèÊöÐÅÏ¢µÄÎïÌåÉÏ¡£
+ï¼ˆ1ï¼‰å°†Scriptæ–‡ä»¶å¤¹é‡Œçš„çš„ShowTagè„šæœ¬æ‹–æ‹½åˆ°éœ€è¦è¢«æè¿°ä¿¡æ¯çš„ç‰©ä½“ä¸Šã€‚
 
-£¨2£©È»ºóÔÚInspector´°¿ÚÉÏ¿´Õâ¸ö½Å±¾»á·¢ÏÖÓÐ4¸ö±äÁ¿Òª±»¸³Öµ¡£
-	ËüÃÇ·Ö±ðÊÇ£º
-		Player(ÓÎÏ·Íæ¼Ò)
-		Tag(±êÇ©µÄÑùÊ½)
-		Content(ÏÔÊ¾µÄÎÄ×ÖÄÚÈÝ)
-		Tag Pos£¨TagµÄÎ»ÖÃ£©
+ï¼ˆ2ï¼‰ç„¶åŽåœ¨Inspectorçª—å£ä¸Šçœ‹è¿™ä¸ªè„šæœ¬ä¼šå‘çŽ°æœ‰4ä¸ªå˜é‡è¦è¢«èµ‹å€¼ã€‚
+	å®ƒä»¬åˆ†åˆ«æ˜¯ï¼š
+		Player(æ¸¸æˆçŽ©å®¶)
+		Tag(æ ‡ç­¾çš„æ ·å¼)
+		Content(æ˜¾ç¤ºçš„æ–‡å­—å†…å®¹)
+		Tag Posï¼ˆTagçš„ä½ç½®ï¼‰
 
-	µÚ1¸ö±äÁ¿£¬°ÑÄãÏîÄ¿ÀïµÄÍæ¼ÒÍÏ×§½øÈ¥¾Í¿ÉÒÔÁË¡£
-	µÚ2¸ö±äÁ¿£¬ÎÒÔÚObjectÎÄ¼þ¼ÐÀï×¼±¸ÁË4ÖÖ±êÇ©ÑùÊ½±¸ÓÃ£¬TagºóµÄÊý×ÖÊÇËü×î¶àÄÜ
-	ÈÝÄÉµÄ×ÖÊý£¬Çë×ÔÐÐÑ¡ÔñºÏÊÊµÄ´óÐ¡Ê¹ÓÃ¡£
-	µÚ3¸ö±äÁ¿£¬ÊäÈëÄãÏëÒªÈÃËüÏÔÊ¾µÄÎÄ×Ö¡£
-	µÚ4¸ö±äÁ¿£¬ÊÇTagÒÔÖ÷½ÇÎ»ÖÃÎªÔ­µãµÄ×ø±ê£¬¿ÉÒÔµ÷ÕûÁ½ÕßµÄÏà¶ÔÎ»ÖÃ
+	ç¬¬1ä¸ªå˜é‡ï¼ŒæŠŠä½ é¡¹ç›®é‡Œçš„çŽ©å®¶æ‹–æ‹½è¿›åŽ»å°±å¯ä»¥äº†ã€‚
+	ç¬¬2ä¸ªå˜é‡ï¼Œæˆ‘åœ¨Objectæ–‡ä»¶å¤¹é‡Œå‡†å¤‡äº†4ç§æ ‡ç­¾æ ·å¼å¤‡ç”¨ï¼ŒTagåŽçš„æ•°å­—æ˜¯å®ƒæœ€å¤šèƒ½
+	å®¹çº³çš„å­—æ•°ï¼Œè¯·è‡ªè¡Œé€‰æ‹©åˆé€‚çš„å¤§å°ä½¿ç”¨ã€‚
+	ç¬¬3ä¸ªå˜é‡ï¼Œè¾“å…¥ä½ æƒ³è¦è®©å®ƒæ˜¾ç¤ºçš„æ–‡å­—ã€‚
+	ç¬¬4ä¸ªå˜é‡ï¼Œæ˜¯Tagä»¥ä¸»è§’ä½ç½®ä¸ºåŽŸç‚¹çš„åæ ‡ï¼Œå¯ä»¥è°ƒæ•´ä¸¤è€…çš„ç›¸å¯¹ä½ç½®
 
-£¨3£©µ±ÖÐÍ¾ÐèÒªÐÞ¸ÄÎïÆ·µÄÃèÊöÊ±£¬ÔÚÍæ¼ÒµÄ´úÂëÀïÐ´£º
-	GameObject.Find("ÎïÆ·µÄÃû×Ö").GetComponent<ShowTag>().Content = "ÐÂµÄÃèÊö";
+ï¼ˆ3ï¼‰å½“ä¸­é€”éœ€è¦ä¿®æ”¹ç‰©å“çš„æè¿°æ—¶ï¼Œåœ¨çŽ©å®¶çš„ä»£ç é‡Œå†™ï¼š
+	GameObject.Find("ç‰©å“çš„åå­—").GetComponent<ShowTag>().Content = "æ–°çš„æè¿°";
 
-£¨4£©¹ØÓÚ±êÇ©½¥±ä³öÏÖºÍÏûÊ§µÄÐ§¹ûµÄµ÷Õû£¬ÀýÈçÏÔÒþÊ±³¤£¬¿É´ò¿ª´úÂë×ÔÐÐÐÞ¸Ä±äÁ¿
-Öµ£¬×¢ÊÍÐ´µÄºÜÏêÏ¸¡£
+ï¼ˆ4ï¼‰å…³äºŽæ ‡ç­¾æ¸å˜å‡ºçŽ°å’Œæ¶ˆå¤±çš„æ•ˆæžœçš„è°ƒæ•´ï¼Œä¾‹å¦‚æ˜¾éšæ—¶é•¿ï¼Œå¯æ‰“å¼€ä»£ç è‡ªè¡Œä¿®æ”¹å˜é‡
+å€¼ï¼Œæ³¨é‡Šå†™çš„å¾ˆè¯¦ç»†ã€‚
 
-£¨5£©¹ØÓÚÍ¼Æ¬µÄ¸ü¸Ä£¬´ò¿ªObjectÎÄ¼þ¼Ð£¬´ò¿ªÆäÖÐÒ»¸öÔ¤Éè£¬±ÈÈçTag5£¬ÔÚÀïÃæ
-µÄImageµÄÊôÐÔÖÐ¿ÉÕÒµ½Sprite£¬Ìæ»»µ±Ç°µÄ¼´¿É¡£
+ï¼ˆ5ï¼‰å…³äºŽå›¾ç‰‡çš„æ›´æ”¹ï¼Œæ‰“å¼€Objectæ–‡ä»¶å¤¹ï¼Œæ‰“å¼€å…¶ä¸­ä¸€ä¸ªé¢„è®¾ï¼Œæ¯”å¦‚Tag5ï¼Œåœ¨é‡Œé¢
+çš„Imageçš„å±žæ€§ä¸­å¯æ‰¾åˆ°Spriteï¼Œæ›¿æ¢å½“å‰çš„å³å¯ã€‚
 
-£¨6£©¹ØÓÚ×ÖÌåµÄ¸ü¸Ä£¬´ò¿ªObjectÎÄ¼þ¼Ð£¬´ò¿ªÆäÖÐÒ»¸öÔ¤Éè£¬±ÈÈçTag5£¬Ñ¡ÖÐ
-Text£¬ÔÚTextÊôÐÔÀï¿É·¢ÏÖFont±äÁ¿£¬Ä¬ÈÏÊÇArial×ÖÌå£¬Äã¿ÉÒÔÔÚ°Ù¶ÈÀïËÑÒ»Ð©ºÃ¿´µÄ
-×ÖÌåÎÄ¼þÌæ»»ÉÏÈ¥¡£
+ï¼ˆ6ï¼‰å…³äºŽå­—ä½“çš„æ›´æ”¹ï¼Œæ‰“å¼€Objectæ–‡ä»¶å¤¹ï¼Œæ‰“å¼€å…¶ä¸­ä¸€ä¸ªé¢„è®¾ï¼Œæ¯”å¦‚Tag5ï¼Œé€‰ä¸­
+Textï¼Œåœ¨Textå±žæ€§é‡Œå¯å‘çŽ°Fontå˜é‡ï¼Œé»˜è®¤æ˜¯Arialå­—ä½“ï¼Œä½ å¯ä»¥åœ¨ç™¾åº¦é‡Œæœä¸€äº›å¥½çœ‹çš„
+å­—ä½“æ–‡ä»¶æ›¿æ¢ä¸ŠåŽ»ã€‚
 
 
-2019.09.02¸üÐÂ
+2019.09.02æ›´æ–°
