@@ -1,9 +1,11 @@
-﻿using UnityEngine;
+﻿/*主角按键检测处理*/
+using UnityEngine;
 
 public class PlayerMove : MonoBehaviour {
 
     private float Speed = 0.05f;
     private float Distence = 0;
+    private float moveUnit = 1.0f;
     private bool IsW = false;
     private bool IsS = false;
     private bool IsA = false;
@@ -37,7 +39,7 @@ public class PlayerMove : MonoBehaviour {
         if (IsW) {
             transform.position += new Vector3(0, Speed, 0);
             Distence += Speed;
-            if (Distence >= 1) {
+            if (Distence >= moveUnit) {
                 Vector3 Pos = transform.position;
                 Pos.y = Mathf.RoundToInt(Pos.y);
                 transform.position = Pos;
@@ -48,7 +50,7 @@ public class PlayerMove : MonoBehaviour {
         else if (IsS) {
             transform.position += new Vector3(0, -Speed, 0);
             Distence += Speed;
-            if (Distence >= 1) {
+            if (Distence >= moveUnit) {
                 Vector3 Pos = transform.position;
                 Pos.y = Mathf.RoundToInt(Pos.y);
                 transform.position = Pos;
@@ -59,7 +61,7 @@ public class PlayerMove : MonoBehaviour {
         else if (IsA) {
             transform.position += new Vector3(-Speed, 0, 0);
             Distence += Speed;
-            if (Distence >= 1) {
+            if (Distence >= moveUnit) {
                 Vector3 Pos = transform.position;
                 Pos.x = Mathf.RoundToInt(Pos.x);
                 transform.position = Pos;
@@ -70,7 +72,7 @@ public class PlayerMove : MonoBehaviour {
         else if (IsD) {
             transform.position += new Vector3(Speed, 0, 0);
             Distence += Speed;
-            if (Distence >= 1) {
+            if (Distence >= moveUnit) {
                 Vector3 Pos = transform.position;
                 Pos.x = Mathf.RoundToInt(Pos.x);
                 transform.position = Pos;
@@ -93,4 +95,5 @@ public class PlayerMove : MonoBehaviour {
         }
         return false;
     }
+
 }

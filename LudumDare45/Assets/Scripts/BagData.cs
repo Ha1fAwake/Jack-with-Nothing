@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿/*背包数据处理类*/
+using UnityEngine;
 
 public class BagData {
 
@@ -8,12 +9,12 @@ public class BagData {
         left,
         right
     };
-    private static int bagItemId = 0;  //背包id
+    private static int bagItemId = 0;  //背包物品的id
     private static int facedItemId;
     private static GameObject bagItem;   //背包物品
     private static GameObject facedItem;
     private static Direction playerFace = Direction.down;  //主角朝向
-    private static Vector3 farAway = new Vector3(9, 9, 0);  //背包位置
+    private static Vector3 farAway = new Vector3(999, 999, 0);  //背包位置
 
     public static int BagItemId { get => bagItemId; set => bagItemId = value; }
     public static int FacedItemId { get => facedItemId; set => facedItemId = value; }
@@ -29,7 +30,8 @@ public class BagData {
         }
 
         //放置物体
-        else if (facedItem == null) {
+        if (facedItem == null) {
+            bagItem.GetComponent<ItemIdentity>().OnLeaveBag();
             if (playerFace == Direction.up) {
                 bagItem.transform.position = Player.position + new Vector3(0, 1, 0);
             }
@@ -43,19 +45,28 @@ public class BagData {
                 bagItem.transform.position = Player.position + new Vector3(1, 0, 0);
             }
             bagItem = null;
+            bagItemId = 0;  //nothing
+            return;
         }
 
         //获得物体
-        else if (bagItem == null) {
+        if (bagItem == null) {
             bagItem = facedItem;
             facedItem.transform.position = farAway;
+            bagItemId = facedItemId;
+            bagItem.GetComponent<ItemIdentity>().OnAddToBag();
+            return;
         }
 
         //交换物体
-        else {
-            bagItem.transform.position = facedItem.transform.position;
-            facedItem.transform.position = farAway;
-            bagItem = facedItem;
-        }
+        bagItem.GetComponent<ItemIdentity>().OnLeaveBag();
+        facedItem.GetComponent<ItemIdentity>().OnAddToBag();
+        bagItem.transform.position = facedItem.transform.position;
+        facedItem.transform.position = farAway;
+        bagItem = facedItem;
+        bagItemId = facedItemId;
+
+        return;
     }
+
 }

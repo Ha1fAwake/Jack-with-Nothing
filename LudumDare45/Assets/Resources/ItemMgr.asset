@@ -15,6 +15,21 @@ MonoBehaviour:
   itemInfos:
   - id: 0
     itemName:
+      selectedIndex: 4
+    descriptions: You have nothing
+    sprite: {fileID: 21300000, guid: 9bdedfa4650174106a3115624f193b99, type: 3}
+  - id: 1
+    itemName:
+      selectedIndex: 1
+    descriptions: "\u4E0Bhi\u4E86\u4F60"
+    sprite: {fileID: 21300000, guid: ea8f56c43254d41728f5ac4e8299b6c9, type: 3}
+  - id: 2
+    itemName:
+      selectedIndex: 2
+    descriptions: "\u4EFD\u5730\u65B9\u5B98\u5E9C"
+    sprite: {fileID: 21300000, guid: c207de86481ff7d48a2fba2fcc374723, type: 3}
+  - id: 3
+    itemName:
       selectedIndex: 0
-    descriptions: "\u963F\u838E"
-    sprite: {fileID: 21300000, guid: b6842e8421df10f4e85302bc46536b5b, type: 3}
+    descriptions: "\u7684\u975E\u5B98\u65B9\u725B\u8089\u6D53\u6C64"
+    sprite: {fileID: 21300000, guid: 888feb4a32e3b564fb7e6f9b28cc8e10, type: 3}

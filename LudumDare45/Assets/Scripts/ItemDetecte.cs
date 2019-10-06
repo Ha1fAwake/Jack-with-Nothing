@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿/*物品检测主角状态*/
+using UnityEngine;
 
 public class ItemDetecte : MonoBehaviour {
 
@@ -6,25 +7,30 @@ public class ItemDetecte : MonoBehaviour {
         if (other.transform.name == "Player") {
             if (BagData.PlayerFace == BagData.Direction.up && transform.position.y > other.transform.position.y + 0.1f) {
                 BagData.FacedItem = gameObject;
-                print("up");
+                BagData.FacedItemId = GetItemId();
+                //print("up");
             }
             else if (BagData.PlayerFace == BagData.Direction.down && transform.position.y + 0.1f < other.transform.position.y) {
                 BagData.FacedItem = gameObject;
-                print("down");
+                BagData.FacedItemId = GetItemId();
+                //print("down");
             }
             else if (BagData.PlayerFace == BagData.Direction.left && transform.position.x + 0.1f < other.transform.position.x) {
                 BagData.FacedItem = gameObject;
-                print("left");
+                BagData.FacedItemId = GetItemId();
+                //print("left");
             }
             else if (BagData.PlayerFace == BagData.Direction.right && transform.position.x > other.transform.position.x + 0.1f) {
                 BagData.FacedItem = gameObject;
-                print("right");
+                BagData.FacedItemId = GetItemId();
+                //print("right");
             }
 
             else {
                 if (BagData.FacedItem == gameObject) {
                     BagData.FacedItem = null;
-                    print("null");
+                    BagData.FacedItemId = 0;
+                    //print("null");
                 }
             }
         }
@@ -33,7 +39,13 @@ public class ItemDetecte : MonoBehaviour {
     private void OnTriggerExit2D(Collider2D other) {
         if (other.transform.name == "Player") {
             BagData.FacedItem = null;
-            print("null");
+            BagData.FacedItemId = 0;
+            //print("null");
         }
+    }
+
+    private int GetItemId() {
+        //返回物品id
+        return GetComponent<ItemIdentity>().ItemInfo.id;
     }
 }
