@@ -14,6 +14,7 @@ public class PlayerMove : MonoBehaviour {
     private float last_xDre;
     private float last_yDre;
     private bool isMoved = false;
+    public KeyCode Key = KeyCode.J;
 
     private void Start() {
         anim = this.GetComponent<Animator>();
@@ -84,7 +85,7 @@ public class PlayerMove : MonoBehaviour {
             */
             #endregion
         }
-        if (Input.GetKeyDown(KeyCode.Space) && SwitchAble()) {
+        if (Input.GetKeyDown(Key) && SwitchAble()) {
             BagData.SwitchItem(transform);
             print("Switch");
         }

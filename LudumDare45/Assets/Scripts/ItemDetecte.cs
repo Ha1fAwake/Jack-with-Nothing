@@ -6,6 +6,11 @@ public class ItemDetecte : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D c) {
         print(c.transform.name);
         print("this:" + this.name);
+
+        if (this.name == "Cow" && c.name == "Player")
+        {
+            TouchTheCowEventHandler.touchTheCow = true;
+        }
     }
 
     private void OnTriggerStay2D(Collider2D other) {
