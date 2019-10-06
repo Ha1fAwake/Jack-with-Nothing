@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using ReadyGamerOne.EditorExtension;
 using UnityEngine;
 
 namespace LudumDare.Model
@@ -8,6 +9,7 @@ namespace LudumDare.Model
     public class MergeInfo
     {
         public ItemMgr mgr;
+        public GameObject prefab;
         [SerializeField] private int targetIdIndex;
         [SerializeField] private int sourId1Index;
         [SerializeField] private int sourId2Index;

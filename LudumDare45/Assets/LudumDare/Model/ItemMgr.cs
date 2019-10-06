@@ -29,7 +29,9 @@ namespace LudumDare.Model
 #endif        
 
         #endregion
-        
+
+        #region 单例
+
         private static ItemMgr _instance;
         private static ItemMgr Instance
         {
@@ -55,11 +57,12 @@ namespace LudumDare.Model
 
                 return _instance;
             }
-        }
+        }        
 
-        public List<BasicItem> itemInfos = new List<BasicItem>();
-        public List<MergeInfo> merageInfos = new List<MergeInfo>();
+        #endregion
         
+        #region UsedByEditor
+
         public int GetID()
         {
             var index = 0;
@@ -82,6 +85,40 @@ namespace LudumDare.Model
 
             return index;
         }
+        /// <summary>
+        /// ID字符串
+        /// </summary>
+        public string[] ItemNames
+        {
+            get
+            {
+                var strs = new string[itemInfos.Count];
+                for (var i = 0; i < itemInfos.Count; i++)
+                    strs[i] = itemInfos[i].ItemName;
+                return strs;
+            }
+        }
+
+        public int[] IDInts
+        {
+            get
+            {
+                var ints = new int[itemInfos.Count];
+                for (var i = 0; i < ints.Length; i++)
+                    ints[i] = itemInfos[i].id;
+                return ints;
+            }
+        }        
+
+        #endregion
+
+        #region DataStructure
+
+        public List<BasicItem> itemInfos = new List<BasicItem>();
+        public List<MergeInfo> merageInfos = new List<MergeInfo>();        
+
+        #endregion
+
 
         /// <summary>
         /// 物品库中是否有这个ID
@@ -93,6 +130,22 @@ namespace LudumDare.Model
             foreach (var VARIABLE in Instance.itemInfos)
             {
                 if (VARIABLE.id == id)
+                    return true;
+            }
+
+            return false;
+        }
+
+        /// <summary>
+        /// 仓库中是否包含这个名字
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        public static bool ContansName(string name)
+        {
+            foreach (var VARIABLE in Instance.itemInfos)
+            {
+                if (VARIABLE.ItemName == name)
                     return true;
             }
 
@@ -114,6 +167,7 @@ namespace LudumDare.Model
 
             return -1;
         }
+        
 
         /// <summary>
         /// 根据ID获取物品信息
@@ -140,7 +194,7 @@ namespace LudumDare.Model
         /// <exception cref="Exception"></exception>
         public static BasicItem GetItem(string name)
         {
-            foreach (var VARIABLE in ItemMgr.Instance.itemInfos)
+            foreach (var VARIABLE in Instance.itemInfos)
             {
                 if (VARIABLE.ItemName == name)
                     return VARIABLE;
@@ -155,7 +209,7 @@ namespace LudumDare.Model
         /// <param name="id_1"></param>
         /// <param name="id_2"></param>
         /// <returns>合法返回正确ID，不合法，返回-1</returns>
-        public static int IsMergeOk(int id_1, int id_2)
+        public static bool IsMergeOk(int id_1, int id_2,out int targetId, out GameObject prefab)
         {
             if(id_1==-1 || id_2==-1)
                 throw new Exception("没有这样的ID: "+id_1+"  "+id_2);
@@ -163,36 +217,27 @@ namespace LudumDare.Model
             {
                 var ids = VARIABLE.SourIds;
                 if (ids.Contains(id_1) && ids.Contains(id_2))
-                    return VARIABLE.TargetId;
+                {
+                    if (VARIABLE.prefab == null)
+                    {
+                        throw new Exception("你忘了给预制体赋值了，物品名："+ItemMgr.GetItem(VARIABLE.TargetId).ItemName);
+                    }
+                    prefab = VARIABLE.prefab;
+                    targetId= VARIABLE.TargetId;
+                    return true;
+                }
             }
 
-            return -1;
-        }
-        
-        /// <summary>
-        /// ID字符串
-        /// </summary>
-        public string[] ItemNames
-        {
-            get
-            {
-                var strs = new string[itemInfos.Count];
-                for (var i = 0; i < itemInfos.Count; i++)
-                    strs[i] = itemInfos[i].ItemName;
-                return strs;
-            }
+            targetId = -1;
+            prefab = null;
+            return false;
         }
 
-        public int[] IDInts
+        public static bool IsMergeOk(string itemName1, string itemName2,out int targetId, out GameObject prefab)
         {
-            get
-            {
-                var ints = new int[itemInfos.Count];
-                for (var i = 0; i < ints.Length; i++)
-                    ints[i] = itemInfos[i].id;
-                return ints;
-            }
+            return IsMergeOk(ItemMgr.Name2Id(itemName1), ItemMgr.Name2Id(itemName2), out targetId,out prefab);
         }
+
         
     }
 }

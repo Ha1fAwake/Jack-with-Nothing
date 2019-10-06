@@ -8,6 +8,7 @@ namespace LudumDare.Model.Editor
     [CustomEditor(typeof(ItemMgr))]
     public class ItemMgrEditor:UnityEditor.Editor
     {
+        private Vector2 pos;
         private ReorderableList itemList;
         private SerializedProperty itemListProp;
         private ReorderableList mergeInfoList;
@@ -41,7 +42,7 @@ namespace LudumDare.Model.Editor
             mergeInfoListProp = serializedObject.FindProperty("merageInfos");
             mergeInfoList = new ReorderableList(serializedObject, mergeInfoListProp, false, true, true, true);
 
-            mergeInfoList.elementHeight = 3 * EditorGUIUtility.singleLineHeight;
+            mergeInfoList.elementHeight = 4 * EditorGUIUtility.singleLineHeight;
             mergeInfoList.drawElementCallback = (rect, index, x, y) =>
             {
                 var prop = mergeInfoListProp.GetArrayElementAtIndex(index);
@@ -84,9 +85,10 @@ namespace LudumDare.Model.Editor
         {
             serializedObject.Update();
 
+            pos= EditorGUILayout.BeginScrollView(pos);
             itemList.DoLayoutList();
             mergeInfoList.DoLayoutList();
-
+            EditorGUILayout.EndScrollView();
             serializedObject.ApplyModifiedProperties();
         }
     }

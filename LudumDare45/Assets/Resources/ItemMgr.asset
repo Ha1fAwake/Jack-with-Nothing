@@ -33,3 +33,10 @@ MonoBehaviour:
       selectedIndex: 0
     descriptions: "\u7684\u975E\u5B98\u65B9\u725B\u8089\u6D53\u6C64"
     sprite: {fileID: 21300000, guid: 888feb4a32e3b564fb7e6f9b28cc8e10, type: 3}
+  merageInfos:
+  - mgr: {fileID: 11400000}
+    prefab: {fileID: 1798499133002970769, guid: e14a59d9b03ec3142bdd938640fbab5f,
+      type: 3}
+    targetIdIndex: 0
+    sourId1Index: 1
+    sourId2Index: 2
