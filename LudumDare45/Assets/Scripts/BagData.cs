@@ -78,7 +78,7 @@ public class BagData {
         //交换物体
         if(ItemMgr.IsExchangeOk(bagItemId, facedItemId)) {
             AudioMgr.Instance.PlayEffect(AudioName.Ok);
-            if (bagItemId == 3 && facedItemId == 7) {
+            if (bagItemId == 3 && facedItemId == 7) {   //奶牛和魔豆
                 ItemMgr.GetItem(facedItemId).exchangeCondition = null;
             }
             if (facedItemId == 18) {    //女神
@@ -99,8 +99,12 @@ public class BagData {
         AudioMgr.Instance.PlayEffect(AudioName.Ok);
         if (facedItem != null && bagItem != null) {
             if (bagItemId == 7 && facedItemId == 5) {  //合成魔豆和井，胜利！
-                SceneManager.LoadScene("Animation");
-
+                if (Vector3.Distance(facedItem.transform.position, new Vector3(6.5f, 6.5f, 0)) <= 1.0f) {
+                    SceneManager.LoadScene("Animation");
+                }
+                else {
+                    return;
+                }
             }
             BasicItem item;
             if (ItemMgr.IsMergeOk(bagItemId, facedItemId, out item)) {

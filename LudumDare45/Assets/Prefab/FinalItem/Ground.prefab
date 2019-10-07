@@ -142,7 +142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName:
-    selectedIndex: 7
+    selectedIndex: 19
 --- !u!61 &7571611686648337526
 BoxCollider2D:
   m_ObjectHideFlags: 0

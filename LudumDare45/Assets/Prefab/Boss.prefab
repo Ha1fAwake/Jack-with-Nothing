@@ -96,7 +96,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aiMgr: {fileID: 0}
   messageWhenStateEnd:
-    selectedIndex: 11
+    selectedIndex: 10
   Bullet: {fileID: 1108401003621492646, guid: a85d826cb720e5e42b93d43f37dd2525, type: 3}
   BulletNum: 20
   WaitTime: 1
@@ -170,11 +170,11 @@ MonoBehaviour:
   playerSlider: {fileID: 0}
   playerSliderScaler: 1
   messageHurtBoss:
-    selectedIndex: 19
-  messageHurtPlayer:
     selectedIndex: 18
+  messageHurtPlayer:
+    selectedIndex: 17
   messageState1End:
-    selectedIndex: 11
+    selectedIndex: 10
   ai1: {fileID: 8124080185114793467}
   ai2: {fileID: 5594608868064398962}
   bulletHurt: 0.089

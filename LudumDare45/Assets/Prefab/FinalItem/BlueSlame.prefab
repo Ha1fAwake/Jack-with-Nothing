@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName:
-    selectedIndex: 10
+    selectedIndex: 9
   playerDeadMessage:
     selectedIndex: 3
   waittingTime: 5
