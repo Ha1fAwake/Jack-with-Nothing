@@ -10,6 +10,7 @@ namespace LudumDare.Scripts
         }
         public override void UseOnTo(ItemIdentity identity)
         {
+            base.UseOnTo(identity);
             Debug.Log("使用物品");
             var flower = identity as FlowerIdentity;
             if (flower)
@@ -19,6 +20,7 @@ namespace LudumDare.Scripts
                     OnEat();
                     Destroy(gameObject);
                     global::BagData.ClearBag();
+                    return;
                 }
             }
         }

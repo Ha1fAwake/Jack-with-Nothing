@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1447173613405030952}
   - component: {fileID: 6474704670104926245}
   - component: {fileID: 3181795202701526267}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MagicBeen
   m_TagString: Untagged
   m_Icon: {fileID: 0}

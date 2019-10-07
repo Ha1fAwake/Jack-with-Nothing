@@ -74,7 +74,12 @@ namespace LudumDare.Scripts
 //            Debug.Log("UpdateForSeconds");
             timer = second - current;
             this.seconds = second;
-            timerCor= MainLoop.Instance.UpdateForSeconds(CallBack, second, () => { timerObj.SetActive(false); });
+            timerCor= MainLoop.Instance.UpdateForSeconds(CallBack, second, () =>
+            {
+                if (timerObj == null)
+                    return;
+                timerObj.SetActive(false);
+            });
         }
 
         public void Stop()
@@ -90,7 +95,7 @@ namespace LudumDare.Scripts
             if (this == null)
             {
                 if (timerObj)
-                    Destroy(timerObj);
+                    GameObject.Destroy(timerObj);
                 return;
             }
             if (timerObj == null)

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8605417831444272230}
   - component: {fileID: 5279226922089093617}
   - component: {fileID: 5594608868064398962}
+  - component: {fileID: 961903179}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Boss
@@ -53,7 +54,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 11.84, y: 16.68}
+    oldSize: {x: 11.842148, y: 16.68}
     newSize: {x: 11.84, y: 16.68}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -161,6 +162,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ce7eeb6cbd847d6bcce5cfffe97695e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sleeping: {fileID: 21300000, guid: 2924b66e408643f4d9610b8e64bce249, type: 3}
+  idle: {fileID: 21300000, guid: 6a53abbe657e59f4dabda0ada22ce3bb, type: 3}
   sliderLoadTime: 3
   bossSlider: {fileID: 0}
   bossSliderScaler: 1
@@ -190,14 +193,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aiMgr: {fileID: 0}
-  mapUnitSize: 1
-  rect:
+  testLayer:
     serializedVersion: 2
-    x: -6.7
-    y: -3.6
-    width: 14.1
-    height: 7.3
-  duringTime: 20
+    m_Bits: 4294967295
+  mapUnitSize: 2
+  map: {x: 8, y: 5}
+  itemCountAtOneTime: 8
+  duringTime: 10
   createCount: 3
   createInfos:
   - ItemName:
@@ -218,3 +220,24 @@ MonoBehaviour:
   - ItemName:
       selectedIndex: 2
     weight: 5
+--- !u!50 &961903179
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8124080185114793465}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

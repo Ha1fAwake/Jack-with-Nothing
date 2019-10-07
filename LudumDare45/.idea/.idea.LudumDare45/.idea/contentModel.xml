@@ -165,6 +165,14 @@
           </e>
           <e p="readme_DOTweenPro.txt" t="Include" />
         </e>
+        <e p="Epic Toon FX" t="Include">
+          <e p="ETFX Readme.txt" t="Include" />
+          <e p="Scripts" t="Include">
+            <e p="ETFXLightFade.cs" t="Include" />
+            <e p="ETFXPitchRandomizer.cs" t="Include" />
+            <e p="ETFXRotation.cs" t="Include" />
+          </e>
+        </e>
         <e p="Fungus" t="Include">
           <e p="Docs" t="Include">
             <e p="CHANGELOG.txt" t="Include" />
@@ -1021,6 +1029,7 @@
           </e>
           <e p="Scripts" t="Include">
             <e p="BagData.cs" t="Include" />
+            <e p="BoomHurt.cs" t="Include" />
             <e p="BoomIdentity.cs" t="Include" />
             <e p="BossAi_1.cs" t="Include" />
             <e p="BossAi_2.cs" t="Include" />
@@ -1040,6 +1049,9 @@
             <e p="SlameIdentity.cs" t="Include" />
             <e p="Test.cs" t="Include" />
             <e p="TImer.cs" t="Include" />
+          </e>
+          <e p="Utility" t="Include">
+            <e p="RayUtil.cs" t="Include" />
           </e>
           <e p="View" t="Include">
             <e p="UIHelper.cs" t="Include" />
@@ -1119,6 +1131,7 @@
           <e p="PlayerMove.cs" t="Include" />
           <e p="PlayerMove2.cs" t="Include" />
           <e p="PlayerUI.cs" t="Include" />
+          <e p="PlayPPT.cs" t="Include" />
           <e p="RandomFly.cs" t="Include" />
           <e p="ShowBag.cs" t="Include" />
           <e p="StartPause.cs" t="Include" />
@@ -1133,6 +1146,9 @@
             <e p="SlowShow.cs" t="Include" />
           </e>
           <e p="使用说明文档.txt" t="Include" />
+        </e>
+        <e p="Test_lt" t="Include">
+          <e p="Move.cs" t="Include" />
         </e>
       </e>
       <e p="LudumDare45.sln" t="IncludeFlat" />

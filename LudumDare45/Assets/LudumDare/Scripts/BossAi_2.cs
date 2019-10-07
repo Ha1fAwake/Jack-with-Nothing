@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using LudumDare.Model;
+using LudumDare.Utility;
 using ReadyGamerOne.Const;
 using ReadyGamerOne.Script;
 using ReadyGamerOne.Utility;
@@ -20,22 +21,42 @@ namespace LudumDare.Scripts
         
     public class BossAi_2 : UnityEngine.MonoBehaviour
     {
+        public static int aliveCount = 0;
         [HideInInspector] public BossAIMgr aiMgr;
+        public LayerMask testLayer;
         public int mapUnitSize;
-        public Rect rect;
+        public Vector2Int map;
+        public Vector2Int offset;
+        private Rect rect;
+        public int itemCountAtOneTime;
         public float duringTime;
         public float createCount;
         public List<ItemCreatable> createInfos = new List<ItemCreatable>();
         private List<Vector2> weightRange=new List<Vector2>();
         private float timer = 0;
 
+        private List<Vector3> posList=new List<Vector3>();
+        private Vector3 startPos;
         private void Start()
         {
+            aliveCount = 0;
+            startPos =new Vector3(offset.x*mapUnitSize,offset.y*mapUnitSize,0) - new Vector3(map.x * mapUnitSize / 2f, map.y * mapUnitSize / 2f, 0);
+            
+            for (var i = 0; i < map.x; i++)
+            {
+                for (var j = 0; j < map.y; j++)
+                {
+                    var target = startPos + new Vector3(i * mapUnitSize, j * mapUnitSize, 0);
+                    posList.Add(target);
+                }
+            }
+
             timer = duringTime;
         }
 
         private void Update()
         {
+            Debug.Log("AliveCount: " + aliveCount + "  itemCountAtOneTime: " + itemCountAtOneTime);
             timer += Time.deltaTime;
             if (timer > duringTime)
             {
@@ -47,9 +68,11 @@ namespace LudumDare.Scripts
 
         private void CreateItems()
         {
-            for (int i = 0; i < createCount; i++)
+            
+            for (int i =aliveCount ; i < itemCountAtOneTime; i++)
             {
                 var item = GetRandomItem();
+                Debug.Log("添加");
                 Instantiate(item.Prefab, GetRandomPos(), Quaternion.identity);
             }
         }
@@ -57,6 +80,9 @@ namespace LudumDare.Scripts
 
         private void OnDrawGizmos()
         {
+            startPos =new Vector3(offset.x*mapUnitSize,offset.y*mapUnitSize,0) - new Vector3(map.x * mapUnitSize / 2f, map.y * mapUnitSize / 2f, 0);
+            rect = new Rect(startPos, new Vector2(map.x*mapUnitSize, mapUnitSize * map.y));
+            GizmosUtil.DrawSign(startPos);
             GizmosUtil.DrawRect(rect);
         }
 
@@ -99,17 +125,15 @@ namespace LudumDare.Scripts
         /// <returns></returns>
         private Vector3 GetRandomPos()
         {
-            var x_Random = Random.Range(rect.x, rect.x + rect.width);
-            var y_Random = Random.Range(rect.y, rect.y + rect.height);
+            Vector3 pos;
+            do
+            {
+                var index = Random.Range(0, posList.Count - 1);
+                Debug.Log("poslist:" + posList.Count + "  index:"+index);
+                pos = posList[index];
+            } while (!RayUtil.IsPositionNone2D(pos, testLayer));
 
-            var x = Mathf.RoundToInt(x_Random / mapUnitSize) * mapUnitSize;
-            var y = Mathf.RoundToInt(y_Random / mapUnitSize) * mapUnitSize;
-
-//            Debug.Log(x + "  " + y);
-
-            
-
-            return new Vector3(x, y, 0);
+            return pos;
         }
 
 

@@ -94,7 +94,8 @@ namespace LudumDare.Scripts
         protected override void OnEat()
         {
             base.OnEat();
-            Destroy(timer.timerObj);
+            if(timer)
+                Destroy(timer.timerObj);
             timer = null;
         }
     }

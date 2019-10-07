@@ -9,10 +9,15 @@ namespace UnityEngine.UI
         public ConstStringChooser messageToShot;
         public override void UseOnTo(ItemIdentity identity)
         {
+            base.UseOnTo(identity);
             if (identity)
                 return;
 
             CEventCenter.BroadMessage(messageToShot.StringValue);
+            BagData.ClearBag();
+            Destroy(gameObject);
+            
+
         }
     }
 }

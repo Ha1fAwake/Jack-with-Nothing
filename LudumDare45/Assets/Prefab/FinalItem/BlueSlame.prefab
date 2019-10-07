@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1199945278185726601}
   - component: {fileID: 1199945278185726622}
   - component: {fileID: 1199945278185726593}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BlueSlame
   m_TagString: Untagged
   m_Icon: {fileID: 0}

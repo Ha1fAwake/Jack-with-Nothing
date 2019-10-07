@@ -16,12 +16,15 @@ namespace LudumDare.Scripts
         public ConstStringChooser messagePlayDead;
         public float timeToBoom;
         private Timer timer;
-        
-
+        public GameObject Parital;
+        public GameObject horizontal;
+        public GameObject vertical;
+        public GameObject horAni;
+        public GameObject verAni;
+        public float hideDelayTime;
 
         private void Start()
         {
-            
             timer = GetComponent<Timer>();
 //            Debug.Log("StartTimer");
             timer.StartTimer(timeToBoom);
@@ -36,7 +39,15 @@ namespace LudumDare.Scripts
 //                Debug.Log("广播");
                 CEventCenter.BroadMessage(messagePlayDead.StringValue);
             }
-                
+
+            GetComponent<SpriteRenderer>().enabled = false;
+            Parital.SetActive(true);
+            horizontal.SetActive(true);
+            vertical.SetActive(true);
+            horAni.SetActive(true);
+            verAni.SetActive(true);
+
+            MainLoop.Instance.ExecuteLater(() => { Destroy(gameObject); }, hideDelayTime);
         }
     }
 }

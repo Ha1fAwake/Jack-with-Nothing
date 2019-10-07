@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 9173732464480707286}
   - component: {fileID: 9173732464480707265}
   - component: {fileID: 9173732464480707264}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GreenSlame
   m_TagString: Untagged
   m_Icon: {fileID: 0}

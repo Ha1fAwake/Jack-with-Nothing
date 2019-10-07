@@ -120,6 +120,7 @@ namespace LudumDare.Model
 
         #endregion
 
+        public static List<MergeInfo> MergeInfos => Instance.merageInfos;
 
         /// <summary>
         /// 物品库中是否有这个ID
