@@ -1,6 +1,7 @@
 ﻿/*背包数据处理类*/
 using UnityEngine;
 using LudumDare.Model;
+using UnityEngine.SceneManagement;
 
 public class BagData {
 
@@ -65,16 +66,26 @@ public class BagData {
         }
 
         //交换物体
-        bagItem.GetComponent<ItemIdentity>().OnLeaveBag();
-        facedItem.GetComponent<ItemIdentity>().OnAddToBag();
-        bagItem.transform.position = facedItem.transform.position;
-        facedItem.transform.position = farAway;
-        bagItem = facedItem;
-        bagItemId = facedItemId;
+        Debug.Log(bagItemId + "  " + facedItemId);
+        if(ItemMgr.IsExchangeOk(bagItemId, facedItemId)) {
+            if (bagItemId == 3 && facedItemId == 7) {
+                ItemMgr.GetItem(facedItemId).exchangeCondition = null;
+            }
+            bagItem.GetComponent<ItemIdentity>().OnLeaveBag();
+            facedItem.GetComponent<ItemIdentity>().OnAddToBag();
+            bagItem.transform.position = facedItem.transform.position;
+            facedItem.transform.position = farAway;
+            bagItem = facedItem;
+            bagItemId = facedItemId;
+        }
         return;
     }
 
     public static void MergeItem() {
+        Debug.Log("胜利！");
+        if (bagItemId == 7 && facedItemId == 5) {  //合成魔豆和井，胜利！
+            SceneManager.LoadScene("Animation");
+        }
         if (facedItem != null && bagItem != null) {
             BasicItem item;
             if (ItemMgr.IsMergeOk(bagItemId, facedItemId, out item)) {

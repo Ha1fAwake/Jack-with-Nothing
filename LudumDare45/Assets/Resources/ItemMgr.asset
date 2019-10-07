@@ -81,7 +81,7 @@ MonoBehaviour:
     descriptions: "\u6211\u662F\u9B54\u8C46"
     fontSprite: {fileID: 21300000, guid: 853b664d8fef425478295b1247270c84, type: 3}
     infoSprite: {fileID: 21300000, guid: 55f54de4e76e6014ea648f5af8d70e11, type: 3}
-    exchangeCondition: 
+    exchangeCondition: 3
     prefab: {fileID: 1798499133002970769, guid: e14a59d9b03ec3142bdd938640fbab5f,
       type: 3}
   - id: 8
