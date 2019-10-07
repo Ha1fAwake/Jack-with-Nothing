@@ -2,10 +2,14 @@
 using UnityEngine;
 using LudumDare.Scripts;
 using System;
+using ReadyGamerOne.Common;
 
-public class RandomFly : MonoBehaviour {
+public class RandomFly : MonoBehaviour
+{
 
-    public static event Action<Collision2D> onColliderEnter;
+    public float damage;
+    public string hurtBossMessage;
+    public string hurtPlayerMessage;
     public int CollisionNum = 10;
     public float Speed = 5;
     private int CountCollision = 0;
@@ -27,8 +31,18 @@ public class RandomFly : MonoBehaviour {
     }
 
     private void OnCollisionEnter2D(Collision2D c) {
+
+        if (c.transform.CompareTag("Player"))
+        {
+            CEventCenter.BroadMessage(hurtPlayerMessage, damage);
+        }else if (c.transform.CompareTag("Boss"))
+        {
+            CEventCenter.BroadMessage(hurtBossMessage,damage);
+        }
+        
+        
+        
         CountCollision++;
-        onColliderEnter?.Invoke(c);
         if (CountCollision == CollisionNum) {
             BossAi_1.DeadBullet++;
             Destroy(gameObject);

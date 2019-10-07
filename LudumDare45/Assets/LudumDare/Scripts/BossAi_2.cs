@@ -20,6 +20,7 @@ namespace LudumDare.Scripts
         
     public class BossAi_2 : UnityEngine.MonoBehaviour
     {
+        [HideInInspector] public BossAIMgr aiMgr;
         public int mapUnitSize;
         public Rect rect;
         public float duringTime;
@@ -105,6 +106,9 @@ namespace LudumDare.Scripts
             var y = Mathf.RoundToInt(y_Random / mapUnitSize) * mapUnitSize;
 
 //            Debug.Log(x + "  " + y);
+
+            
+
             return new Vector3(x, y, 0);
         }
 

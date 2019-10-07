@@ -87,10 +87,17 @@ namespace LudumDare.Scripts
         private void CallBack()
         {
 //            Debug.Log("CallBask");
+            if (this == null)
+            {
+                if (timerObj)
+                    Destroy(timerObj);
+                return;
+            }
             if (timerObj == null)
             {
                 return;
             }
+
             timerObj.transform.position = FolloWho.position + Offset;
             timer -= Time.deltaTime;
 

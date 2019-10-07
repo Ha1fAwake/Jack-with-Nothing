@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using ReadyGamerOne.Common;
 using ReadyGamerOne.Const;
 using ReadyGamerOne.Script;
@@ -40,6 +41,23 @@ namespace LudumDare.Scripts
             base.OnEat();
             
             Destroy(timer.timerObj);
+        }
+
+        private List<int> ids = new List<int>();
+        public override void UseOnTo(ItemIdentity identity)
+        {
+            base.UseOnTo(identity);
+
+            if (identity is SlameIdentity)
+            {
+                ids.Clear();
+                ids.Add(ItemInfo.id);
+                ids.Add(identity.ItemInfo.id);
+                if(ids.Contains(4)&&ids.Contains(8))
+                    global::BagData.MergeItem();
+            }
+            
+            
         }
     }
 }

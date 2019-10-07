@@ -1035,6 +1035,7 @@
             <e p="InputToCEventCenter.cs" t="Include" />
             <e p="ItemIdentity.cs" t="Include" />
             <e p="JJ.cs" t="Include" />
+            <e p="MusicIdentity.cs" t="Include" />
             <e p="PlayerHandler.cs" t="Include" />
             <e p="SlameIdentity.cs" t="Include" />
             <e p="Test.cs" t="Include" />
@@ -1109,6 +1110,8 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="BagData.cs" t="Include" />
+          <e p="ContactWithMerchant.cs" t="Include" />
+          <e p="EggFly.cs" t="Include" />
           <e p="ItemDetecte.cs" t="Include" />
           <e p="ItemSwitch.cs" t="Include" />
           <e p="MergeItem.cs" t="Include" />

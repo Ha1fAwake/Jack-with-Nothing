@@ -26,7 +26,7 @@ MonoBehaviour:
       selectedIndex: 1
     descriptions: "\u6211\u662F\u98DF\u4EBA\u82B1"
     fontSprite: {fileID: 21300000, guid: a918c9c780838344ea35be18a6bf8365, type: 3}
-    infoSprite: {fileID: 21300000, guid: 2d0be3b8e0d014b40b230ff0a19db0f8, type: 3}
+    infoSprite: {fileID: 21300000, guid: 750d03fa13246ab4891c73e95631a1e9, type: 3}
     exchangeCondition: 23
     prefab: {fileID: 8437316721810894758, guid: ce4b27d85c6b24744a8bbf456f9362ad,
       type: 3}
@@ -98,7 +98,7 @@ MonoBehaviour:
       selectedIndex: 9
     descriptions: "\u6211\u662F\u5B89\u5168\u98DF\u4EBA\u82B1"
     fontSprite: {fileID: 21300000, guid: 216024c3434a2c149bfd13a6cbf4a31c, type: 3}
-    infoSprite: {fileID: 21300000, guid: 750d03fa13246ab4891c73e95631a1e9, type: 3}
+    infoSprite: {fileID: 21300000, guid: 2d0be3b8e0d014b40b230ff0a19db0f8, type: 3}
     exchangeCondition: 
     prefab: {fileID: 1798499133002970769, guid: e14a59d9b03ec3142bdd938640fbab5f,
       type: 3}
@@ -138,10 +138,19 @@ MonoBehaviour:
     exchangeCondition: 
     prefab: {fileID: 5233453046523610489, guid: 99b3b488bea89974eb77883f8b1437ec,
       type: 3}
+  - id: 14
+    itemName:
+      selectedIndex: 18
+    descriptions: "\u6211\u662F\u97F3\u7B26"
+    fontSprite: {fileID: 0}
+    infoSprite: {fileID: 21300000, guid: c0f209318f81bb740b32a51632be80d5, type: 3}
+    exchangeCondition: 
+    prefab: {fileID: 1481675741780124899, guid: 51fbe94f81a1cbb4684a051059e1cdf9,
+      type: 3}
   merageInfos:
   - mgr: {fileID: 11400000}
     prefab: {fileID: 1798499133002970769, guid: e14a59d9b03ec3142bdd938640fbab5f,
       type: 3}
-    targetIdIndex: 3
-    sourId1Index: 1
-    sourId2Index: 2
+    targetIdIndex: 14
+    sourId1Index: 8
+    sourId2Index: 3

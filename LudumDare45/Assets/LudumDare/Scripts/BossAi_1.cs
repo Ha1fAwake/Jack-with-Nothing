@@ -1,21 +1,22 @@
-/*BossµÄÇ°ÆÚAIÐÐÎª½Å±¾*/
+/*Bossï¿½ï¿½Ç°ï¿½ï¿½AIï¿½ï¿½Îªï¿½Å±ï¿½*/
 using ReadyGamerOne.Const;
 using UnityEngine;
 using ReadyGamerOne.Common;
 using ReadyGamerOne.Script;
 
 namespace LudumDare.Scripts {
-    public class BossAi_1 : MonoBehaviour {
-
+    public class BossAi_1 : MonoBehaviour
+    {
+        [HideInInspector] public BossAIMgr aiMgr;
         public ConstStringChooser messageWhenStateEnd;
         public GameObject Bullet;
-        public int BulletNum = 20; //×Óµ¯ÊýÁ¿
-        public float WaitTime = 5.0f;   //·¢ÉäÇ°µÄµÈ´ýÊ±¼ä
-        public float DeltCreateTime = 0.2f; //×Óµ¯·¢ÉäÊ±¼ä¼ä¸ô
+        public int BulletNum = 20; //ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½
+        public float WaitTime = 5.0f;   //ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ÄµÈ´ï¿½Ê±ï¿½ï¿½
+        public float DeltCreateTime = 0.2f; //ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½
         public static int DeadBullet = 0;
         private float TimeCount = 0;
-        private bool IsShooted = false; //ÊÇ·ñÒÑ¿ªÊ¼·¢Éä×Óµ¯
-        private bool IsSendMessage = false;  //ÊÇ·ñÒÑ·¢ÉäÏûÏ¢
+        private bool IsShooted = false; //ï¿½Ç·ï¿½ï¿½Ñ¿ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½Óµï¿½
+        private bool IsSendMessage = false;  //ï¿½Ç·ï¿½ï¿½Ñ·ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
 
         private void AnnounceStateEnd() {
             CEventCenter.BroadMessage(messageWhenStateEnd.StringValue);
@@ -29,12 +30,16 @@ namespace LudumDare.Scripts {
             if (DeadBullet == BulletNum && !IsSendMessage) {
                 IsSendMessage = true;
                 AnnounceStateEnd();
-                print("×ª»»ÖÁai2");
+                print("×ªï¿½ï¿½ï¿½ï¿½ai2");
             }
         }
 
         public void CreateBullet() {
-            Instantiate(Bullet, transform.position, new Quaternion());
+            var bullet= Instantiate(Bullet, transform.position, new Quaternion());
+            var logic = bullet.GetComponent<RandomFly>();
+            logic.damage = aiMgr.bulletHurt;
+            logic.hurtBossMessage = aiMgr.messageHurtBoss.StringValue;
+            logic.hurtPlayerMessage = aiMgr.messageHurtPlayer.StringValue;
         }
     }
 }
