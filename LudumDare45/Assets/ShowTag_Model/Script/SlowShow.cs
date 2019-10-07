@@ -4,8 +4,11 @@ using UnityEngine.UI;
 public class SlowShow : MonoBehaviour {
 
     private float TimeCount = 0;
-    private float ShowTime = 0.2f;  //玩家靠近时标签慢慢浮现消耗的时间
-    private float Alpha = 1f;
+    [Range(0, 5.0f)]
+    public float ShowTime = 2f;  //玩家靠近时标签慢慢浮现消耗的时间
+    [Range(0, 1.0f)]
+    public float Alpha = 1f;
+
 
     void Update() {
         if (TimeCount < ShowTime) {

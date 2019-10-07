@@ -4,15 +4,20 @@ using UnityEngine.UI;
 public class ShowTag : MonoBehaviour {
 
     public GameObject Tag;                  //标签组件
-    public string Content;                  //物品的描述（初始赋值时用）
+    public int showTime = 1;    //显示次数
     public Vector3 TagPos = new Vector3(0, 0.5f, 0);   //Tag的偏移位置
 
     private GameObject Tag1;                //标签实例化组件
+    private string Content;                  //物品的名字
     private bool IsShowing = false;         //是否显示标签
     private bool IsSlowFade = false;
     private readonly float FadeTime = 0.2f; //玩家离开时标签慢慢消失消耗的时间
     private float TimeCount = 0;
+    private int ShowCount = 0;
 
+    private void Start() {
+        Content = GetComponent<ItemIdentity>().ItemInfo.ItemName;
+    }
 
     private void Update() {
         if (IsSlowFade) SlowFade();
@@ -51,15 +56,18 @@ public class ShowTag : MonoBehaviour {
     private void OnTriggerStay2D(Collider2D c) {
         if (BagData.FacedItem == gameObject) {
             if (!IsShowing && c.transform.tag == "Player") {
-                Destroy(Tag1);  //清除上一个Tag
-                Tag1 = Instantiate(Tag, new Vector3(), new Quaternion(0, 0, 0, 0)); //生成对象
-                foreach (Transform child in Tag1.transform) {
-                    child.GetComponent<RectTransform>().anchoredPosition = Camera.main.WorldToScreenPoint(transform.position + TagPos) - new Vector3(Screen.width / 2, Screen.height / 2, 0);
-                    if (child.gameObject.name == "Text") {
-                        child.gameObject.GetComponent<Text>().text = Content;   //修改文本
+                if (ShowCount != showTime) {
+                    ShowCount++;
+                    Destroy(Tag1);  //清除上一个Tag
+                    Tag1 = Instantiate(Tag, new Vector3(), new Quaternion(0, 0, 0, 0)); //生成对象
+                    foreach (Transform child in Tag1.transform) {
+                        child.GetComponent<RectTransform>().anchoredPosition = Camera.main.WorldToScreenPoint(transform.position + TagPos) - new Vector3(Screen.width / 2, Screen.height / 2, 0);
+                        if (child.gameObject.name == "Text") {
+                            child.gameObject.GetComponent<Text>().text = Content;   //修改文本
+                        }
                     }
+                    IsShowing = true;
                 }
-                IsShowing = true;
             }
         }
     }
@@ -71,5 +79,4 @@ public class ShowTag : MonoBehaviour {
             IsSlowFade = true;
         }
     }
-
 }

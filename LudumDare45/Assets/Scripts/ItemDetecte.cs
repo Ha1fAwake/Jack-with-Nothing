@@ -3,7 +3,8 @@ using UnityEngine;
 
 public class ItemDetecte : MonoBehaviour {
 
-    private float datecteDistence = 0.1f;
+    private float datecteDistence = 0.8f;
+
     private void OnTriggerEnter2D(Collider2D c) {
         if (this.name == "Cow" && c.name == "Player") {
             TouchTheCowEventHandler.touchTheCow = true;

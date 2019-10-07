@@ -4,7 +4,7 @@ using UnityEngine;
 public class PlayerMove2 : MonoBehaviour {
 
     private Animator anim;
-    private float Speed = 2.0f;
+    public float MoveSpeed = 2.0f;
     private float last_xDre;
     private float last_yDre;
     private bool isMoved = false;
@@ -30,19 +30,19 @@ public class PlayerMove2 : MonoBehaviour {
         anim.SetFloat("yValue", last_yDre);
 
         if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) {
-            GetComponent<Rigidbody2D>().velocity = new Vector3(0, Speed, 0);
+            GetComponent<Rigidbody2D>().velocity = new Vector3(0, MoveSpeed, 0);
             BagData.PlayerFace = BagData.Direction.up;
         }
         else if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S)) {
-            GetComponent<Rigidbody2D>().velocity = new Vector3(0, -Speed, 0);
+            GetComponent<Rigidbody2D>().velocity = new Vector3(0, -MoveSpeed, 0);
             BagData.PlayerFace = BagData.Direction.down;
         }
         else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A)) {
-            GetComponent<Rigidbody2D>().velocity = new Vector3(-Speed, 0, 0);
+            GetComponent<Rigidbody2D>().velocity = new Vector3(-MoveSpeed, 0, 0);
             BagData.PlayerFace = BagData.Direction.left;
         }
         else if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D)) {
-            GetComponent<Rigidbody2D>().velocity = new Vector3(Speed, 0, 0);
+            GetComponent<Rigidbody2D>().velocity = new Vector3(MoveSpeed, 0, 0);
             BagData.PlayerFace = BagData.Direction.right;
         }
         if (Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.W)) {
