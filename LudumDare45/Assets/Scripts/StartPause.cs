@@ -9,6 +9,7 @@ public class StartPause : MonoBehaviour {
     private void OnStart() {
         player.GetComponent<PlayerMove2>().enabled = false;
         player.GetComponent<PlayerLogic>().enabled = false;
+        player.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
     }
 
     private void OnEnd() {

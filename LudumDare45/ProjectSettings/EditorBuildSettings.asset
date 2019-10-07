@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FlowerGarden.unity
     guid: bdd13ea0d1740994da4ab77e12743c9f
+  - enabled: 1
+    path: Assets/Scenes/Animation.unity
+    guid: 914056b38080c83438424eee315ecb76
   m_configObjects: {}
