@@ -450,10 +450,10 @@ namespace Fungus.EditorUtils
             {
                 filterStale = false;
                 //reset all
-                foreach (var item in filteredBlocks)
-                {
-                    item.IsFiltered = false;
-                }
+                //foreach (var item in filteredBlocks)
+                //{
+                //    item.IsFiltered = false;
+                //}
                 
                 //gather new
                 filteredBlocks = blocks.Where(block => block.BlockName.ToLower().Contains(searchString.ToLower())).ToArray();
