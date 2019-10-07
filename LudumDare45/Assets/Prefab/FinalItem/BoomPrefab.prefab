@@ -146,11 +146,11 @@ MonoBehaviour:
   timerPrefab: {fileID: 7007935096176972274, guid: d4fedf0213c2c9446a570a95b9805793,
     type: 3}
   sliderPath:
-    go: {fileID: 7007935096176972274, guid: d4fedf0213c2c9446a570a95b9805793, type: 3}
+    go: {fileID: 0}
     selectedIndex: 0
     path: Slider
   fillImagePath:
-    go: {fileID: 7007935096176972274, guid: d4fedf0213c2c9446a570a95b9805793, type: 3}
+    go: {fileID: 0}
     selectedIndex: 3
     path: Slider/Fill Area/Fill
   itemOffset: {x: 0, y: 1, z: 0}

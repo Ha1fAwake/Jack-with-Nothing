@@ -31,9 +31,9 @@ public class BagData {
             return;
         }
 
-        //放置物体
+        //扔掉物体
         if (facedItem == null) {
-            //不能扔掉
+            #region 扔掉
             /*
             bagItem.GetComponent<ItemIdentity>().OnLeaveBag();
             if (playerFace == Direction.up) {
@@ -51,6 +51,7 @@ public class BagData {
             bagItem = null;
             bagItemId = 0;  //nothing
             */
+            #endregion
             return;
         }
 
@@ -70,7 +71,6 @@ public class BagData {
         facedItem.transform.position = farAway;
         bagItem = facedItem;
         bagItemId = facedItemId;
-
         return;
     }
 
@@ -82,7 +82,6 @@ public class BagData {
                 GameObject.Destroy(bagItem);
                 GameObject.Destroy(facedItem);
                 bagItemId = 0;
-
             }
         }
     }
