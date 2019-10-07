@@ -1,6 +1,7 @@
 using System;
 using LudumDare.Model;
 using ReadyGamerOne.Const;
+using ReadyGamerOne.Script;
 using UnityEngine;
 
 namespace LudumDare.Scripts
@@ -12,6 +13,8 @@ namespace LudumDare.Scripts
         
         private void Start()
         {
+//            AudioMgr.Instance.PlayEffect(AudioName.);
+            
             BasicItem item;
 
             if (ItemMgr.IsExchangeOk(item_1.StringValue, item_2.StringValue))

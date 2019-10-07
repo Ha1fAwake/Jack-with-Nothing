@@ -168,11 +168,11 @@ MonoBehaviour:
   bossSlider: {fileID: 0}
   bossSliderScaler: 1
   playerSlider: {fileID: 0}
-  playerSliderScaler: 0.474
+  playerSliderScaler: 1
   messageHurtBoss:
-    selectedIndex: 20
-  messageHurtPlayer:
     selectedIndex: 19
+  messageHurtPlayer:
+    selectedIndex: 18
   messageState1End:
     selectedIndex: 11
   ai1: {fileID: 8124080185114793467}
@@ -195,9 +195,10 @@ MonoBehaviour:
   aiMgr: {fileID: 0}
   testLayer:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 512
   mapUnitSize: 2
   map: {x: 8, y: 5}
+  offset: {x: 0, y: 0}
   itemCountAtOneTime: 8
   duringTime: 10
   createCount: 3
@@ -215,7 +216,7 @@ MonoBehaviour:
       selectedIndex: 10
     weight: 8
   - ItemName:
-      selectedIndex: 14
+      selectedIndex: 13
     weight: 5
   - ItemName:
       selectedIndex: 2

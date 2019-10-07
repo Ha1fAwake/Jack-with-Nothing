@@ -1125,6 +1125,7 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="BagData.cs" t="Include" />
+          <e p="ContactWithGoddess.cs" t="Include" />
           <e p="ContactWithMerchant.cs" t="Include" />
           <e p="EggFly.cs" t="Include" />
           <e p="ItemDetecte.cs" t="Include" />
@@ -1136,6 +1137,7 @@
           <e p="PlayerUI.cs" t="Include" />
           <e p="PlayPPT.cs" t="Include" />
           <e p="RandomFly.cs" t="Include" />
+          <e p="Replay.cs" t="Include" />
           <e p="ShowBag.cs" t="Include" />
           <e p="StartPause.cs" t="Include" />
           <e p="ThemeControl.cs" t="Include" />

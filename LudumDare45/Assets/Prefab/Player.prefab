@@ -198,6 +198,7 @@ MonoBehaviour:
     selectedIndex: 3
   dieSignPrefab: {fileID: 1908808963263394841, guid: db76b052318deb34cb50eabaac41f0be,
     type: 3}
+  offset: {x: 0, y: 6, z: 0}
 --- !u!1 &8981403283817417691
 GameObject:
   m_ObjectHideFlags: 0
@@ -209,7 +210,6 @@ GameObject:
   - component: {fileID: 8981403283817417692}
   - component: {fileID: 8981403283817417694}
   - component: {fileID: 8981403283817417693}
-  - component: {fileID: 3990740722979827944}
   m_Layer: 0
   m_Name: bag
   m_TagString: Untagged
@@ -292,15 +292,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3990740722979827944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8981403283817417691}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bfc100b4be16094ba4e1a3da0dd82be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

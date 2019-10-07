@@ -10,5 +10,6 @@ namespace LudumDare.Scripts
         public static string TitleBgm = "TitleBgm";
         public static string CloudBgm = "CloudBgm";
         public static string BossBgm = "BossBgm";
+        public static string Victory = "Victory";
     }
 }

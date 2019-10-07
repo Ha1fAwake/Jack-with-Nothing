@@ -168,6 +168,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName:
-    selectedIndex: 18
-  messageToShot:
     selectedIndex: 17
+  messageToShot:
+    selectedIndex: 16

@@ -21,6 +21,9 @@ namespace LudumDare.Scripts
         [Header("消化时间")]
         public float eattingTime;
 
+        public float attackTime = 0.2f;
+        public GameObject attacker;
+
         private Animator ani;
 
         public override BasicItem ItemInfo
@@ -29,6 +32,12 @@ namespace LudumDare.Scripts
             { 
                 return ItemMgr.GetItem(itemName.StringValue);
             }
+        }
+
+        public void AttackTrigger()
+        {
+            attacker.SetActive(true);
+            MainLoop.Instance.ExecuteLater(()=>attacker.SetActive(false), attackTime);
         }
 
         private void Start()

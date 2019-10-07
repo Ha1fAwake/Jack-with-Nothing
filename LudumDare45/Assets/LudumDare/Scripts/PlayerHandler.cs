@@ -9,6 +9,7 @@ namespace LudumDare.Scripts
     {
         public ConstStringChooser playerDieMessage;
         public GameObject dieSignPrefab;
+        public Vector3 offset=new Vector3(0,3,0);
         private void Start()
         {
 //            Debug.Log("监听");
@@ -18,8 +19,9 @@ namespace LudumDare.Scripts
         private void OnMessageCome()
         {
             Debug.Log("玩家应该死亡");
-            var mb=  Instantiate(dieSignPrefab);
-            mb.AddComponent<FullDown>();
+            var mb = Instantiate(dieSignPrefab, transform.position+offset, Quaternion.identity);
+            mb.AddComponent<FullDown>().targetY = transform.position.y;
+
         }
     }
 }

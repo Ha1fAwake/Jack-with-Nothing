@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName:
-    selectedIndex: 24
+    selectedIndex: 23
 --- !u!114 &3909609216825921361
 MonoBehaviour:
   m_ObjectHideFlags: 0
