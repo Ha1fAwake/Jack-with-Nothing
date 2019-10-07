@@ -93,7 +93,7 @@ public class BagData {
         }
         else {
             bagItem.GetComponent<ItemIdentity>().UseOnTo(facedItem.GetComponent<ItemIdentity>());
-            bagItem = null;
+            //bagItem = null;
             BagItemId = 0;
         }
     }

@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class ItemDetecte : MonoBehaviour {
 
-    private float datecteDistence = 0.8f;
+    private float datecteDistence = 0.5f;
     [HideInInspector] public Transform player;
 
     private void OnTriggerEnter2D(Collider2D c) {
