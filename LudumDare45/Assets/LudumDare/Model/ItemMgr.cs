@@ -194,7 +194,7 @@ namespace LudumDare.Model
                     return VARIABLE;
             }
 
-            throw new Exception("没有这个ID的物体");
+            throw new Exception("没有这个ID的物体：" + name);
         }
 
         /// <summary>

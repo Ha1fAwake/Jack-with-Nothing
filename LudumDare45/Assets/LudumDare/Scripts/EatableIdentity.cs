@@ -18,6 +18,7 @@ namespace LudumDare.Scripts
                 {
                     OnEat();
                     Destroy(gameObject);
+                    global::BagData.ClearBag();
                 }
             }
         }

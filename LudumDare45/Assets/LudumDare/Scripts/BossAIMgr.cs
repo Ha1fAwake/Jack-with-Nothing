@@ -12,7 +12,9 @@ namespace LudumDare.Scripts
     {
         public float sliderLoadTime;
         public Slider bossSlider;
+        [Range(0,1f)]public float bossSliderScaler=1.0f;
         public Slider playerSlider;
+        [Range(0,1f)]public float playerSliderScaler = 1.0f;
         public ConstStringChooser messageHurtBoss;
         public ConstStringChooser messageHurtPlayer;
         public ConstStringChooser messageState1End;
@@ -36,8 +38,8 @@ namespace LudumDare.Scripts
                 ai1.enabled = false;
                 ai2.enabled = true;
             });
-            CEventCenter.AddListener<float>(messageHurtPlayer.StringValue, (hurt) => playerSlider.value -= hurt);
-            CEventCenter.AddListener<float>(messageHurtBoss.StringValue, (hurt) =>bossSlider.value -= hurt);
+            CEventCenter.AddListener<float>(messageHurtPlayer.StringValue, (hurt) => playerSlider.value -= hurt*playerSliderScaler);
+            CEventCenter.AddListener<float>(messageHurtBoss.StringValue, (hurt) =>bossSlider.value -= hurt*bossSliderScaler);
             
         }
 

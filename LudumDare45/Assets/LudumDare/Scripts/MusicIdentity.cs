@@ -1,9 +1,10 @@
+using LudumDare.Scripts;
 using ReadyGamerOne.Common;
 using ReadyGamerOne.Const;
 
 namespace UnityEngine.UI
 {
-    public class MusicIdentity : ItemIdentity
+    public class MusicIdentity : EatableIdentity
     {
         public ConstStringChooser messageToShot;
         public override void UseOnTo(ItemIdentity identity)

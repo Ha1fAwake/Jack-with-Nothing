@@ -147,6 +147,24 @@ MonoBehaviour:
     exchangeCondition: 
     prefab: {fileID: 1481675741780124899, guid: 51fbe94f81a1cbb4684a051059e1cdf9,
       type: 3}
+  - id: 15
+    itemName:
+      selectedIndex: 7
+    descriptions: "\u6211\u662F\u97F3\u7B26"
+    fontSprite: {fileID: 21300000, guid: 7785a5531f046b14d96168b211b0d5bf, type: 3}
+    infoSprite: {fileID: 21300000, guid: 5140e589713764f4c805af18ebe17dc6, type: 3}
+    exchangeCondition: 
+    prefab: {fileID: 9147590411915261500, guid: 27d43451809b84849a66e1585a82f30a,
+      type: 3}
+  - id: 16
+    itemName:
+      selectedIndex: 22
+    descriptions: "\u6211\u662F\u5893\u7891"
+    fontSprite: {fileID: 21300000, guid: 7785a5531f046b14d96168b211b0d5bf, type: 3}
+    infoSprite: {fileID: 21300000, guid: cde9c5c9ac5719b459d7e85202d82351, type: 3}
+    exchangeCondition: 
+    prefab: {fileID: 1908808963263394841, guid: db76b052318deb34cb50eabaac41f0be,
+      type: 3}
   merageInfos:
   - mgr: {fileID: 11400000}
     prefab: {fileID: 1798499133002970769, guid: e14a59d9b03ec3142bdd938640fbab5f,
