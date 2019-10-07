@@ -1,13 +1,22 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class StartPause : MonoBehaviour
-{
+public class StartPause : MonoBehaviour {
+
     public GameObject player;
+    public GameObject Bean;
+    public GameObject Merchant;
 
-    private void OnStart()
-    {
-        player.AddComponent<PlayerMove2>();
+    private void OnStart() {
+        player.GetComponent<PlayerMove2>().enabled = false;
+        player.GetComponent<PlayerLogic>().enabled = false;
+    }
+
+    private void OnEnd() {
+        player.GetComponent<PlayerMove2>().enabled = true;
+        player.GetComponent<PlayerLogic>().enabled = true;
+    }
+
+    private void OnCreateBean() {
+        Instantiate(Bean, Merchant.transform.position + new Vector3(0, -1, 0), new Quaternion());
     }
 }
