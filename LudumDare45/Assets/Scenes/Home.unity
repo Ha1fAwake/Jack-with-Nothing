@@ -6096,6 +6096,7 @@ GameObject:
   - component: {fileID: 1902938806}
   - component: {fileID: 1902938805}
   - component: {fileID: 1902938804}
+  - component: {fileID: 1902938801}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -6142,6 +6143,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 1902938760}
   commandList:
+  - {fileID: 1902938801}
   - {fileID: 1902938764}
   - {fileID: 1902938769}
   - {fileID: 1902938770}
@@ -6168,7 +6170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -52.60344, y: 210.05121}
+  scrollPos: {x: -48.125977, y: 204.08105}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -6180,9 +6182,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1902938774}
-  selectedCommands:
-  - {fileID: 1902938791}
+  - {fileID: 1902938761}
+  selectedCommands: []
   variables:
   - {fileID: 1902938807}
   description: 
@@ -7179,6 +7180,23 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 0
   targetGameObjectOLD: {fileID: 0}
+--- !u!114 &1902938801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1902938759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 45
+  indentLevel: 0
+  targetObject: {fileID: 1902938759}
+  methodName: OnStart
+  delay: 0
 --- !u!114 &1902938802
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -7198,7 +7216,7 @@ MonoBehaviour:
   delay: 0
 --- !u!114 &1902938804
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -7262,7 +7280,7 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &1902938805
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -7276,7 +7294,7 @@ MonoBehaviour:
   indentLevel: 0
 --- !u!114 &1902938806
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
