@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 8437316721810894761}
   - component: {fileID: 8437316721810894764}
   - component: {fileID: 8437316721810894767}
-  - component: {fileID: 3120176913462951970}
   - component: {fileID: 3120176913462951971}
+  - component: {fileID: 6751384559722656531}
   m_Layer: 0
   m_Name: FlowerPrefab
   m_TagString: Untagged
@@ -156,31 +156,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.6
---- !u!114 &3120176913462951970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8437316721810894758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b0e1a7740d294f4ab8d7d1c275ec912, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timerPrefab: {fileID: 7007935096176972274, guid: d4fedf0213c2c9446a570a95b9805793,
-    type: 3}
-  sliderPath:
-    go: {fileID: 0}
-    selectedIndex: 0
-    path: Slider
-  fillImagePath:
-    go: {fileID: 0}
-    selectedIndex: 3
-    path: Slider/Fill Area/Fill
-  itemOffset: {x: 0, y: 1, z: 0}
-  playerOffset: {x: 0, y: 2, z: 0}
-  timerObj: {fileID: 0}
 --- !u!114 &3120176913462951971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,3 +177,28 @@ MonoBehaviour:
   canEat: 1
   acceptableItemIds: 0400000008000000
   eattingTime: 5
+--- !u!114 &6751384559722656531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8437316721810894758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b0e1a7740d294f4ab8d7d1c275ec912, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerPrefab: {fileID: 5616957679145317364, guid: d4fedf0213c2c9446a570a95b9805793,
+    type: 3}
+  sliderPath:
+    go: {fileID: 5616957679145317364, guid: d4fedf0213c2c9446a570a95b9805793, type: 3}
+    selectedIndex: 0
+    path: Slider
+  fillImagePath:
+    go: {fileID: 5616957679145317364, guid: d4fedf0213c2c9446a570a95b9805793, type: 3}
+    selectedIndex: 3
+    path: Slider/Fill Area/Fill
+  itemOffset: {x: 0, y: 1, z: 0}
+  playerOffset: {x: 0, y: 2, z: 0}
+  timerObj: {fileID: 0}

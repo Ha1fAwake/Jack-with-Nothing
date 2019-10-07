@@ -749,7 +749,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 935807418}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40e00c3e8dccf784c9f5a3afb8e6957b, type: 3}
+  m_Script: {fileID: 11500000, guid: 4bfc100b4be16094ba4e1a3da0dd82be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &995116976
@@ -797,7 +797,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   messageWhenStateEnd:
     selectedIndex: 0
-  Bullet: {fileID: 5796632749855346358, guid: a85d826cb720e5e42b93d43f37dd2525, type: 3}
+  Bullet: {fileID: 1575521377651790299, guid: a85d826cb720e5e42b93d43f37dd2525, type: 3}
   BulletNum: 20
   WaitTime: 1
   DeltCreateTime: 0.2

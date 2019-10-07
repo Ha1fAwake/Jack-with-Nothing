@@ -185,14 +185,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b0e1a7740d294f4ab8d7d1c275ec912, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerPrefab: {fileID: 7007935096176972274, guid: d4fedf0213c2c9446a570a95b9805793,
+  timerPrefab: {fileID: 5616957679145317364, guid: d4fedf0213c2c9446a570a95b9805793,
     type: 3}
   sliderPath:
-    go: {fileID: 0}
+    go: {fileID: 5616957679145317364, guid: d4fedf0213c2c9446a570a95b9805793, type: 3}
     selectedIndex: 0
     path: Slider
   fillImagePath:
-    go: {fileID: 0}
+    go: {fileID: 5616957679145317364, guid: d4fedf0213c2c9446a570a95b9805793, type: 3}
     selectedIndex: 3
     path: Slider/Fill Area/Fill
   itemOffset: {x: 0, y: 1, z: 0}
