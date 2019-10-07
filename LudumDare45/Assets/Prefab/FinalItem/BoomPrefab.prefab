@@ -369,7 +369,7 @@ MonoBehaviour:
     selectedIndex: 2
   messagePlayDead:
     selectedIndex: 3
-  timeToBoom: 3
+  timeToBoom: 10
   Parital: {fileID: 1255450616457566982}
   horizontal: {fileID: 8250092486244240859}
   vertical: {fileID: 5175729850935085432}

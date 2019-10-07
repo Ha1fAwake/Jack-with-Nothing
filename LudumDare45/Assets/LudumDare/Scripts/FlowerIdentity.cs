@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using LudumDare.Model;
 using ReadyGamerOne.Common;
 using ReadyGamerOne.Const;
+using ReadyGamerOne.EditorExtension;
 using ReadyGamerOne.Script;
 using UnityEngine;
 
@@ -12,28 +13,27 @@ namespace LudumDare.Scripts
     public class FlowerIdentity:EatableIdentity
     {
         public ConstStringChooser playerDeadMessage;
-        public ConstStringChooser chewingFlower;
+        public AnimationNameChooser chewingAni;
+        public AnimationNameChooser bitAni;
         public bool canEat = true;
         [Header("可以吃的物品ID")]
         public List<int> acceptableItemIds=new List<int>();
         [Header("消化时间")]
         public float eattingTime;
-        private SpriteRenderer spriteRenderer;
+
+        private Animator ani;
 
         public override BasicItem ItemInfo
         {
             get
-            {
-                if (canEat)
-                    return ItemMgr.GetItem(itemName.StringValue);
-                else
-                    return ItemMgr.GetItem(chewingFlower.StringValue);
+            { 
+                return ItemMgr.GetItem(itemName.StringValue);
             }
         }
 
         private void Start()
         {
-            spriteRenderer = GetComponent<SpriteRenderer>();
+            ani = GetComponent<Animator>();
         }
 
         /// <summary>
@@ -67,7 +67,7 @@ namespace LudumDare.Scripts
 
             Debug.Log("真吃了");
             canEat = false;
-            spriteRenderer.sprite = ItemMgr.GetItem(chewingFlower.StringValue).infoSprite;
+            ani.Play(Animator.StringToHash(chewingAni.StringValue));
             timer = GetComponent<Timer>();
                 timer.StartTimer(eattingTime);
             MainLoop.Instance.ExecuteLater(OnFinishEating, eattingTime);
@@ -86,8 +86,7 @@ namespace LudumDare.Scripts
             }
 
             canEat = true;
-            spriteRenderer.sprite = ItemMgr.GetItem(itemName.StringValue).infoSprite;
-
+            ani.Play(Animator.StringToHash(bitAni.StringValue));
         }
 
 

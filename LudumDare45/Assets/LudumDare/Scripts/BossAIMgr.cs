@@ -11,6 +11,7 @@ namespace LudumDare.Scripts
     public class BossAIMgr : MonoBehaviour
     {
         public static bool goStateOne = false;
+        public MonoBehaviour checken;
         public Sprite sleeping;
         public Sprite idle;
         public float sliderLoadTime;
@@ -35,6 +36,7 @@ namespace LudumDare.Scripts
         {
             ai1.aiMgr = this;
             ai2.aiMgr = this;
+            checken.enabled = false;
             sr = GetComponent<SpriteRenderer>();
             if(goStateOne)
                 CEventCenter.AddListener(messageState1End.StringValue, EnterStateTwo);
@@ -48,6 +50,7 @@ namespace LudumDare.Scripts
             sr.sprite = sleeping;
             ai1.enabled = true;
             ai2.enabled = false;
+            checken.enabled = true;
         }
 
         private void EnterStateTwo()
