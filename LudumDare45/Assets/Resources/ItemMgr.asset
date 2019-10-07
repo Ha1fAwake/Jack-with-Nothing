@@ -172,3 +172,9 @@ MonoBehaviour:
     targetIdIndex: 14
     sourId1Index: 8
     sourId2Index: 3
+  - mgr: {fileID: 11400000}
+    prefab: {fileID: 1798499133002970769, guid: e14a59d9b03ec3142bdd938640fbab5f,
+      type: 3}
+    targetIdIndex: 0
+    sourId1Index: 4
+    sourId2Index: 7

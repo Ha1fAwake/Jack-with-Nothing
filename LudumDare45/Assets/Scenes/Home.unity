@@ -5844,6 +5844,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1311465982744087150, guid: dc464e6985cf64a45b75675ccade0747,
+        type: 3}
+      propertyPath: Tag
+      value: 
+      objectReference: {fileID: 344713825875213613, guid: 1070fca1d54e61a43a580e89874b3821,
+        type: 3}
+    - target: {fileID: 1311465982744087150, guid: dc464e6985cf64a45b75675ccade0747,
+        type: 3}
+      propertyPath: TagPos.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -6790009100344630982, guid: dc464e6985cf64a45b75675ccade0747,
         type: 3}
       propertyPath: itemName.selectedIndex
@@ -6023,7 +6034,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 141.54237
     y: 156.71432
-    width: 132.38803
+    width: 121.641754
     height: 40
   tint: {r: 0.74509805, g: 0.427451, b: 0.32156864, a: 1}
   useCustomTint: 1
@@ -6386,7 +6397,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 320.86005
     y: 150.58823
-    width: 139.5522
+    width: 124.62683
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 1
@@ -6730,7 +6741,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 534.6928
     y: 204.87405
-    width: 159.8507
+    width: 144.02982
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7071,7 +7082,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &1902938801
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
