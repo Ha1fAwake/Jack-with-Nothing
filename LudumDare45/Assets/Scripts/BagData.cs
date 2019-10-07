@@ -23,6 +23,7 @@ public class BagData {
     public static GameObject FacedItem { get => facedItem; set => facedItem = value; }
     public static Direction PlayerFace { get => playerFace; set => playerFace = value; }
 
+    //交换或拾取
     public static void SwitchItem(Transform Player) {
 
         //无效操作
@@ -32,6 +33,8 @@ public class BagData {
 
         //放置物体
         if (facedItem == null) {
+            //不能扔掉
+            /*
             bagItem.GetComponent<ItemIdentity>().OnLeaveBag();
             if (playerFace == Direction.up) {
                 bagItem.transform.position = Player.position + new Vector3(0, 1, 0);
@@ -47,6 +50,7 @@ public class BagData {
             }
             bagItem = null;
             bagItemId = 0;  //nothing
+            */
             return;
         }
 
@@ -85,11 +89,13 @@ public class BagData {
 
     public static void UseItem() {
         if (bagItem == null) return;
-        if(facedItem==null) {
+        if (facedItem == null) {
             bagItem.GetComponent<ItemIdentity>().UseOnTo(null);
         }
         else {
             bagItem.GetComponent<ItemIdentity>().UseOnTo(facedItem.GetComponent<ItemIdentity>());
+            bagItem = null;
+            BagItemId = 0;
         }
     }
 }
