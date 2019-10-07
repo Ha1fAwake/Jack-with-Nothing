@@ -83,4 +83,13 @@ public class BagData {
         }
     }
 
+    public static void UseItem() {
+        if (bagItem == null) return;
+        if(facedItem==null) {
+            bagItem.GetComponent<ItemIdentity>().UseOnTo(null);
+        }
+        else {
+            bagItem.GetComponent<ItemIdentity>().UseOnTo(facedItem.GetComponent<ItemIdentity>());
+        }
+    }
 }
