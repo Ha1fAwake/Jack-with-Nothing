@@ -1,5 +1,6 @@
 using System;
 using LudumDare.Model;
+using ReadyGamerOne.Global;
 using ReadyGamerOne.MemorySystem;
 using TMPro;
 using UnityEngine;
@@ -14,10 +15,7 @@ namespace LudumDare.View
 
         public static GameObject ShowItemInfo(BasicItem item)
         {
-            var canvas = Object.FindObjectOfType<Canvas>();
-            if (canvas == null)
-                throw new Exception("显示UI，场景里，需要有Canvas");
-            var obj = MemoryMgr.InstantiateGameObject(Const.ItemInfoPath, canvas.transform);
+            var obj = MemoryMgr.InstantiateGameObject(Const.ItemInfoPath,GlobalVar.G_Canvas.transform);
             obj.transform.Find("Image").GetComponent<Image>().sprite = item.infoSprite;
             obj.transform.Find("ItemName").GetComponent<TextMeshProUGUI>().text = item.ItemName;
             obj.transform.Find("ItemDescription").GetComponent<TextMeshProUGUI>().text = item.descriptions;

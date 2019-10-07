@@ -18,25 +18,25 @@ namespace LudumDare.Scripts
         private Timer timer;
         
 
-        public override void OnAddToBag()
-        {
-            base.OnAddToBag();
-            
-        }
 
         private void Start()
         {
             
             timer = GetComponent<Timer>();
+//            Debug.Log("StartTimer");
             timer.StartTimer(timeToBoom);
             MainLoop.Instance.ExecuteLater(OnBoom, timeToBoom);
         }
 
         private void OnBoom()
         {
-            Debug.Log("炸弹爆炸");
+//            Debug.Log("炸弹爆炸");
             if (IsInBag)
+            {
+//                Debug.Log("广播");
                 CEventCenter.BroadMessage(messagePlayDead.StringValue);
+            }
+                
         }
     }
 }

@@ -5,12 +5,12 @@ using UnityEngine;
 
 namespace LudumDare.Scripts
 {
-    [RequireComponent(typeof(Timer))]
     public class PlayerHandler : UnityEngine.MonoBehaviour
     {
         public ConstStringChooser messageToListen;
         private void Start()
         {
+//            Debug.Log("监听");
             CEventCenter.AddListener(messageToListen.StringValue,OnMessageCome);
         }
 

@@ -1030,6 +1030,7 @@
               <e p="ItemCreateableDrawer.cs" t="Include" />
             </e>
             <e p="FlowerIdentity.cs" t="Include" />
+            <e p="GameMgr.cs" t="Include" />
             <e p="InputToCEventCenter.cs" t="Include" />
             <e p="ItemIdentity.cs" t="Include" />
             <e p="PlayerHandler.cs" t="Include" />
@@ -1109,6 +1110,7 @@
           <e p="ItemDetecte.cs" t="Include" />
           <e p="ItemSwitch.cs" t="Include" />
           <e p="MergeItem.cs" t="Include" />
+          <e p="PlayerLogic.cs" t="Include" />
           <e p="PlayerMove.cs" t="Include" />
           <e p="PlayerMove2.cs" t="Include" />
           <e p="PlayerUI.cs" t="Include" />

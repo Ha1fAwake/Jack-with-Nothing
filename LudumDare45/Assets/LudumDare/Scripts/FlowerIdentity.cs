@@ -58,10 +58,14 @@ namespace LudumDare.Scripts
         /// <param name="id"></param>
         public bool TryStartEating(int id)
         {
+            if (!canEat)
+                return false;
             if (!acceptableItemIds.Contains(id))
                 return false;
+            
             canEat = false;
             spriteRenderer.sprite = ItemMgr.GetItem(chewingFlower.StringValue).infoSprite;
+            GetComponent<Timer>().StartTimer(eattingTime);
             MainLoop.Instance.ExecuteLater(OnFinishEating, eattingTime);
             return true;
         }
