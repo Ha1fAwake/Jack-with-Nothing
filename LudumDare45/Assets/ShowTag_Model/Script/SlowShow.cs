@@ -5,7 +5,7 @@ public class SlowShow : MonoBehaviour {
 
     private float TimeCount = 0;
     [Range(0, 5.0f)]
-    public float ShowTime = 2f;  //玩家靠近时标签慢慢浮现消耗的时间
+    public float ShowTime = 1f;  //玩家靠近时标签慢慢浮现消耗的时间
     [Range(0, 1.0f)]
     public float Alpha = 1f;
 
