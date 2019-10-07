@@ -27,7 +27,8 @@ namespace LudumDare.View
 
         public static void Hide()
         {
-            lastObj?.SetActive(false);
+            if(lastObj && lastObj.activeSelf)
+                lastObj.SetActive(false);
         }
     }
 }

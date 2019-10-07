@@ -1,3 +1,7 @@
+#if UNITY_EDITOR
+
+using UnityEditor;
+#endif
 using UnityEngine;
 
 namespace ReadyGamerOne.Utility
@@ -15,11 +19,23 @@ namespace ReadyGamerOne.Utility
             var p = pos + new Vector3(rect.position.x, rect.position.y, 0);
             var h = rect.height;
             var w = rect.width;
+            var ld = p;
+            var rd = ld + new Vector3(w, 0, 0);
+            var lu = ld + new Vector3(0, h, 0);
+            var ru = ld + new Vector3(w, h, 0);
 
             Gizmos.DrawLine(p, p + new Vector3(w, 0, 0));
             Gizmos.DrawLine(p, p + new Vector3(0, h, 0));           
             Gizmos.DrawLine(p+new Vector3(w,h,0), p + new Vector3(w, 0, 0));
             Gizmos.DrawLine(p+new Vector3(w,h,0), p + new Vector3(0, h, 0));
+
+#if UNITY_EDITOR
+            Handles.Label(p, p.ToString());
+            Handles.Label(lu, lu.ToString());
+            Handles.Label(rd, rd.ToString());
+            Handles.Label(ru, ru.ToString());
+#endif
+
         }
         
         public static void DrawRect(Rect rect)=>DrawRect(rect,Vector3.zero);

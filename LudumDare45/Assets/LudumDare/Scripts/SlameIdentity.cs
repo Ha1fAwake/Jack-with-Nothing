@@ -10,7 +10,7 @@ namespace LudumDare.Scripts
     /// 有一个潜伏时间，放到背包开始计时，没有拿出来，你就会死亡
     /// </summary>
     [RequireComponent(typeof(Timer))]
-    public class SlameIdentity : ItemIdentity
+    public class SlameIdentity : EatableIdentity
     {
         public ConstStringChooser playerDeadMessage;
         [Header("潜伏时间")]
@@ -35,18 +35,11 @@ namespace LudumDare.Scripts
             timer.Stop();
         }
 
-        public override void UseOnTo(ItemIdentity identity)
+        protected override void OnEat()
         {
-            Debug.Log("使用");
-            var flower = identity as FlowerIdentity;
-            if (flower)
-            {
-                if (flower.TryStartEating(ItemInfo.id))
-                {
-                    Destroy(timer.timerObj);
-                    Destroy(gameObject);
-                }
-            }
+            base.OnEat();
+            
+            Destroy(timer.timerObj);
         }
     }
 }

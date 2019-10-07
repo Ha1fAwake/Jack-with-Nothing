@@ -155,7 +155,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.6
+  m_Radius: 0.93
 --- !u!114 &3120176913462951971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,7 +175,7 @@ MonoBehaviour:
   chewingFlower:
     selectedIndex: 9
   canEat: 1
-  acceptableItemIds: 0400000008000000
+  acceptableItemIds: 0400000008000000010000000a0000000c0000000b00000009000000
   eattingTime: 5
 --- !u!114 &6751384559722656531
 MonoBehaviour:

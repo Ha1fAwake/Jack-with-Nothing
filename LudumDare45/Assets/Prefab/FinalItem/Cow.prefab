@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1311465982744087147}
   - component: {fileID: 1311465982744087150}
   - component: {fileID: 1311465982744087149}
-  - component: {fileID: 3734492063679332685}
+  - component: {fileID: -6790009100344630982}
   m_Layer: 0
   m_Name: Cow
   m_TagString: Untagged
@@ -154,8 +154,8 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.86
---- !u!114 &3734492063679332685
+  m_Radius: 1.16
+--- !u!114 &-6790009100344630982
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -164,8 +164,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 1311465982744087140}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fca04527ff1718468e89045df77a1dd, type: 3}
+  m_Script: {fileID: 11500000, guid: ddb0fa7112376804a9c074808ae3d450, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   itemName:
-    selectedIndex: 6
+    selectedIndex: 12

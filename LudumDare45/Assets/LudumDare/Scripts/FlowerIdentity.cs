@@ -9,7 +9,7 @@ using UnityEngine;
 namespace LudumDare.Scripts
 {
     [RequireComponent(typeof(Timer))]
-    public class FlowerIdentity:ItemIdentity
+    public class FlowerIdentity:EatableIdentity
     {
         public ConstStringChooser playerDeadMessage;
         public ConstStringChooser chewingFlower;
@@ -49,7 +49,8 @@ namespace LudumDare.Scripts
             }
         }
 
-
+        private Timer timer;
+        
         /// <summary>
         /// 尝试吃某个物品
         /// 如果物品在可吃列表就会吃，否则返回False
@@ -58,14 +59,17 @@ namespace LudumDare.Scripts
         /// <param name="id"></param>
         public bool TryStartEating(int id)
         {
+            Debug.Log("试吃");
             if (!canEat)
                 return false;
             if (!acceptableItemIds.Contains(id))
                 return false;
-            
+
+            Debug.Log("真吃了");
             canEat = false;
             spriteRenderer.sprite = ItemMgr.GetItem(chewingFlower.StringValue).infoSprite;
-            GetComponent<Timer>().StartTimer(eattingTime);
+            timer = GetComponent<Timer>();
+                timer.StartTimer(eattingTime);
             MainLoop.Instance.ExecuteLater(OnFinishEating, eattingTime);
             return true;
         }
@@ -86,5 +90,12 @@ namespace LudumDare.Scripts
 
         }
 
+
+        protected override void OnEat()
+        {
+            base.OnEat();
+            Destroy(timer.timerObj);
+            timer = null;
+        }
     }
 }

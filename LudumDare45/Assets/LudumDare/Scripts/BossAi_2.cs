@@ -27,8 +27,12 @@ namespace LudumDare.Scripts
         public List<ItemCreatable> createInfos = new List<ItemCreatable>();
         private List<Vector2> weightRange=new List<Vector2>();
         private float timer = 0;
-        
-        
+
+        private void Start()
+        {
+            timer = duringTime;
+        }
+
         private void Update()
         {
             timer += Time.deltaTime;
@@ -72,7 +76,8 @@ namespace LudumDare.Scripts
             var nowWeight = 0f;
             foreach (var VARIABLE in createInfos)
             {
-                weightRange.Add(new Vector2(nowWeight/allWeight, (nowWeight + VARIABLE.weight)/allWeight));
+                var w = new Vector2(nowWeight / allWeight, (nowWeight + VARIABLE.weight) / allWeight);
+                weightRange.Add(w);
                 nowWeight += VARIABLE.weight;
             }
 
@@ -99,6 +104,7 @@ namespace LudumDare.Scripts
             var x = Mathf.RoundToInt(x_Random / mapUnitSize) * mapUnitSize;
             var y = Mathf.RoundToInt(y_Random / mapUnitSize) * mapUnitSize;
 
+//            Debug.Log(x + "  " + y);
             return new Vector3(x, y, 0);
         }
 

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6643159245414896592}
   - component: {fileID: 4425237276428907663}
   - component: {fileID: 3551473142850161643}
-  - component: {fileID: 3835507690008958728}
+  - component: {fileID: 6661137733412069308}
   m_Layer: 0
   m_Name: Milk
   m_TagString: Untagged
@@ -155,7 +155,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.14
---- !u!114 &3835507690008958728
+--- !u!114 &6661137733412069308
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3423054284320163829}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fca04527ff1718468e89045df77a1dd, type: 3}
+  m_Script: {fileID: 11500000, guid: ddb0fa7112376804a9c074808ae3d450, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   itemName:

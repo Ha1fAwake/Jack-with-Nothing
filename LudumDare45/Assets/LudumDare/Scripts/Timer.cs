@@ -89,7 +89,6 @@ namespace LudumDare.Scripts
 //            Debug.Log("CallBask");
             if (timerObj == null)
             {
-                Debug.LogWarning("?????");
                 return;
             }
             timerObj.transform.position = FolloWho.position + Offset;

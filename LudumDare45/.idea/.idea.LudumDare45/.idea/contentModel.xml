@@ -1025,6 +1025,7 @@
             <e p="BossAi_1.cs" t="Include" />
             <e p="BossAi_2.cs" t="Include" />
             <e p="BossAIMgr.cs" t="Include" />
+            <e p="EatableIdentity.cs" t="Include" />
             <e p="Editor" t="Include">
               <e p="BossAi_2Editor.cs" t="Include" />
               <e p="ItemCreateableDrawer.cs" t="Include" />
@@ -1116,6 +1117,7 @@
           <e p="PlayerUI.cs" t="Include" />
           <e p="RandomFly.cs" t="Include" />
           <e p="ShowBag.cs" t="Include" />
+          <e p="StartPause.cs" t="Include" />
           <e p="ThemeControl.cs" t="Include" />
           <e p="ToGarden.cs" t="Include" />
           <e p="ToHome.cs" t="Include" />

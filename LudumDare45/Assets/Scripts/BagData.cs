@@ -88,10 +88,16 @@ public class BagData {
 
     public static void UseItem() {
         if (bagItem == null) return;
-        if (facedItem == null) {
+
+        Debug.Log("当前物品：" + bagItem.name);
+        if (facedItem == null)
+        {
+            Debug.Log("面对空");
             bagItem.GetComponent<ItemIdentity>().UseOnTo(null);
         }
-        else {
+        else
+        {
+            Debug.Log("面对：" + facedItem.name);
             bagItem.GetComponent<ItemIdentity>().UseOnTo(facedItem.GetComponent<ItemIdentity>());
             //bagItem = null;
             BagItemId = 0;
