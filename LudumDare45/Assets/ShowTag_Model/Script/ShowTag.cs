@@ -21,6 +21,11 @@ public class ShowTag : MonoBehaviour {
 
     private void Update() {
         if (IsSlowFade) SlowFade();
+        if (Tag1 != null) {
+            foreach (Transform child in Tag1.transform) {
+                child.GetComponent<RectTransform>().anchoredPosition = Camera.main.WorldToScreenPoint(transform.position + TagPos) - new Vector3(Screen.width / 2, Screen.height / 2, 0);
+            }
+        }
     }
 
     private void SlowFade() {
@@ -55,6 +60,7 @@ public class ShowTag : MonoBehaviour {
 
     private void OnTriggerStay2D(Collider2D c) {
         if (BagData.FacedItem == gameObject) {
+
             if (!IsShowing && c.transform.tag == "Player") {
                 if (ShowCount != showTime) {
                     ShowCount++;
