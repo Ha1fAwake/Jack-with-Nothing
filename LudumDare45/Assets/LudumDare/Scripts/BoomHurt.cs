@@ -15,6 +15,7 @@ namespace LudumDare.Scripts
         public ConstStringChooser hurtBoss;
         private void OnTriggerEnter2D(Collider2D other)
         {
+            Debug.Log(gameObject.name + "  碰到：" + other.transform.name);
             if (other.CompareTag("Player"))
             {
                 CEventCenter.BroadMessage(hurtPlayer.StringValue, playerHurt);
@@ -24,7 +25,10 @@ namespace LudumDare.Scripts
             }
 
             if (other.GetComponent<ItemIdentity>())
+            {
+                Debug.Log("销毁");
                 Destroy(other.gameObject);
+            }
         }
 
 

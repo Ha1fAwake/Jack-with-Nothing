@@ -56,7 +56,7 @@ namespace LudumDare.Scripts
 
         private void Update()
         {
-            Debug.Log("AliveCount: " + aliveCount + "  itemCountAtOneTime: " + itemCountAtOneTime);
+//            Debug.Log("AliveCount: " + aliveCount + "  itemCountAtOneTime: " + itemCountAtOneTime);
             timer += Time.deltaTime;
             if (timer > duringTime)
             {
