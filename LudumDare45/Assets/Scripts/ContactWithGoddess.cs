@@ -7,7 +7,9 @@ public class ContactWithGoddess : MonoBehaviour
 {
     public Flowchart flow;
 
-    private void OnTriggerEnter2D(Collider2D other) {
-        flow.ExecuteBlock("Go");
+    private void OnTriggerEnter2D(Collider2D collision) {
+        if(collision.tag == "Player") {
+            flow.ExecuteBlock("Go");
+        }
     }
 }
