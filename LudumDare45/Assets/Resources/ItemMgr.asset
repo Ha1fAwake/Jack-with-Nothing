@@ -146,7 +146,7 @@ MonoBehaviour:
       selectedIndex: 18
     descriptions: 'United spirit of the green and blue slime. Contains metaphysical
       power. '
-    fontSprite: {fileID: 0}
+    fontSprite: {fileID: 21300000, guid: b13c75e47e7b0f04c81a6b7a065a32e5, type: 3}
     infoSprite: {fileID: 21300000, guid: c0f209318f81bb740b32a51632be80d5, type: 3}
     exchangeCondition: 
     prefab: {fileID: 1481675741780124899, guid: 51fbe94f81a1cbb4684a051059e1cdf9,

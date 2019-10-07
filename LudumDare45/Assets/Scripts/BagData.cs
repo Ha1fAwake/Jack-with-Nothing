@@ -2,6 +2,8 @@
 using UnityEngine;
 using LudumDare.Model;
 using UnityEngine.SceneManagement;
+using ReadyGamerOne.Script;
+using LudumDare.Scripts;
 
 public class BagData {
 
@@ -29,13 +31,15 @@ public class BagData {
 
         //无效操作
         if (facedItem == null && bagItem == null) {
+            AudioMgr.Instance.PlayEffect(AudioName.Error);
             return;
         }
 
         //扔掉物体
         if (facedItem == null) {
+            AudioMgr.Instance.PlayEffect(AudioName.Ok);
             #region 扔掉
-            
+
             bagItem.GetComponent<ItemIdentity>().OnLeaveBag();
             if (playerFace == Direction.up) {
                 bagItem.transform.position = Player.position + new Vector3(0, 1, 0);
@@ -58,9 +62,12 @@ public class BagData {
 
         //获得物体
         if (bagItem == null) {
+            
             if (facedItemId == 18) {    //女神
+                AudioMgr.Instance.PlayEffect(AudioName.Error);
                 return;
             }
+            AudioMgr.Instance.PlayEffect(AudioName.Ok);
             bagItem = facedItem;
             facedItem.transform.position = farAway;
             bagItemId = facedItemId;
@@ -70,10 +77,12 @@ public class BagData {
 
         //交换物体
         if(ItemMgr.IsExchangeOk(bagItemId, facedItemId)) {
+            AudioMgr.Instance.PlayEffect(AudioName.Ok);
             if (bagItemId == 3 && facedItemId == 7) {
                 ItemMgr.GetItem(facedItemId).exchangeCondition = null;
             }
             if (facedItemId == 18) {    //女神
+                AudioMgr.Instance.PlayEffect(AudioName.Error);
                 return;
             }
             bagItem.GetComponent<ItemIdentity>().OnLeaveBag();
@@ -87,10 +96,11 @@ public class BagData {
     }
 
     public static void MergeItem() {
-        Debug.Log("合成");
+        AudioMgr.Instance.PlayEffect(AudioName.Ok);
         if (facedItem != null && bagItem != null) {
             if (bagItemId == 7 && facedItemId == 5) {  //合成魔豆和井，胜利！
                 SceneManager.LoadScene("Animation");
+
             }
             BasicItem item;
             if (ItemMgr.IsMergeOk(bagItemId, facedItemId, out item)) {
@@ -103,7 +113,10 @@ public class BagData {
     }
 
     public static void UseItem() {
-        if (bagItem == null) return;
+        if (bagItem == null) {
+            AudioMgr.Instance.PlayEffect(AudioName.Error);
+            return;
+        }
         if (facedItem == null) {
 
             bagItem.GetComponent<ItemIdentity>().UseOnTo(null);
