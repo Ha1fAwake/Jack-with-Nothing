@@ -14,7 +14,6 @@ public class PlayerMove : MonoBehaviour {
     private float last_xDre;
     private float last_yDre;
     private bool isMoved = false;
-    public KeyCode Key = KeyCode.J;
 
     private void Start() {
         anim = this.GetComponent<Animator>();
@@ -27,8 +26,7 @@ public class PlayerMove : MonoBehaviour {
             float x = Input.GetAxisRaw("Horizontal");
             float y = Input.GetAxisRaw("Vertical");
 
-            if(Mathf.Abs(x) > Mathf.Epsilon || Mathf.Abs(y) > Mathf.Epsilon)
-            {
+            if (Mathf.Abs(x) > Mathf.Epsilon || Mathf.Abs(y) > Mathf.Epsilon) {
                 last_xDre = x;
                 last_yDre = y;
                 isMoved = true;
@@ -85,10 +83,6 @@ public class PlayerMove : MonoBehaviour {
             */
             #endregion
         }
-        if (Input.GetKeyDown(Key) && SwitchAble()) {
-            BagData.SwitchItem(transform);
-            print("Switch");
-        }
         Move();
     }
 
@@ -142,16 +136,6 @@ public class PlayerMove : MonoBehaviour {
     public bool KeyAble() {
         if (!IsW && !IsS && !IsA && !IsD) return true;
         else return false;
-    }
-
-    public bool SwitchAble() {
-        
-        if (transform.position.x == (int)(transform.position.x)) {
-            if (transform.position.y == (int)(transform.position.y)) {
-                return true;
-            }
-        }
-        return false;
     }
 
 }

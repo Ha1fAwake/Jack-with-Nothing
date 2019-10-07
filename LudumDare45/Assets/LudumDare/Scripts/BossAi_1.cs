@@ -10,9 +10,6 @@ namespace LudumDare.Scripts {
         public float Speed;
         public int BulletNumm = 20;
         public static int DeadBullet = 0;
-
-
-
         private void AnnounceStateEnd() {
             CEventCenter.BroadMessage(messageWhenStateEnd.StringValue);
         }

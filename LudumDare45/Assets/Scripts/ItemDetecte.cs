@@ -3,37 +3,35 @@ using UnityEngine;
 
 public class ItemDetecte : MonoBehaviour {
 
+    private float datecteDistence = 0.1f;
     private void OnTriggerEnter2D(Collider2D c) {
-        print(c.transform.name);
-        print("this:" + this.name);
-
-        if (this.name == "Cow" && c.name == "Player")
-        {
+        if (this.name == "Cow" && c.name == "Player") {
             TouchTheCowEventHandler.touchTheCow = true;
         }
     }
 
     private void OnTriggerStay2D(Collider2D other) {
+        //print("Stay");
         if (other.transform.name == "Player") {
-            if (BagData.PlayerFace == BagData.Direction.up && transform.position.y > other.transform.position.y + 0.1f) {
+            if (BagData.PlayerFace == BagData.Direction.up && transform.position.y > other.transform.position.y + datecteDistence) {
                 BagData.FacedItem = gameObject;
                 BagData.FacedItemId = GetItemId();
                 print("up");
             }
-            else if (BagData.PlayerFace == BagData.Direction.down && transform.position.y + 0.1f < other.transform.position.y) {
+            else if (BagData.PlayerFace == BagData.Direction.down && transform.position.y + datecteDistence < other.transform.position.y) {
                 BagData.FacedItem = gameObject;
                 BagData.FacedItemId = GetItemId();
                 print("down");
             }
-            else if (BagData.PlayerFace == BagData.Direction.left && transform.position.x + 0.1f < other.transform.position.x) {
+            else if (BagData.PlayerFace == BagData.Direction.left && transform.position.x + datecteDistence < other.transform.position.x) {
                 BagData.FacedItem = gameObject;
                 BagData.FacedItemId = GetItemId();
-                //print("left");
+                print("left");
             }
-            else if (BagData.PlayerFace == BagData.Direction.right && transform.position.x > other.transform.position.x + 0.1f) {
+            else if (BagData.PlayerFace == BagData.Direction.right && transform.position.x > other.transform.position.x + datecteDistence) {
                 BagData.FacedItem = gameObject;
                 BagData.FacedItemId = GetItemId();
-                //print("right");
+                print("right");
             }
 
             else {
@@ -50,12 +48,11 @@ public class ItemDetecte : MonoBehaviour {
         if (other.transform.name == "Player") {
             BagData.FacedItem = null;
             BagData.FacedItemId = 0;
-            //print("null");
+            print("null");
         }
     }
 
     private int GetItemId() {
-        //返回物品id
         return GetComponent<ItemIdentity>().ItemInfo.id;
     }
 }

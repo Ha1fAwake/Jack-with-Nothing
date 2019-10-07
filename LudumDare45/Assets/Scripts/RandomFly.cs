@@ -5,7 +5,6 @@ using System;
 public class RandomFly : MonoBehaviour {
 
     public static event Action<Collision2D> onColliderEnter;
-
     public int CollisionNum = 10;
     public float Speed = 5;
     private int CountCollision = 0;
