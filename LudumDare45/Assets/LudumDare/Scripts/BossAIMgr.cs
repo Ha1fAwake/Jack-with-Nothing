@@ -1,13 +1,19 @@
+using System;
+using LudumDare.Model;
 using UnityEngine;
 
 namespace LudumDare.Scripts
 {
     public class BossAIMgr : MonoBehaviour
     {
-        public MonoBehaviour aiState_1;
-        public MonoBehaviour aiState_2;
+        private void Start()
+        {
+            RandomFly.onColliderEnter += OnBulletEnter;
+        }
         
-        
-        
+        private void OnBulletEnter(Collision2D collision)
+        {
+            
+        }
     }
 }

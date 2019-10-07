@@ -250,7 +250,5 @@ namespace LudumDare.Model
         {
             return IsExchangeOk(Name2Id(ownName), Name2Id(targetName));
         }
-        
-        
     }
 }

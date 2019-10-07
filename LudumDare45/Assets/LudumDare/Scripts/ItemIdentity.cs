@@ -9,9 +9,9 @@ public class ItemIdentity : MonoBehaviour
 {
     public ConstStringChooser itemName;
     public event Action onAddToBag;
-
+    
     public bool IsInBag { get; private set; } = false;
-    public BasicItem ItemInfo => ItemMgr.GetItem(itemName.StringValue);
+    public virtual BasicItem ItemInfo => ItemMgr.GetItem(itemName.StringValue);
 
     public virtual void OnAddToBag()
     {
@@ -24,4 +24,8 @@ public class ItemIdentity : MonoBehaviour
         IsInBag = false;
     }
 
+    public virtual void UseOnTo(ItemIdentity identity)
+    {
+        
+    }
 }

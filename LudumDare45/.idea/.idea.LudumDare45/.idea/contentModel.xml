@@ -1021,14 +1021,21 @@
           </e>
           <e p="Scripts" t="Include">
             <e p="BagData.cs" t="Include" />
+            <e p="BoomIdentity.cs" t="Include" />
             <e p="BossAi_1.cs" t="Include" />
             <e p="BossAi_2.cs" t="Include" />
             <e p="BossAIMgr.cs" t="Include" />
-            <e p="EatableFlower.cs" t="Include" />
+            <e p="Editor" t="Include">
+              <e p="BossAi_2Editor.cs" t="Include" />
+              <e p="ItemCreateableDrawer.cs" t="Include" />
+            </e>
+            <e p="FlowerIdentity.cs" t="Include" />
             <e p="InputToCEventCenter.cs" t="Include" />
             <e p="ItemIdentity.cs" t="Include" />
-            <e p="Slame.cs" t="Include" />
+            <e p="PlayerHandler.cs" t="Include" />
+            <e p="SlameIdentity.cs" t="Include" />
             <e p="Test.cs" t="Include" />
+            <e p="TImer.cs" t="Include" />
           </e>
           <e p="View" t="Include">
             <e p="UIHelper.cs" t="Include" />
@@ -1100,11 +1107,16 @@
         <e p="Scripts" t="Include">
           <e p="BagData.cs" t="Include" />
           <e p="ItemDetecte.cs" t="Include" />
+          <e p="ItemSwitch.cs" t="Include" />
           <e p="MergeItem.cs" t="Include" />
           <e p="PlayerMove.cs" t="Include" />
+          <e p="PlayerMove2.cs" t="Include" />
           <e p="PlayerUI.cs" t="Include" />
+          <e p="RandomFly.cs" t="Include" />
           <e p="ShowBag.cs" t="Include" />
           <e p="ThemeControl.cs" t="Include" />
+          <e p="ToGarden.cs" t="Include" />
+          <e p="ToHome.cs" t="Include" />
           <e p="TouchTheCowEventHandler.cs" t="Include" />
         </e>
         <e p="ShowTag_Model" t="Include">

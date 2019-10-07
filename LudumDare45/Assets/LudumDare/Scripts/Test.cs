@@ -1,8 +1,6 @@
 using System;
 using LudumDare.Model;
-using LudumDare.View;
 using ReadyGamerOne.Const;
-using ReadyGamerOne.Utility;
 using UnityEngine;
 
 namespace LudumDare.Scripts
