@@ -1034,6 +1034,7 @@
             <e p="GameMgr.cs" t="Include" />
             <e p="InputToCEventCenter.cs" t="Include" />
             <e p="ItemIdentity.cs" t="Include" />
+            <e p="JJ.cs" t="Include" />
             <e p="PlayerHandler.cs" t="Include" />
             <e p="SlameIdentity.cs" t="Include" />
             <e p="Test.cs" t="Include" />
