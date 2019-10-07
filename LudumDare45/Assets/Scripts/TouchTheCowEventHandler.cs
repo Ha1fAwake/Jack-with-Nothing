@@ -6,13 +6,15 @@ using Fungus;
 [EventHandlerInfo("MyHandler", "TouchTheCow", "Set the touchTheCow to control blocks.")]
 public class TouchTheCowEventHandler : EventHandler
 {
-    public static bool touchTheCow;
+    public static bool touchTheCow = false;
+    private bool firstTime = false;
 
     private void Update()
     {
-        if (touchTheCow)
+        if (touchTheCow && firstTime == false)
         {
             ExecuteBlock();
         }
+        firstTime = true;
     }
 }
