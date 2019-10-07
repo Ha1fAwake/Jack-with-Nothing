@@ -58,6 +58,9 @@ public class BagData {
 
         //获得物体
         if (bagItem == null) {
+            if (facedItemId == 18) {    //女神
+                return;
+            }
             bagItem = facedItem;
             facedItem.transform.position = farAway;
             bagItemId = facedItemId;
@@ -66,10 +69,12 @@ public class BagData {
         }
 
         //交换物体
-        Debug.Log(bagItemId + "  " + facedItemId);
         if(ItemMgr.IsExchangeOk(bagItemId, facedItemId)) {
             if (bagItemId == 3 && facedItemId == 7) {
                 ItemMgr.GetItem(facedItemId).exchangeCondition = null;
+            }
+            if (facedItemId == 18) {    //女神
+                return;
             }
             bagItem.GetComponent<ItemIdentity>().OnLeaveBag();
             facedItem.GetComponent<ItemIdentity>().OnAddToBag();
@@ -82,11 +87,11 @@ public class BagData {
     }
 
     public static void MergeItem() {
-        Debug.Log("胜利！");
-        if (bagItemId == 7 && facedItemId == 5) {  //合成魔豆和井，胜利！
-            SceneManager.LoadScene("Animation");
-        }
+        Debug.Log("合成");
         if (facedItem != null && bagItem != null) {
+            if (bagItemId == 7 && facedItemId == 5) {  //合成魔豆和井，胜利！
+                SceneManager.LoadScene("Animation");
+            }
             BasicItem item;
             if (ItemMgr.IsMergeOk(bagItemId, facedItemId, out item)) {
                 GameObject.Instantiate(item.Prefab, facedItem.transform.position, new Quaternion());

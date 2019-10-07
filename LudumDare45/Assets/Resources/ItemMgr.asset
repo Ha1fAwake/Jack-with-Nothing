@@ -169,10 +169,35 @@ MonoBehaviour:
     itemName:
       selectedIndex: 23
     descriptions: "\u6211\u662F\u5893\u7891"
-    fontSprite: {fileID: 21300000, guid: 7785a5531f046b14d96168b211b0d5bf, type: 3}
+    fontSprite: {fileID: 21300000, guid: ced2c3e1e4fd53a438a7ddb6c849ccc8, type: 3}
     infoSprite: {fileID: 21300000, guid: cb3baa310d603e749b31ee9a3d373690, type: 3}
     exchangeCondition: 
     prefab: {fileID: 1908808963263394841, guid: db76b052318deb34cb50eabaac41f0be,
+      type: 3}
+  - id: 18
+    itemName:
+      selectedIndex: 24
+    descriptions: "\u6211\u662F\u5973\u795E"
+    fontSprite: {fileID: 0}
+    infoSprite: {fileID: 21300000, guid: 459e8eaf5277fb84c85e8680e7918791, type: 3}
+    exchangeCondition: 
+    prefab: {fileID: 0}
+  - id: 19
+    itemName:
+      selectedIndex: 25
+    descriptions: "\u6211\u662F\u7AD6\u7434"
+    fontSprite: {fileID: 21300000, guid: c2e4044d5b303e74eb210f2a6e61d040, type: 3}
+    infoSprite: {fileID: 21300000, guid: 153ba66ca6a0fda4fbc4af68b552075f, type: 3}
+    exchangeCondition: 
+    prefab: {fileID: 109028332924101700, guid: a00f026dbd4c1b944bf8d2180dda7b29, type: 3}
+  - id: 20
+    itemName:
+      selectedIndex: 18
+    descriptions: "\u6211\u662F\u97F3\u7B26"
+    fontSprite: {fileID: 21300000, guid: b13c75e47e7b0f04c81a6b7a065a32e5, type: 3}
+    infoSprite: {fileID: 21300000, guid: c0f209318f81bb740b32a51632be80d5, type: 3}
+    exchangeCondition: 
+    prefab: {fileID: 1481675741780124899, guid: 51fbe94f81a1cbb4684a051059e1cdf9,
       type: 3}
   merageInfos:
   - mgr: {fileID: 11400000}
@@ -187,3 +212,9 @@ MonoBehaviour:
     targetIdIndex: 0
     sourId1Index: 4
     sourId2Index: 7
+  - mgr: {fileID: 11400000}
+    prefab: {fileID: 1798499133002970769, guid: e14a59d9b03ec3142bdd938640fbab5f,
+      type: 3}
+    targetIdIndex: 19
+    sourId1Index: 18
+    sourId2Index: 14
