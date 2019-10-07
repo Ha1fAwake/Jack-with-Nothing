@@ -1,5 +1,6 @@
 ﻿/*主角按键检测处理*/
 using UnityEngine;
+using LudumDare.View;
 
 public class PlayerMove2 : MonoBehaviour {
 
@@ -31,15 +32,19 @@ public class PlayerMove2 : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) {
             BagData.PlayerFace = BagData.Direction.up;
+            UIHelper.Hide();    //隐藏面板
         }
         else if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S)) {
             BagData.PlayerFace = BagData.Direction.down;
+            UIHelper.Hide();
         }
         else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A)) {
             BagData.PlayerFace = BagData.Direction.left;
+            UIHelper.Hide();
         }
         else if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D)) {
             BagData.PlayerFace = BagData.Direction.right;
+            UIHelper.Hide();
         }
         if (Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.W)) {
             BagData.PlayerFace = BagData.Direction.up;

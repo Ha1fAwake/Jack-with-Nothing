@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿/*其它功能按键处理*/
+using UnityEngine;
 using LudumDare.Model;
 using LudumDare.View;
 public class PlayerLogic : MonoBehaviour {

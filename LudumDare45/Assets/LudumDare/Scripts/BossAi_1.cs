@@ -1,3 +1,4 @@
+/*Boss的前期AI行为脚本*/
 using ReadyGamerOne.Const;
 using UnityEngine;
 using ReadyGamerOne.Common;
@@ -28,7 +29,7 @@ namespace LudumDare.Scripts {
             if (DeadBullet == BulletNum && !IsSendMessage) {
                 IsSendMessage = true;
                 AnnounceStateEnd();
-                print("转换");
+                print("转换至ai2");
             }
         }
 
