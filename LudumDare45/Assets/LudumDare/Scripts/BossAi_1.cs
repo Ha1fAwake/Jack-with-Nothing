@@ -5,8 +5,7 @@ using ReadyGamerOne.Common;
 using ReadyGamerOne.Script;
 
 namespace LudumDare.Scripts {
-    public class BossAi_1 : MonoBehaviour
-    {
+    public class BossAi_1 : MonoBehaviour {
         [HideInInspector] public BossAIMgr aiMgr;
         public ConstStringChooser messageWhenStateEnd;
         public GameObject Bullet;
@@ -35,7 +34,7 @@ namespace LudumDare.Scripts {
         }
 
         public void CreateBullet() {
-            var bullet= Instantiate(Bullet, transform.position, new Quaternion());
+            var bullet = Instantiate(Bullet, transform.position, new Quaternion());
             var logic = bullet.GetComponent<RandomFly>();
             logic.damage = aiMgr.bulletHurt;
             logic.hurtBossMessage = aiMgr.messageHurtBoss.StringValue;

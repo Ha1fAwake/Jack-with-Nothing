@@ -1016,7 +1016,9 @@
           </e>
         </e>
         <e p="LudumDare" t="Include">
+          <e p="AudioName.cs" t="Include" />
           <e p="Const.cs" t="Include" />
+          <e p="FullDown.cs" t="Include" />
           <e p="Model" t="Include">
             <e p="BasicItem.cs" t="Include" />
             <e p="Editor" t="Include">
@@ -1046,6 +1048,7 @@
             <e p="JJ.cs" t="Include" />
             <e p="MusicIdentity.cs" t="Include" />
             <e p="PlayerHandler.cs" t="Include" />
+            <e p="SceneMgr.cs" t="Include" />
             <e p="SlameIdentity.cs" t="Include" />
             <e p="Test.cs" t="Include" />
             <e p="TImer.cs" t="Include" />

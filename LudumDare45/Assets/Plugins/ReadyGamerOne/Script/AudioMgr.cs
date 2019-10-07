@@ -56,7 +56,9 @@ namespace ReadyGamerOne.Script
             {
                 if (bgmAudioSource == null)
                 {
-                    bgmAudioSource = (GetComponent<AudioSource>() ?? gameObject.AddComponent<AudioSource>());
+                    bgmAudioSource = GetComponent<AudioSource>();
+                    if (null == bgmAudioSource)
+                        bgmAudioSource = gameObject.AddComponent<AudioSource>();
                 }
 
                 return bgmAudioSource;
@@ -104,7 +106,7 @@ namespace ReadyGamerOne.Script
             if (!enableBgmAudio)
                 return;
 
-            var clip = MemoryMgr.GetSourceFromResources<AudioClip>(name);
+            var clip = audioclips[name];
             if (clip == null)
             {
                 Debug.Log("音效获取失败：" + name);
@@ -126,7 +128,7 @@ namespace ReadyGamerOne.Script
             if (!enableEffectAudio)
                 return;
 
-            var clip = MemoryMgr.GetSourceFromResources<AudioClip>(name);
+            var clip = audioclips[name];
 
             if (clip == null)
             {

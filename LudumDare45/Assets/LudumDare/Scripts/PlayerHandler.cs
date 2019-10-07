@@ -1,22 +1,25 @@
-using System;
+using LudumDare.Scriptsq;
 using ReadyGamerOne.Common;
 using ReadyGamerOne.Const;
 using UnityEngine;
 
 namespace LudumDare.Scripts
 {
-    public class PlayerHandler : UnityEngine.MonoBehaviour
+    public class PlayerHandler : MonoSingleton<PlayerHandler>
     {
-        public ConstStringChooser messageToListen;
+        public ConstStringChooser playerDieMessage;
+        public GameObject dieSignPrefab;
         private void Start()
         {
 //            Debug.Log("监听");
-            CEventCenter.AddListener(messageToListen.StringValue,OnMessageCome);
+            CEventCenter.AddListener(playerDieMessage.StringValue,OnMessageCome);
         }
 
         private void OnMessageCome()
         {
             Debug.Log("玩家应该死亡");
+            var mb=  Instantiate(dieSignPrefab);
+            mb.AddComponent<FullDown>();
         }
     }
 }
