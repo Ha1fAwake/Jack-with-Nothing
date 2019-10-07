@@ -35,7 +35,7 @@ public class BagData {
         //扔掉物体
         if (facedItem == null) {
             #region 扔掉
-            /*
+            
             bagItem.GetComponent<ItemIdentity>().OnLeaveBag();
             if (playerFace == Direction.up) {
                 bagItem.transform.position = Player.position + new Vector3(0, 1, 0);
@@ -51,7 +51,7 @@ public class BagData {
             }
             bagItem = null;
             bagItemId = 0;  //nothing
-            */
+            
             #endregion
             return;
         }
