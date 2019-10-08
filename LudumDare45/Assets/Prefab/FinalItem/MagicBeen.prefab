@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2274086566112918078}
   - component: {fileID: 1447173613405030952}
   - component: {fileID: 6474704670104926245}
-  - component: {fileID: 3181795202701526267}
+  - component: {fileID: 9128707840460882354}
   m_Layer: 9
   m_Name: MagicBeen
   m_TagString: Untagged
@@ -155,7 +155,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.66
---- !u!114 &3181795202701526267
+--- !u!114 &9128707840460882354
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -164,8 +164,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6650154517313603469}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fca04527ff1718468e89045df77a1dd, type: 3}
+  m_Script: {fileID: 11500000, guid: 49b00a65bd8a8da4b9ed463a8afee145, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   itemName:
-    selectedIndex: 7
+    selectedIndex: 16
+  messageToShot:
+    selectedIndex: 15

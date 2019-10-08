@@ -18,7 +18,6 @@ namespace ReadyGamerOne.Script
             SceneManager.sceneUnloaded += (s) => OnAnySceneUnload();
             AddGlobalScript();
             WorkForOnlyOnce();
-            RefreshGlobalVar();
         }
 
         protected virtual void Start()
@@ -33,7 +32,7 @@ namespace ReadyGamerOne.Script
 
         protected virtual void OnAnySceneLoad()
         {
-            
+            RefreshGlobalVar();
         }
 
         protected virtual void OnAnySceneUnload()

@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 8124080185114793464}
   - component: {fileID: 8124080185114793466}
   - component: {fileID: 7234916747233925612}
-  - component: {fileID: 8124080185114793467}
   - component: {fileID: 8605417831444272230}
   - component: {fileID: 5279226922089093617}
   - component: {fileID: 5594608868064398962}
   - component: {fileID: 961903179}
+  - component: {fileID: 1134237768}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Boss
@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 8124080185114793465}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 3, z: 0}
-  m_LocalScale: {x: 0.26470587, y: 0.26470587, z: 0.26470587}
+  m_LocalScale: {x: 0.8252975, y: 0.7232717, z: 0.71330816}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -50,7 +50,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.06926608, y: -1.8687344}
+  m_Offset: {x: 0.1521399, y: 3.0382693}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -61,7 +61,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8.29464, y: 12.4439125}
+  m_Size: {x: 8.460386, y: 2.4874845}
   m_EdgeRadius: 0
 --- !u!95 &7234916747233925612
 Animator:
@@ -82,25 +82,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &8124080185114793467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8124080185114793465}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32336975373b441fbc385b61bc9d3681, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  aiMgr: {fileID: 0}
-  messageWhenStateEnd:
-    selectedIndex: 10
-  Bullet: {fileID: 1108401003621492646, guid: a85d826cb720e5e42b93d43f37dd2525, type: 3}
-  BulletNum: 20
-  WaitTime: 1
-  DeltCreateTime: 0.2
 --- !u!212 &8605417831444272230
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -138,7 +119,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_Sprite: {fileID: 21300000, guid: 6a53abbe657e59f4dabda0ada22ce3bb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -162,24 +143,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ce7eeb6cbd847d6bcce5cfffe97695e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sleeping: {fileID: 21300000, guid: 2924b66e408643f4d9610b8e64bce249, type: 3}
+  sleeping: {fileID: 21300000, guid: bc6bbab30624cb444a7668fa7965957c, type: 3}
   idle: {fileID: 21300000, guid: 6a53abbe657e59f4dabda0ada22ce3bb, type: 3}
   sliderLoadTime: 3
-  bossSlider: {fileID: 0}
-  bossSliderScaler: 1
   playerSlider: {fileID: 0}
-  playerSliderScaler: 1
+  bossSlider: {fileID: 0}
   messageHurtBoss:
     selectedIndex: 18
   messageHurtPlayer:
     selectedIndex: 17
   messageState1End:
     selectedIndex: 10
-  ai1: {fileID: 8124080185114793467}
+  messagePlayerDie:
+    selectedIndex: 0
+  messsageBossDie:
+    selectedIndex: 24
+  ai1: {fileID: 0}
   ai2: {fileID: 5594608868064398962}
-  bulletHurt: 0.089
-  eggHurt: 0.079
-  musicHurt: 0.079
 --- !u!114 &5594608868064398962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,11 +177,11 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   mapUnitSize: 2
-  map: {x: 8, y: 5}
-  offset: {x: 0, y: 0}
-  itemCountAtOneTime: 8
+  map: {x: 8, y: 2}
+  offset: {x: 0, y: -1}
+  itemCountAtOneTime: 6
   duringTime: 10
-  createCount: 3
+  createCount: 5
   createInfos:
   - ItemName:
       selectedIndex: 1
@@ -213,14 +193,14 @@ MonoBehaviour:
       selectedIndex: 0
     weight: 8
   - ItemName:
-      selectedIndex: 10
+      selectedIndex: 12
     weight: 8
   - ItemName:
-      selectedIndex: 13
+      selectedIndex: 9
     weight: 5
   - ItemName:
       selectedIndex: 2
-    weight: 5
+    weight: 10
 --- !u!50 &961903179
 Rigidbody2D:
   serializedVersion: 4
@@ -242,3 +222,29 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!61 &1134237768
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8124080185114793465}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.053803504, y: 6.2270293}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 11.842148, y: 16.68}
+    newSize: {x: 11.84, y: 16.68}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.7726693, y: 4.2259417}
+  m_EdgeRadius: 0

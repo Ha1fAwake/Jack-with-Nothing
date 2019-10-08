@@ -32,6 +32,8 @@ public class ShowTag : MonoBehaviour {
         if (!IsShowing) {
             if (TimeCount < FadeTime) {
                 TimeCount += Time.deltaTime;
+                if (Tag1 == null)
+                    return;
                 foreach (Transform child in Tag1.transform) {
                     if (child.gameObject.name == "Image") {
                         Color colors = child.gameObject.GetComponent<Image>().color;

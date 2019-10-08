@@ -196,9 +196,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerDieMessage:
     selectedIndex: 3
+  bossDieMessage:
+    selectedIndex: 24
   dieSignPrefab: {fileID: 1908808963263394841, guid: db76b052318deb34cb50eabaac41f0be,
     type: 3}
+  victoryPrefab: {fileID: 6283454979649143396, guid: 69b82140dd6481c47926e02b8592a5ed,
+    type: 3}
   offset: {x: 0, y: 6, z: 0}
+  ExitButton: {fileID: 5474797376680494586, guid: 249549b3380cae845a0f710ed6c7a885,
+    type: 3}
 --- !u!1 &8981403283817417691
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,9 +14,13 @@ public class ItemIdentity : MonoBehaviour
     public bool IsInBag { get; private set; } = false;
     public virtual BasicItem ItemInfo => ItemMgr.GetItem(itemName.StringValue);
 
-    private void Start()
+    protected virtual void Start()
     {
+        if (this == null)
+            return;
         var rig = gameObject.AddComponent<Rigidbody2D>();
+        if (rig == null)
+            return;
         rig.bodyType = RigidbodyType2D.Kinematic;
         rig.gravityScale = 0;
     }
@@ -38,9 +42,10 @@ public class ItemIdentity : MonoBehaviour
     {
         if (identity)
         {
+            if (identity.ItemInfo.id == ItemInfo.id)
+                return;
             foreach (var mergeInfo in ItemMgr.MergeInfos)
             {
-                Debug.Log("Merge:  "+mergeInfo.SourId1+"   "+mergeInfo.SourId2);
                 var list = mergeInfo.SourIds;
                 if (list.Contains(ItemInfo.id) && list.Contains(identity.ItemInfo.id))
                 {
@@ -56,9 +61,8 @@ public class ItemIdentity : MonoBehaviour
         BossAi_2.aliveCount++;
     }
 
-    private void OnDestroy()
+    protected virtual void OnDestroy()
     {
-        Debug.Log("销毁");
         BossAi_2.aliveCount--;
     }
 }

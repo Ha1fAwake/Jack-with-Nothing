@@ -40,8 +40,9 @@ namespace LudumDare.Scripts
             MainLoop.Instance.ExecuteLater(()=>attacker.SetActive(false), attackTime);
         }
 
-        private void Start()
+        protected override void Start()
         {
+            base.Start();
             ani = GetComponent<Animator>();
         }
 
@@ -54,6 +55,7 @@ namespace LudumDare.Scripts
             if (canEat)
             {
                 //你完了，这食人花都敢拿
+                Debug.Log("把危险食人花拿走");
                 CEventCenter.BroadMessage(playerDeadMessage.StringValue);
             }
         }
@@ -88,6 +90,9 @@ namespace LudumDare.Scripts
         /// </summary>
         private void OnFinishEating()
         {
+            if (this == null)
+                return;
+            
             if (IsInBag)
             {
                 //贪吃蛇居然还在身上，你完了

@@ -60,6 +60,8 @@ namespace LudumDare.Scripts
             {
                 if (timerPrefab == null)
                     throw new Exception("我裂开了");
+                if (GlobalVar.G_Canvas == null)
+                    throw new Exception("woc,Canvas没了");
                 timerObj= Instantiate(timerPrefab,GlobalVar.G_Canvas.transform);
                 if(timerObj==null)
                     throw new Exception("我人傻了");

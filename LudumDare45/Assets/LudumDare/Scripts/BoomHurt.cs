@@ -8,25 +8,29 @@ namespace LudumDare.Scripts
 {
     public class BoomHurt : UnityEngine.MonoBehaviour
     {
-        [Range(0, 1f)] public float bossHurt;
-        [Range(0, 1f)] public float playerHurt;
 
         public ConstStringChooser hurtPlayer;
         public ConstStringChooser hurtBoss;
         private void OnTriggerEnter2D(Collider2D other)
         {
-            Debug.Log(gameObject.name + "  碰到：" + other.transform.name);
             if (other.CompareTag("Player"))
             {
-                CEventCenter.BroadMessage(hurtPlayer.StringValue, playerHurt);
+                Debug.Log("伤害玩家");
+                CEventCenter.BroadMessage(hurtPlayer.StringValue, GameMgr.Instance.boomDamage);
             }else if (other.CompareTag("Boss"))
             {
-                CEventCenter.BroadMessage(hurtBoss.StringValue, bossHurt);
+                Debug.Log("伤害Boss");
+                CEventCenter.BroadMessage(hurtBoss.StringValue, GameMgr.Instance.boomDamage);
             }
 
-            if (other.GetComponent<ItemIdentity>())
+            if (transform.IsChildOf(other.transform))
+                return;
+
+            var iden = other.GetComponent<ItemIdentity>();
+            if (iden)
             {
-                Debug.Log("销毁");
+                if (iden is BoomIdentity)
+                    return;
                 Destroy(other.gameObject);
             }
         }

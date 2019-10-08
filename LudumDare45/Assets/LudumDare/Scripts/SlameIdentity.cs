@@ -18,15 +18,20 @@ namespace LudumDare.Scripts
         public float waittingTime;
 
         private Timer timer;
+        private Coroutine cor;
         public override void OnAddToBag()
         {
             base.OnAddToBag();
             timer = GetComponent<Timer>();
             timer.StartTimer(waittingTime);
-            MainLoop.Instance.ExecuteLater(() =>
+            cor = MainLoop.Instance.ExecuteLater(() =>
             {
-                if(IsInBag)
+                if (IsInBag)
+                {
+                    Debug.Log("玩家被背包里的史莱姆搞死");
                     CEventCenter.BroadMessage(playerDeadMessage.StringValue);
+
+                }
             }, waittingTime);
         }
 
@@ -43,21 +48,11 @@ namespace LudumDare.Scripts
             Destroy(timer.timerObj);
         }
 
-//        private List<int> ids = new List<int>();
-//        public override void UseOnTo(ItemIdentity identity)
-//        {
-//            base.UseOnTo(identity);
-//
-//            if (identity is SlameIdentity)
-//            {
-//                ids.Clear();
-//                ids.Add(ItemInfo.id);
-//                ids.Add(identity.ItemInfo.id);
-//                if(ids.Contains(4)&&ids.Contains(8))
-//                    global::BagData.MergeItem();
-//            }
-//            
-//            
-//        }
+        protected override void OnDestroy()
+        {
+            base.OnDestroy();
+            if (cor != null)
+                MainLoop.Instance.StopCoroutine(cor);
+        }
     }
 }

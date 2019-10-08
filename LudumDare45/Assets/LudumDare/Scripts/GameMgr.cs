@@ -1,7 +1,9 @@
+using Fungus;
 using ReadyGamerOne.Global;
 using ReadyGamerOne.MemorySystem;
 using ReadyGamerOne.Script;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace LudumDare.Scripts
 {
@@ -27,9 +29,15 @@ namespace LudumDare.Scripts
             base.Awake();
         }
 
-
-
         #endregion
+
+        public float eatDamage=10f;
+        public float bulletDamage=10f;
+        public float eggDamage=15f;
+        public float boomDamage=5;
+        public float playerScaler = 1.0f;
+        public float bossScaler = 1.0f;
+        
         protected override void WorkForOnlyOnce()
         {
             base.WorkForOnlyOnce();

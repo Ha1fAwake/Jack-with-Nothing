@@ -23,8 +23,9 @@ namespace LudumDare.Scripts
         public GameObject verAni;
         public float hideDelayTime;
 
-        private void Start()
+        protected override void Start()
         {
+            base.Start();
             timer = GetComponent<Timer>();
 //            Debug.Log("StartTimer");
             timer.StartTimer(timeToBoom);
@@ -34,9 +35,12 @@ namespace LudumDare.Scripts
         private void OnBoom()
         {
 //            Debug.Log("炸弹爆炸");
+            if (this == null)
+                return;
             if (IsInBag)
             {
 //                Debug.Log("广播");
+                Debug.Log("玩家被炸死");
                 CEventCenter.BroadMessage(messagePlayDead.StringValue);
             }
 
@@ -47,7 +51,11 @@ namespace LudumDare.Scripts
             horAni.SetActive(true);
             verAni.SetActive(true);
 
-            MainLoop.Instance.ExecuteLater(() => { Destroy(gameObject); }, hideDelayTime);
+            MainLoop.Instance.ExecuteLater(() =>
+            {
+                if(this!=null)
+                    Destroy(gameObject);
+            }, hideDelayTime);
         }
     }
 }

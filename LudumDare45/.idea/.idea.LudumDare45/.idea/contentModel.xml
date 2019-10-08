@@ -1037,9 +1037,11 @@
             <e p="BossAi_2.cs" t="Include" />
             <e p="BossAIMgr.cs" t="Include" />
             <e p="EatableIdentity.cs" t="Include" />
+            <e p="EatHurt.cs" t="Include" />
             <e p="Editor" t="Include">
               <e p="BossAi_2Editor.cs" t="Include" />
               <e p="ItemCreateableDrawer.cs" t="Include" />
+              <e p="SuperBloodBarEditor.cs" t="Include" />
             </e>
             <e p="FlowerIdentity.cs" t="Include" />
             <e p="GameMgr.cs" t="Include" />
@@ -1050,6 +1052,7 @@
             <e p="PlayerHandler.cs" t="Include" />
             <e p="SceneMgr.cs" t="Include" />
             <e p="SlameIdentity.cs" t="Include" />
+            <e p="SuperBloodBar.cs" t="Include" />
             <e p="Test.cs" t="Include" />
             <e p="TImer.cs" t="Include" />
           </e>
@@ -1115,6 +1118,7 @@
               <e p="UIInputer.cs" t="Include" />
             </e>
             <e p="Utility" t="Include">
+              <e p="AlphaExtension.cs" t="Include" />
               <e p="EnumUtil.cs" t="Include" />
               <e p="GizmosUtil.cs" t="Include" />
               <e p="InputUtil.cs" t="Include" />

@@ -14,6 +14,7 @@ namespace UnityEngine.UI
                 return;
 
             CEventCenter.BroadMessage(messageToShot.StringValue);
+            Debug.Log("广播消息：" + messageToShot.StringValue);
             BagData.ClearBag();
             Destroy(gameObject);
             

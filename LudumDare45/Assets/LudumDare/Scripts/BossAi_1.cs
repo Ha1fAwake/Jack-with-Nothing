@@ -33,10 +33,13 @@ namespace LudumDare.Scripts {
             }
         }
 
-        public void CreateBullet() {
+        public void CreateBullet()
+        {
+            if (this == null)
+                return;
             var bullet = Instantiate(Bullet, transform.position, new Quaternion());
             var logic = bullet.GetComponent<RandomFly>();
-            logic.damage = aiMgr.bulletHurt;
+            logic.damage = GameMgr.Instance.bulletDamage;
             logic.hurtBossMessage = aiMgr.messageHurtBoss.StringValue;
             logic.hurtPlayerMessage = aiMgr.messageHurtPlayer.StringValue;
         }

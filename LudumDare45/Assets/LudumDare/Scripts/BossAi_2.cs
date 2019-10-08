@@ -129,7 +129,7 @@ namespace LudumDare.Scripts
             do
             {
                 var index = Random.Range(0, posList.Count - 1);
-                Debug.Log("poslist:" + posList.Count + "  index:"+index);
+//                Debug.Log("poslist:" + posList.Count + "  index:"+index);
                 pos = posList[index];
             } while (!RayUtil.IsPositionNone2D(pos, testLayer));
 
