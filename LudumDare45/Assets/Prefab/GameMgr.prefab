@@ -10,8 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3229822306641938386}
   - component: {fileID: 3229822306641938387}
-  - component: {fileID: 1561438211}
-  - component: {fileID: 368398889}
   m_Layer: 0
   m_Name: GameMgr
   m_TagString: Boss
@@ -51,49 +49,3 @@ MonoBehaviour:
   boomDamage: 4
   playerScaler: 1
   bossScaler: 1
---- !u!114 &1561438211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3229822306641938384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 989decb435b9c794a81208dc519a4eab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneBgm:
-    values:
-    - Boom
-    - Error
-    - FarmBgm
-    - Flower
-    - Ok
-    - TitleBgm
-    - CloudBgm
-    - BossBgm
-    selectedIndex: 2
---- !u!114 &368398889
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3229822306641938384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 989decb435b9c794a81208dc519a4eab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneBgm:
-    values:
-    - Boom
-    - Error
-    - FarmBgm
-    - Flower
-    - Ok
-    - TitleBgm
-    - CloudBgm
-    - BossBgm
-    selectedIndex: 5
