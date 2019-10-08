@@ -43,3 +43,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bfc100b4be16094ba4e1a3da0dd82be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eatDamage: 3
+  bulletDamage: 2
+  eggDamage: 5
+  boomDamage: 4
+  playerScaler: 1
+  bossScaler: 1

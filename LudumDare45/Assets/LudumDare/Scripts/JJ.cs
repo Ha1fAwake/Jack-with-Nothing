@@ -9,11 +9,14 @@ namespace UnityEngine.UI {
 
         private void Start() {
             CEventCenter.AddListener(messageToShoot.StringValue, Shot);
-            Debug.Log("添加监听："+messageToShoot.StringValue);
+//            Debug.Log("添加监听："+messageToShoot.StringValue);
         }
 
-        private void Shot() {
-            Debug.Log("发射！！！");
+        private void Shot()
+        {
+            if (this == null)
+                return;
+//            Debug.Log("发射！！！");
             Instantiate(egg, transform.position, new Quaternion());
         }
     }

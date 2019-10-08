@@ -49,6 +49,13 @@ namespace LudumDare.Scripts
                 );
         }
 
+
+        protected override void OnAnySceneLoad()
+        {
+            base.OnAnySceneLoad();
+            global::BagData.ClearBag();
+        }
+
         protected override void AddGlobalScript()
         {
             base.AddGlobalScript();

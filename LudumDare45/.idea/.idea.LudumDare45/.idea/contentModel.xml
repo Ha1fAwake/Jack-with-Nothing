@@ -1045,6 +1045,10 @@
             </e>
             <e p="FlowerIdentity.cs" t="Include" />
             <e p="GameMgr.cs" t="Include" />
+            <e p="Hurter" t="Include">
+              <e p="EggHurt.cs" t="Include" />
+              <e p="TriggerHurt.cs" t="Include" />
+            </e>
             <e p="InputToCEventCenter.cs" t="Include" />
             <e p="ItemIdentity.cs" t="Include" />
             <e p="JJ.cs" t="Include" />

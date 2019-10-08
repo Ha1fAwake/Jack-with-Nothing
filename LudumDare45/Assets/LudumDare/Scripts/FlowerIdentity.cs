@@ -15,11 +15,14 @@ namespace LudumDare.Scripts
         public ConstStringChooser playerDeadMessage;
         public AnimationNameChooser chewingAni;
         public AnimationNameChooser bitAni;
+        public ConstStringChooser chewingFlower;
         public bool canEat = true;
         [Header("可以吃的物品ID")]
         public List<int> acceptableItemIds=new List<int>();
         [Header("消化时间")]
         public float eattingTime;
+
+        public float chewingFlowerSprite;
 
         public float attackTime = 0.2f;
         public GameObject attacker;
@@ -28,10 +31,7 @@ namespace LudumDare.Scripts
 
         public override BasicItem ItemInfo
         {
-            get
-            { 
-                return ItemMgr.GetItem(itemName.StringValue);
-            }
+            get { return canEat ? ItemMgr.GetItem(itemName.StringValue) : ItemMgr.GetItem(chewingFlower.StringValue); }
         }
 
         public void AttackTrigger()
@@ -70,18 +70,16 @@ namespace LudumDare.Scripts
         /// <param name="id"></param>
         public bool TryStartEating(int id)
         {
-            Debug.Log("试吃");
             if (!canEat)
                 return false;
             if (!acceptableItemIds.Contains(id))
                 return false;
 
-            Debug.Log("真吃了");
             canEat = false;
             ani.Play(Animator.StringToHash(chewingAni.StringValue));
             timer = GetComponent<Timer>();
                 timer.StartTimer(eattingTime);
-            MainLoop.Instance.ExecuteLater(OnFinishEating, eattingTime);
+                MainLoop.Instance.ExecuteLater(OnFinishEating, eattingTime);
             return true;
         }
 

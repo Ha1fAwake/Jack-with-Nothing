@@ -40,7 +40,11 @@ namespace LudumDare.Scripts
                 
                 playerSlider.Value -= hurt * GameMgr.Instance.playerScaler;
                 if (playerSlider.Value <= 0)
+                {
+                    Debug.Log("玩家血量："+playerSlider.Value+ "    宣告玩家死亡，死于扣血");
                     CEventCenter.BroadMessage(messagePlayerDie.StringValue);
+                    
+                }
             });
             CEventCenter.AddListener<float>(messageHurtBoss.StringValue, (hurt) =>
             {

@@ -29,7 +29,7 @@ namespace LudumDare.Scripts {
             if (DeadBullet == BulletNum && !IsSendMessage) {
                 IsSendMessage = true;
                 AnnounceStateEnd();
-                print("ת����ai2");
+//                print("ת����ai2");
             }
         }
 

@@ -72,7 +72,7 @@ namespace LudumDare.Scripts
             for (int i =aliveCount ; i < itemCountAtOneTime; i++)
             {
                 var item = GetRandomItem();
-                Debug.Log("添加");
+//                Debug.Log("添加");
                 Instantiate(item.Prefab, GetRandomPos(), Quaternion.identity);
             }
         }

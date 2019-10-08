@@ -92,8 +92,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7129e1ffef707f041b39096167976a24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossHurt: 0.22
-  playerHurt: 0.2
   hurtPlayer:
     selectedIndex: 17
   hurtBoss:
@@ -281,9 +279,12 @@ MonoBehaviour:
     rac: {fileID: 9100000, guid: 47c073e2432df404b91b7e88b6d1068e, type: 2}
     selectedIndex: 0
     stringValue: FlowerAni
+  chewingFlower:
+    selectedIndex: 8
   canEat: 1
-  acceptableItemIds: 030000000400000008000000090000000c0000000e00000001000000
+  acceptableItemIds: 030000000400000008000000090000000c0000000e000000
   eattingTime: 5
+  chewingFlowerSprite: 0
   attackTime: 0.2
   attacker: {fileID: 0}
 --- !u!114 &6751384559722656531

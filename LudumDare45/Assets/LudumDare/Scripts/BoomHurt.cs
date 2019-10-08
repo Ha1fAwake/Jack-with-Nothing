@@ -6,22 +6,11 @@ using UnityEngine;
 
 namespace LudumDare.Scripts
 {
-    public class BoomHurt : UnityEngine.MonoBehaviour
+    public class BoomHurt : TriggerHurt
     {
-
-        public ConstStringChooser hurtPlayer;
-        public ConstStringChooser hurtBoss;
-        private void OnTriggerEnter2D(Collider2D other)
+        protected override void OnTriggerEnter2D(Collider2D other)
         {
-            if (other.CompareTag("Player"))
-            {
-                Debug.Log("伤害玩家");
-                CEventCenter.BroadMessage(hurtPlayer.StringValue, GameMgr.Instance.boomDamage);
-            }else if (other.CompareTag("Boss"))
-            {
-                Debug.Log("伤害Boss");
-                CEventCenter.BroadMessage(hurtBoss.StringValue, GameMgr.Instance.boomDamage);
-            }
+            base.OnTriggerEnter2D(other);
 
             if (transform.IsChildOf(other.transform))
                 return;

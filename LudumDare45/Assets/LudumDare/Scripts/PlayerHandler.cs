@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 
 namespace LudumDare.Scripts
 {
-    public class PlayerHandler : MonoSingleton<PlayerHandler>
+    public class PlayerHandler :MonoBehaviour
     {
         public ConstStringChooser playerDieMessage;
         public ConstStringChooser bossDieMessage;
@@ -31,6 +31,8 @@ namespace LudumDare.Scripts
 
         private void OnMessageCome()
         {
+            if (this == null)
+                return;
             var mb = Instantiate(dieSignPrefab, transform.position+offset, Quaternion.identity);
             mb.AddComponent<FullDown>().targetY = transform.position.y;
             Instantiate(ExitButton,GlobalVar.G_Canvas.transform);

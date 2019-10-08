@@ -57,7 +57,7 @@ public class ItemIdentity : MonoBehaviour
 
     private void OnEnable()
     {
-        Debug.Log("生成");
+//        Debug.Log("生成");
         BossAi_2.aliveCount++;
     }
 

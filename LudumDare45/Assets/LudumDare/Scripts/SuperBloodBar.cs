@@ -170,12 +170,15 @@ namespace LudumDare.Scripts
             get { return value; }
             set
             {
+                
                 ValueChangeTransition(this.value, value);
                 
                 
                 this.value = value;
 
                 var fillRect = FillRect;
+                if (fillRect == null)
+                    return;
                 fillRect.sizeDelta=new Vector2(
                     -(1-this.value/maxValue) *Mathf.Abs(SizeDeltaX),
                     fillRect.sizeDelta.y);
@@ -220,7 +223,7 @@ namespace LudumDare.Scripts
         {
             if(!Application.isPlaying)
                 return;
-            Debug.Log("??????");
+//            Debug.Log("??????");
             timer = 0;
             if (coroutine != null)
                 MainLoop.Instance.StopCoroutine(coroutine);

@@ -11,7 +11,7 @@ namespace LudumDare.Scripts
         public override void UseOnTo(ItemIdentity identity)
         {
             base.UseOnTo(identity);
-            Debug.Log("使用物品");
+//            Debug.Log("使用物品");
             var flower = identity as FlowerIdentity;
             if (flower)
             {
