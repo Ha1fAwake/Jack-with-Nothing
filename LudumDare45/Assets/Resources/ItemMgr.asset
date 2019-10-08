@@ -83,7 +83,7 @@ MonoBehaviour:
     descriptions: 'Very important plot device from the original story. '
     fontSprite: {fileID: 21300000, guid: 853b664d8fef425478295b1247270c84, type: 3}
     infoSprite: {fileID: 21300000, guid: 55f54de4e76e6014ea648f5af8d70e11, type: 3}
-    exchangeCondition: 
+    exchangeCondition: 3
     prefab: {fileID: 6650154517313603469, guid: 0ec2aa80f55d3ce418105b48cb47b44e,
       type: 3}
   - id: 8

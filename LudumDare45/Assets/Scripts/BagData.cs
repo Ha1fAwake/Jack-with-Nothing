@@ -101,6 +101,9 @@ public class BagData {
             if (bagItemId == 7 && facedItemId == 5) {  //合成魔豆和井，胜利！
                 if (Vector3.Distance(facedItem.transform.position, new Vector3(6.5f, 6.5f, 0)) <= 1.0f) {
                     {
+                        //把条件放回去
+                        ItemMgr.GetItem(7).exchangeCondition = "3";
+                        
                         SceneManager.LoadScene("Animation");
                         return;
                     }
