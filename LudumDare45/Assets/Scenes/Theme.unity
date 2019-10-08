@@ -314,35 +314,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &368398888 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3229822306641938384, guid: a7b29474f56ce9e4c8b7c8b0f257b4bb,
-    type: 3}
-  m_PrefabInstance: {fileID: 853053894}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &368398889
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 368398888}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 989decb435b9c794a81208dc519a4eab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneBgm:
-    values:
-    - Boom
-    - Error
-    - FarmBgm
-    - Flower
-    - Ok
-    - TitleBgm
-    - CloudBgm
-    - BossBgm
-    selectedIndex: 5
 --- !u!1001 &853053894
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -33,8 +33,12 @@ namespace LudumDare.Model
                 var text = "===<BaseItem>===\n";
                 text += "ItemName: " + itemName.StringValue + "\n";
                 text += "Description: " + descriptions + "\n";
-                text += "InfoSprite: " + infoSprite.name + "\n";
-                text += "FontSprite: " + fontSprite.name + "\n";
+                if(infoSprite)
+                    text += "InfoSprite: " + infoSprite.name + "\n";
+                if(fontSprite)
+                    text += "FontSprite: " + fontSprite.name + "\n";
+                if (prefab)
+                    text += "Prefab: " + prefab.name + "\n";
                 return text;
             }
     }

@@ -3961,35 +3961,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99b3b488bea89974eb77883f8b1437ec, type: 3}
---- !u!1 &1561438210 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3229822306641938384, guid: a7b29474f56ce9e4c8b7c8b0f257b4bb,
-    type: 3}
-  m_PrefabInstance: {fileID: 758324435}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1561438211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1561438210}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 989decb435b9c794a81208dc519a4eab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneBgm:
-    values:
-    - Boom
-    - Error
-    - FarmBgm
-    - Flower
-    - Ok
-    - TitleBgm
-    - CloudBgm
-    - BossBgm
-    selectedIndex: 2
 --- !u!1 &1567370374
 GameObject:
   m_ObjectHideFlags: 0
@@ -5053,6 +5024,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1311465982744087145, guid: dc464e6985cf64a45b75675ccade0747,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1311465982744087150, guid: dc464e6985cf64a45b75675ccade0747,
         type: 3}
       propertyPath: Tag
@@ -5068,11 +5044,6 @@ PrefabInstance:
         type: 3}
       propertyPath: itemName.selectedIndex
       value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1311465982744087145, guid: dc464e6985cf64a45b75675ccade0747,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc464e6985cf64a45b75675ccade0747, type: 3}

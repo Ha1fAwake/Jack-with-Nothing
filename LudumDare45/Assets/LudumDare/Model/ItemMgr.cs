@@ -34,7 +34,7 @@ namespace LudumDare.Model
         #region 单例
 
         private static ItemMgr _instance;
-        private static ItemMgr Instance
+        public static ItemMgr Instance
         {
             get
             {

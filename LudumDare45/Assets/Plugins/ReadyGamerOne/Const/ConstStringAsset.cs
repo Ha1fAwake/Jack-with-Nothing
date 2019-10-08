@@ -16,7 +16,7 @@ namespace ReadyGamerOne.Const
             {
                 if (!_instance)
                 {
-                    if (File.Exists("Assets/Resources/GlobalConstStrings.asset"))
+                    //if (File.Exists("Assets/Resources/GlobalConstStrings.asset"))
                         _instance = Resources.Load<ConstStringAsset>("GlobalConstStrings");
                 }
 #if UNITY_EDITOR
