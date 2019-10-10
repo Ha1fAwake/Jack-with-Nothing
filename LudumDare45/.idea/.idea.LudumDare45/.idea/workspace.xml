@@ -2,28 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0482ef6b-22f4-447a-aa7b-43e035ffb97e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/LudumDare/Model/BasicItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LudumDare/Model/BasicItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LudumDare/Model/ItemMgr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LudumDare/Model/ItemMgr.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LudumDare/Scripts/Test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LudumDare/Scripts/Test.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReadyGamerOne/Const/ConstStringAsset.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReadyGamerOne/Const/ConstStringAsset.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/GameMgr.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/GameMgr.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Home.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Home.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Theme.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Theme.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Games/LudumDare45_Data/Managed/Assembly-CSharp-firstpass.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Games/LudumDare45_Data/Managed/Assembly-CSharp-firstpass.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Games/LudumDare45_Data/Managed/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Games/LudumDare45_Data/Managed/Assembly-CSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Games/LudumDare45_Data/Managed/Unity.TextMeshPro.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Games/LudumDare45_Data/Managed/Unity.TextMeshPro.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Games/LudumDare45_Data/Managed/Unity.Timeline.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Games/LudumDare45_Data/Managed/Unity.Timeline.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Games/LudumDare45_Data/Managed/UnityEngine.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Games/LudumDare45_Data/Managed/UnityEngine.UI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Games/LudumDare45_Data/globalgamemanagers" beforeDir="false" afterPath="$PROJECT_DIR$/Games/LudumDare45_Data/globalgamemanagers" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Games/LudumDare45_Data/globalgamemanagers.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Games/LudumDare45_Data/globalgamemanagers.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Games/LudumDare45_Data/level0" beforeDir="false" afterPath="$PROJECT_DIR$/Games/LudumDare45_Data/level0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Games/LudumDare45_Data/level1" beforeDir="false" afterPath="$PROJECT_DIR$/Games/LudumDare45_Data/level1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Games/LudumDare45_Data/level2" beforeDir="false" afterPath="$PROJECT_DIR$/Games/LudumDare45_Data/level2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Games/LudumDare45_Data/level3" beforeDir="false" afterPath="$PROJECT_DIR$/Games/LudumDare45_Data/level3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Games/LudumDare45_Data/level4" beforeDir="false" afterPath="$PROJECT_DIR$/Games/LudumDare45_Data/level4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Games/LudumDare45_Data/level5" beforeDir="false" afterPath="$PROJECT_DIR$/Games/LudumDare45_Data/level5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Games/LudumDare45_Data/resources.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Games/LudumDare45_Data/resources.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Games/LudumDare45_Data/sharedassets5.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Games/LudumDare45_Data/sharedassets5.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LudumDare45/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LudumDare45/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LudumDare45/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LudumDare45/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +35,7 @@
             <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReadyGamerOne/Const/ConstStringAsset.cs">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="700">
-                  <caret line="40" column="1" lean-forward="true" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+                  <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
                   <folding>
                     <marker date="1570540418303" expanded="false" signature="6:112" ph="..." />
                     <marker date="1570540418303" expanded="true" signature="143:1222" ph="{...}" />
@@ -730,12 +710,12 @@
       <workItem from="1570376464192" duration="4711000" />
       <workItem from="1570409576792" duration="52765000" />
       <workItem from="1570493065906" duration="24990000" />
-      <workItem from="1570533341200" duration="7722000" />
+      <workItem from="1570533341200" duration="8328000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128453000" />
+    <option name="totallyTimeSpent" value="129059000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -747,8 +727,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17847629" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1802,7 +1781,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReadyGamerOne/Const/ConstStringAsset.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="700">
-          <caret line="40" column="1" lean-forward="true" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+          <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
           <folding>
             <marker date="1570540418303" expanded="false" signature="6:112" ph="..." />
             <marker date="1570540418303" expanded="true" signature="143:1222" ph="{...}" />

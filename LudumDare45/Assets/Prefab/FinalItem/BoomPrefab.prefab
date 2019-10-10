@@ -228,8 +228,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f38ee6403c6f634a9b1cdf12ee97527, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossHurt: 0.064
-  playerHurt: 0.071
   hurtPlayer:
     selectedIndex: 17
   hurtBoss:
@@ -369,7 +367,7 @@ MonoBehaviour:
     selectedIndex: 2
   messagePlayDead:
     selectedIndex: 3
-  timeToBoom: 5
+  timeToBoom: 7
   Parital: {fileID: 1255450616457566982}
   horizontal: {fileID: 8250092486244240859}
   vertical: {fileID: 5175729850935085432}
@@ -514,8 +512,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f38ee6403c6f634a9b1cdf12ee97527, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossHurt: 0.064
-  playerHurt: 0.071
   hurtPlayer:
     selectedIndex: 17
   hurtBoss:
@@ -614,8 +610,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f38ee6403c6f634a9b1cdf12ee97527, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossHurt: 0.064
-  playerHurt: 0.071
   hurtPlayer:
     selectedIndex: 17
   hurtBoss:

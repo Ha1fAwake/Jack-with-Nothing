@@ -20,7 +20,7 @@ MonoBehaviour:
     fontSprite: {fileID: 21300000, guid: 2baa0bb176874a648a0d11d7475019a3, type: 3}
     infoSprite: {fileID: 21300000, guid: 0439f571fa61e1f4cb52b32650c72cc9, type: 3}
     exchangeCondition: 
-    prefab: {fileID: 100000, guid: fbafb8431307c42c9b1bfb9b27f6bd98, type: 3}
+    prefab: {fileID: 0}
   - id: 1
     itemName:
       selectedIndex: 1
@@ -83,7 +83,7 @@ MonoBehaviour:
     descriptions: 'Very important plot device from the original story. '
     fontSprite: {fileID: 21300000, guid: 853b664d8fef425478295b1247270c84, type: 3}
     infoSprite: {fileID: 21300000, guid: 55f54de4e76e6014ea648f5af8d70e11, type: 3}
-    exchangeCondition: 3
+    exchangeCondition: 
     prefab: {fileID: 6650154517313603469, guid: 0ec2aa80f55d3ce418105b48cb47b44e,
       type: 3}
   - id: 8
@@ -187,12 +187,12 @@ MonoBehaviour:
   - mgr: {fileID: 11400000}
     prefab: {fileID: 1798499133002970769, guid: e14a59d9b03ec3142bdd938640fbab5f,
       type: 3}
-    targetIdIndex: 0
-    sourId1Index: 4
-    sourId2Index: 7
-  - mgr: {fileID: 11400000}
-    prefab: {fileID: 1798499133002970769, guid: e14a59d9b03ec3142bdd938640fbab5f,
-      type: 3}
     targetIdIndex: 17
     sourId1Index: 16
     sourId2Index: 13
+  - mgr: {fileID: 11400000}
+    prefab: {fileID: 1798499133002970769, guid: e14a59d9b03ec3142bdd938640fbab5f,
+      type: 3}
+    targetIdIndex: 0
+    sourId1Index: 7
+    sourId2Index: 4
